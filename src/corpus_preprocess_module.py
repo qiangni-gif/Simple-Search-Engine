@@ -33,12 +33,13 @@ def preProcess(dataPath):
     #https://stackoverflow.com/questions/16780158/search-within-tags-with-beautifulsoup-python
     #https://stackoverflow.com/questions/19080957/how-to-remove-all-a-href-tags-from-text
     #https://www.freecodecamp.org/news/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe/
-                
-    i=0
+    #https://stackoverflow.com/questions/18337407/saving-utf-8-texts-in-json-dumps-as-utf8-not-as-u-escape-sequence
+
     docId = 1
     for html in os.listdir(dataPath):
         ## temp, only process one file now
         with open(os.path.join(dataPath,html)) as f:
+            print(os.path.join(dataPath,html))
             file = bs(f,'html.parser')
             mainDiv = file.find('div', attrs={'class':'sc_sccoursedescs'})
 
@@ -49,7 +50,7 @@ def preProcess(dataPath):
                     #print(docId)
                 docId = docId+1
                 title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
-                    #print(title)
+                #print(title)
                 desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
                 if not desc is None:
                     for a in desc.findAll('a'):
@@ -61,10 +62,13 @@ def preProcess(dataPath):
                 if '/' not in title:
                     container['title'] = title
                 else:
-                    container['title'] = title.rsplit('/',1)[1].strip()
+                    string = title.rsplit('/',1)
+                    temp = string[0].split(' ')
+                    container['title'] = temp[0]+' '+temp[1]+string[1]
+                    #print(container['title'])
                     
                     
-                if detect(title) == 'en' and detect(container['desc']) == 'en':
+                if detect(container['title']) == 'en':
                     data.append(container)
                 
     return data
@@ -73,18 +77,8 @@ def preProcess(dataPath):
 # In[4]:
 
 
-data = preProcess(rssPath)
-
-
-# In[5]:
-
-
-with open(dataStorage,'w') as f:
-        json.dump(data, f, sort_keys=True, indent=4)
-
-
-# In[ ]:
-
-
-
+def getCorpus():    
+    data = preProcess(rssPath)
+    with open(dataStorage,'w') as f:
+            json.dump(data, f, sort_keys=True, indent=4,ensure_ascii=False)
 
