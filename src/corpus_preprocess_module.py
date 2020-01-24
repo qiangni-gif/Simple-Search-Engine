@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[58]:
+# In[1]:
 
 
 from bs4 import BeautifulSoup as bs
@@ -12,14 +12,14 @@ import json
 from langdetect import detect
 
 
-# In[59]:
+# In[2]:
 
 
 rssPath = '../resources'
 dataStorage = '../output/storage.json'
 
 
-# In[193]:
+# In[3]:
 
 
 def preProcess(dataPath):
@@ -38,49 +38,53 @@ def preProcess(dataPath):
     docId = 1
     for html in os.listdir(dataPath):
         ## temp, only process one file now
-        if i==0:
-            i=i+1
-            with open(os.path.join(dataPath,html)) as f:
-                file = bs(f,'html.parser')
-                mainDiv = file.find('div', attrs={'class':'sc_sccoursedescs'})
+        with open(os.path.join(dataPath,html)) as f:
+            file = bs(f,'html.parser')
+            mainDiv = file.find('div', attrs={'class':'sc_sccoursedescs'})
 
             
-                for courseblock in mainDiv.find_all('div', attrs={'class':'courseblock'}):
-                    container = dict()
-                    container['docId'] = docId
+            for courseblock in mainDiv.find_all('div', attrs={'class':'courseblock'}):
+                container = dict()
+                container['docId'] = docId
                     #print(docId)
-                    docId = docId+1
-                    title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
+                docId = docId+1
+                title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
                     #print(title)
-                    desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
-                    if not desc is None:
-                        for a in desc.findAll('a'):
-                            a.replaceWithChildren()
+                desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
+                if not desc is None:
+                    for a in desc.findAll('a'):
+                        a.replaceWithChildren()
                             #for some reasons desc.string sometimes returns NONE even though there indeed texts
-                        container['desc'] = desc.text.strip()
-                    else:
-                        container['desc'] = 'Nothing to see here'
-                    if '/' not in title:
-                        container['title'] = title
-                    else:
-                        container['title'] = title.rsplit('/',1)[1].strip()
+                    container['desc'] = desc.text.strip()
+                else:
+                    container['desc'] = 'Nothing to see here'
+                if '/' not in title:
+                    container['title'] = title
+                else:
+                    container['title'] = title.rsplit('/',1)[1].strip()
                     
                     
-                    if detect(title) == 'en' and detect(container['desc']) == 'en':
-                        data.append(container)
+                if detect(title) == 'en' and detect(container['desc']) == 'en':
+                    data.append(container)
                 
     return data
 
 
-# In[195]:
+# In[4]:
 
 
 data = preProcess(rssPath)
 
 
-# In[196]:
+# In[5]:
 
 
 with open(dataStorage,'w') as f:
         json.dump(data, f, sort_keys=True, indent=4)
+
+
+# In[ ]:
+
+
+
 
