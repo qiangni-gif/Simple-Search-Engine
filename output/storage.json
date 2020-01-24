@@ -1,0 +1,902 @@
+[
+    {
+        "desc": "This course provides the student with the basic knowledge necessary to effectively manage an organization. The student will learn what constitutes the manager's role and how the managerial functions of planning, organizing, leading, controlling, and communication are used to oversee the organization's human, financial, physical, material, and commercial resources. In particular, through the case method approach, students will be introduced to the art of logical problem solving, while addressing such issues as corporate social responsibility and managerial ethics.",
+        "docId": 1,
+        "title": "ADM 1100 Introduction to Business Management "
+    },
+    {
+        "desc": "The course situates business within its changing socio-economic, political and technological environments. Managers must learn to both distinguish between and properly utilize the more confrontational world of lobbying, as well as the collaborative governance mechanisms that join private, public and civic organizations. Students will address real-world predicaments of ethical management, corporate social responsibility, and strategic governance that arise within the social context of business.",
+        "docId": 2,
+        "title": "ADM 1101 Social Context of Business "
+    },
+    {
+        "desc": "This course provides the student with the basic knowledge necessary to effectively manage an organization.  The student will learn what constitutes the manager's role and how the managerial functions of planning, organizing, leading, controlling and communication are used to oversee the organization's human, financial, physical, material, and commercial resources.  In particular through the Case Method Approach, students will be introduced to the art of logical problem solving, while addressing such issues as corporate social responsibility and managerial ethics.",
+        "docId": 3,
+        "title": "ADM 1300 Introduction to Business Management "
+    },
+    {
+        "desc": "The course situates business within its changing socio-economic, political and tehnological environments. Managers must learn to both distinguish between and properly utilize the more confrontational world of lobbying, as well as the collaborative governance mechanisms that join private, public and civic organizations. Students will address real-world predicaments of ethical management, corporate social responsibility, and strategic governance that arise within the social context of business.",
+        "docId": 4,
+        "title": "ADM 1301 Social Context of Business "
+    },
+    {
+        "desc": "This course introduces students to the financial statements of an organization and the accounting system that produces them. Emphasis is placed on understanding the role the financial statements play in communicating meaningful information about the firm, and how estimates and accounting policy choices affect the numbers in the statements.",
+        "docId": 5,
+        "title": "ADM 1340 Financial Accounting "
+    },
+    {
+        "desc": "Introduction to information technology tools to support operational, tactical and strategic level processes and decision making in an organization. Business applications and problem solving using spreadsheets, databases and collaborative tools. Introduction to specific IT tools used to support operations and decision making within the various functional areas of an organization, including marketing, sales and customer service, human resources, finance and accounting. Introduction to business intelligence and performance management concepts and tools.",
+        "docId": 6,
+        "title": "ADM 1370 Applications of Information Technology for Business "
+    },
+    {
+        "desc": "Introduction to problem solving techniques with the focus on decision making for efficiency, profitability, and sustainability. Tools for structured problem solving applicable in the areas of management, finance, marketing, organizational planning, transportation, operations, and allocation of scarce resources. Emphasis on computer-based modeling approaches to facilitate formulation, resolution, and interpretation of the results.",
+        "docId": 13,
+        "title": "ADM 2302 Business Analytics "
+    },
+    {
+        "desc": "Introduction to the use of statistical methods and tools in business,  Data exploration. Descriptive statistics including graphical representation of data, measure of central tendency and dispersion.  Applications of random variables and their probability distribution in business.  Useful probability distributions in management, including binomial, Poisson, normal, exponential and uniform distributions.  Introduction to statistical process control and quality improvement.  Hands-on experience with Excel and/or Minitab. (The lab is optional.)",
+        "docId": 14,
+        "title": "ADM 2303 Statistics for Management "
+    },
+    {
+        "desc": "Topics include the estimation (using confidence intervals) and hypothesis testing (including non-parametric methods); correlation and the simple linear regression model (with extensions to multiple regression); and chi-square tests on qualitative data. Emphasis on understanding when and how to use (and not misuse) various methods.  Hands-on experience with statistical software tools. (The lab is optional.)",
+        "docId": 15,
+        "title": "ADM 2304 Applications of Statistical Methods in Business "
+    },
+    {
+        "desc": "The entrepreneurial process and characteristics of the entrepreneur; social entrepreneurship; intrapreneurship; women and minorities in entrepreneurship; entrepreneurial failure; entrepreneurship as an economic development strategy and resulting programs and policies; steps in moving entrepreneurial endeavors forward; introduction to ideation and business planning.",
+        "docId": 16,
+        "title": "ADM 2313 The Entrepreneurial Society "
+    },
+    {
+        "desc": "Concepts and approaches for diagnosing and predicting events in organizations. Work motivation, job satisfaction and performance, group dynamics, leadership, decision-making, power, conflict and culture.",
+        "docId": 18,
+        "title": "ADM 2336 Organizational Behaviour "
+    },
+    {
+        "desc": "Policies and practices relating to job analysis, human resource planning, staffing, performance appraisal, training and development, wage and salary administration, and collective bargaining.",
+        "docId": 19,
+        "title": "ADM 2337 Human Resource Management "
+    },
+    {
+        "desc": "This course introduces students to the role of management accounting, as distinct from financial accounting, in the decision-making process. Major topics include: the determination of the costs of products and services, cost behaviour, relevant costs, standard costs, budgeting, responsibility accounting and cost allocation. All topics are approached in a management context in order to give the student an appreciation of the value of the various techniques available for the analysis and solution of problems faced by managers.",
+        "docId": 20,
+        "title": "ADM 2341 Managerial Accounting "
+    },
+    {
+        "desc": "This course extends, at a more advanced level, the material covered in ADM 1340. Concepts and procedures, including current and proposed accounting practices, are studied within the context of specific balance sheet and income statement items with specific emphasis on the assets of an organization. In conjunction with ADM 3340, it enhances the student's understanding of accounting practices and financial reporting.",
+        "docId": 21,
+        "title": "ADM 2342 Intermediate Accounting I "
+    },
+    {
+        "desc": "Key theoretical paradigms of modern finance. Arbitrage, expected utility, risk aversion, trade-offs between risk and return, behavioural and the concepts of prospect theory, framing, mental accounting, agency relationships, and information asymmetry.",
+        "docId": 23,
+        "title": "ADM 2352 Finance Theory "
+    },
+    {
+        "desc": "Introduction to management information systems, their underlying infrastructure and technology, and their impacts on organizations and individuals. Applications of information systems at the operational and decision making levels. Electronic business. Ethical and legal issues. Security and quality issues. Advanced topics including knowledge management and business intelligence.",
+        "docId": 24,
+        "title": "ADM 2372 Management Information Systems "
+    },
+    {
+        "desc": "Develop effective written and oral business communication skills.  Emphasis will be on quality in business written communications; strategies for planning and implementing effective communication to different audiences, including oral communication and presentations in front of an audience.",
+        "docId": 25,
+        "title": "ADM 2381 Business Communication Skills "
+    },
+    {
+        "desc": "Stage coop / Co-op Work Term",
+        "docId": 40,
+        "title": "Co-op Work Term"
+    },
+    {
+        "desc": "Study of supply chain management and of its impact on the competitive success and profitability of modern organizations. The integration of information and materials flows across multiple organizations. The roles of business logistics functions, including forecasting and planning, procurement, purchasing, inventory management, warehousing and materials handling, transportation management, and after sales service and customer relationships in the integrated supply chain. Issues of global logistics and reverse logistics.",
+        "docId": 42,
+        "title": "ADM 3302 Supply Chain Management "
+    },
+    {
+        "desc": "Advanced prescriptive analytics introducing simulation modeling of complex problems that include both deterministic and probabilistic elements. Students will get hands-on experience with simulation and decision modeling and formulation, software and results interpretation skills.",
+        "docId": 43,
+        "title": "ADM 3305 Business Simulation Analytics "
+    },
+    {
+        "desc": "Ideation, business modeling and validation; the business planning process, including: market evaluation and the marketing plan, physical, human resources and organizational planning, and the financial plan. Student projects in moving an actual business concept through the process from idea to plan, including: crafting a business idea; building a business model; implementing a validation plan; and, writing a business plan.",
+        "docId": 45,
+        "title": "ADM 3313 New Venture Creation "
+    },
+    {
+        "desc": "Examines and evaluates the practices of merchants, traders, entrepreneurs, financiers, marketers and profit seekers of the 15th to the 19th centuries who contributed to the development of global business and trade. Emphasizes the dynamic intertwining of markets and their social, technological, political, economic and cultural context via the analysis and discussion of case studies, readings and other sources.",
+        "docId": 47,
+        "title": "ADM 3317 The Global Context of Business: Merchants, Traders, Capitalists and Profit Seekers "
+    },
+    {
+        "desc": "Study of the changing international business environment, from a competitive and economic perspective. With a regional and a global approach, trade patterns, the role of international institutions (IMF, WTO, CNUCED, etc.) and trading blocks (EU, NAFTA, APEC, etc.) are analyzed. Questions related to ethics, environmental issues and corporate responsibility are also considered.",
+        "docId": 48,
+        "title": "ADM 3318 International Business "
+    },
+    {
+        "desc": "Synthesis of the behavioural analysis of the consumer (psychology, sociology, social psychology). Recent applications of behavioural theory will be investigated in light of the consumer's behaviour, individually and as mediated by group processes. Behavioural impact of the corporate and marketing strategies on the consumer.",
+        "docId": 50,
+        "title": "ADM 3321 Consumer Behaviour "
+    },
+    {
+        "desc": "Concepts and decisions involved with marketing of services.  It concerns specific service industries (i.e. tourism, financial) and firms that primarily sell goods that include services (i.e. computers). Special attention is given to service quality in the profit and non-profit context.",
+        "docId": 51,
+        "title": "ADM 3322 Services Marketing "
+    },
+    {
+        "desc": "Review of exploratory, descriptive, and causal research methods such as interviews and focus groups, surveys, and experiments. Topics include: sample selection, the gathering, analysis and interpretation of market-related data, study of multivariate data analysis techniques, investigation of relevant applied market research topics.",
+        "docId": 52,
+        "title": "ADM 3323 Market Research "
+    },
+    {
+        "desc": "Theory and practice of advertising and sales promotion in the context of the integrated marketing communications field. Focus on the strategy and tactics of creative and media decisions in advertising.",
+        "docId": 53,
+        "title": "ADM 3326 Advertising and Sales Promotion Management "
+    },
+    {
+        "desc": "In-depth study of external and internal staffing policies and practices in organizations. HR Forecasting, recruitment, selection, human rights and employment equity issues in staffing, identification and validation of selection criteria and techniques, career and succession planning, destaffing, and the relationship between the staffing process and other organizational processes.",
+        "docId": 54,
+        "title": "ADM 3333 Staffing Organizations "
+    },
+    {
+        "desc": "Theories of industrial relations, structure and functions of labour organizations, union-management relations, employer-employee relations, legislation and policies regulating industrial relations, negotiation and administration of collective agreements and bargaining outcomes.",
+        "docId": 55,
+        "title": "ADM 3334 Industrial Relations "
+    },
+    {
+        "desc": "Economic and non-economic rewards, compensation, performance and satisfaction, job analysis, evaluation and internal comparisons, pay surveys and external comparisons, pay structure, merit pay, incentive pay and benefits, impact of pay equity legislation and collective bargaining on compensation.",
+        "docId": 56,
+        "title": "ADM 3337 Compensation Administration "
+    },
+    {
+        "desc": "Continuation of ADM 2342. In this course, concepts and procedures, including current and proposed accounting practices, are studied within the context of specific balance sheet and income statement items with specific emphasis on the liabilities and equity of an organization.",
+        "docId": 57,
+        "title": "ADM 3340 Intermediate Accounting II "
+    },
+    {
+        "desc": "Provides a general knowledge of the Canadian Federal Income Tax system as it relates to individual taxpayers. The course includes the tax provisions for calculating all sources of taxpayer income to arrive at taxable income and the calculation of income taxes payable by an individual taxpayer.",
+        "docId": 58,
+        "title": "ADM 3345 Taxation I "
+    },
+    {
+        "desc": "An in-depth study of the principal concepts and techniques of cost analysis and cost management within the organization. The major part of the course concentrates on a mastery of the different cost accumulation systems, such as job order and process costing and cost analysis such as variance analysis. Special attention is given to the implications and integration of the different methods, techniques and studies related to the formal accounting system in the firm.",
+        "docId": 59,
+        "title": "ADM 3346 Cost Accounting "
+    },
+    {
+        "desc": "Definition of auditing. Concepts of management assertions, audit objectives, evidence, materiality and risk, internal control, audit planning, and reporting as applied to financial statements. Professional ethics, legal liability, and the responsibilities of auditors to society are also addressed.",
+        "docId": 60,
+        "title": "ADM 3349 Auditing Theory "
+    },
+    {
+        "desc": "Credit management, capital budgeting under risk, capital structure, dividend policy, mergers and acquisitions, leasing, introduction to derivates, introduction to corporate risk management.",
+        "docId": 61,
+        "title": "ADM 3350 Corporate Finance "
+    },
+    {
+        "desc": "Markets for debt instruments, term structure of interest rates, bond valuation, duration analysis, bond portfolio management and immunization, fixed income derivatives.",
+        "docId": 62,
+        "title": "ADM 3351 Fixed Income Investments "
+    },
+    {
+        "desc": "Students will oversee a portfolio of Canadian equity securities, with investments made via funds donated to the program. Emphasis is on applied equity valuation and portfolio management. Comprising a two-academic year program, students must complete Module I (3 credits) in Fall of the two year program, attend financial presentations, trip to Toronto, portfolio team meetings and portfolio management activities on an ongoing basis throughout the remainder of the academic year, and end with completion of Module II (3 credits) in Winter of the second year of the program.",
+        "docId": 64,
+        "title": "ADM 3357 Applied Investment Fund Management Module I "
+    },
+    {
+        "desc": "The international financial environment, foreign exchange markets and derivatives, managing transaction and economic exposures, foreign investment and financing decisions, and managing mutinational operations.",
+        "docId": 65,
+        "title": "ADM 3358 Multinational Business Finance "
+    },
+    {
+        "desc": "Assess healthcare analytics from a data perspective, specifically how patient data is acquired, turned into information and translated into knowledge; how healthcare information systems are designed and evaluated; how different systems such as clinical, electronic health records and public health systems function and are integrated; how the benefits and barriers of e-health systems including security, privacy, ethical and legal issues are assessed.",
+        "docId": 67,
+        "title": "ADM 3363 Healthcare Informatics for Managers "
+    },
+    {
+        "desc": "Emerging topics in the Management of Information Systems including green IT; cloud computing; social media in general and social networks in particular; mobile technologies; sustainability; IT security; auditing and ethics; feasibility assessments. Topics may vary with each offering of the course based on emerging trends in IT and its management.",
+        "docId": 68,
+        "title": "ADM 3378 Emerging Topics in Management Information Systems "
+    },
+    {
+        "desc": "Systemic methodology for analyzing business problems or opportunities and the role of technologies in addressing business needs; articulating business requirements for technology solutions; high-level logical system characteristics including business process requirements and data design; formal methodologies for converting business requirements into solution characteristics and technical specifications; business process (re-)design and change management; systems acquisition alternatives and feasibility based on cost/benefit, ethical, cultural and legal considerations.",
+        "docId": 69,
+        "title": "ADM 3379 Systems Analysis, Development, and Performance "
+    },
+    {
+        "desc": "The seminars will focus on issues in administrative studies. The focus of these seminars should be expected to change from year to year.",
+        "docId": 70,
+        "title": "ADM 3396 Seminar in Administration "
+    },
+    {
+        "desc": "Stage coop / Co-op Work Term",
+        "docId": 100,
+        "title": "Co-op Work Term"
+    },
+    {
+        "desc": "Stage coop / Co-op Work Term",
+        "docId": 101,
+        "title": "Co-op Work Term"
+    },
+    {
+        "desc": "Advanced predictive analytics methods for business and management; time series analysis, econometric modeling, growth models, substitution and diffusion models, opinion polling, technology forecasting; selection of appropriate prediction techniques, collection and use of data, critical evaluation of results. Overview of advanced quantitative and qualitative techniques and of their context of utilization via presentations, projects and in-class discussions.",
+        "docId": 106,
+        "title": "ADM 4307 Business Forecasting Analytics "
+    },
+    {
+        "desc": "This course integrates knowledge attained from prior courses combined with the latest strategy frameworks and analytical concepts. Students must examine and resolve the complex decisions top managers face in today's globally competitive world. Pedagogically, the course utilizes the case study method, which encourages student centered learning, real business analysis, and group participation. As an introductory course in strategy, the emphasis is placed on the fundamental tools of strategic formulation, competitive and market analysis, developing resource and organizational capabilities, shaping strategic fit, and leading organizational integration, with the aim of improving a firm's long-term performance.",
+        "docId": 107,
+        "title": "ADM 4311 Strategic Management "
+    },
+    {
+        "desc": "Brief overview of the traditional model for strategy making; new business models and their strategy implications in the new economy, i.e. an economy based on information technology and on companies focused on leveraging the Internet. Modern strategy themes include emergent strategy, system thinking, business webs and disruptive technologies. Practical learning experience as students explore the value propositions of thirty new economy companies.",
+        "docId": 108,
+        "title": "ADM 4312 Management in the New Economy "
+    },
+    {
+        "desc": "The Innovation process, from discovery to diffusion; intellectual property, innovation financing, organization design and strategy for innovation. Successful frameworks, strategies, funding techniques, business models, risks, and barriers for introducing break-through products and services.",
+        "docId": 110,
+        "title": "ADM 4316 Management of Innovation "
+    },
+    {
+        "desc": "Corporate social responsibility (CSR) and sustainability at multiple levels \u0096 self, others, the organization and society. Personal values, ethics, beliefs and attitudes and their relation to CSR and sustainability. Emphasis upon action, with the opportunity for leadership development. Social entrepreneurship, B-Corps, carbon-negative enterprises, regenerative business models, cradle-to-cradle design thinking, the circular economy.",
+        "docId": 111,
+        "title": "ADM 4317 Leadership, Strategy and Sustainability "
+    },
+    {
+        "desc": "Stages of multinational organization: exports, foreign direct investment, joint ventures and licensing agreements, mergers and acquisitions.  Managing multinational corporations, regional and global strategies: organization and structures, adjusting to cultural differences and political risk assessment.  Governments and multinational corporations (MNCs) relations: benefits of MNCs for host countries and national investment policies.  Corporate responsibility: ethics, environment and labour standards.",
+        "docId": 112,
+        "title": "ADM 4318 Multinational Business Policy "
+    },
+    {
+        "desc": "Strategic management in developing and emerging economies, with an emphasis on the interconnection between business growth and equitable development. Poverty, inequality, technological and institutional gaps remain significant hurdles to competitive performance, economic development and global business integration; the strategies, policies, organizational and institutional changes required to address these challenges are examined. Development issues and approaches are considered from multiple perspectives, particularly those of managers and policymakers.",
+        "docId": 113,
+        "title": "ADM 4319 Strategic Management in Developing and Emerging Economies "
+    },
+    {
+        "desc": "A highly applied course with a mix of formal lectures and group research activities, in which students work in groups to address the strategic promotional mandate from a major corporate sponsor. Each group will first develop and implement a primary and/or secondary market research project to gather a portion of the necessary intelligence. Then, using the pooled research reports, each group will develop a detailed strategic promotional plan. At the conclusion of the course, the teams with the three best promotional plans will compete in a public presentation known as the Michel Cloutier Marketing Competition.",
+        "docId": 115,
+        "title": "ADM 4325 Promotional Planning Practicum "
+    },
+    {
+        "desc": "Strategic approach for international markets. Markets selection and segmentation: formulation of the international marketing mix programs; international marketing strategies for small, medium and multinational firms.",
+        "docId": 117,
+        "title": "ADM 4328 International Marketing "
+    },
+    {
+        "desc": "Personal visits and personal contacts remain the most effective way of building a committed relationship between a buyer and a seller, especially in business markets.  The course will focus on the acquisition of essential selling skills required to meet the challenges facing sales professionals and on the development of expertise to retain customers and expand business opportunities.",
+        "docId": 118,
+        "title": "ADM 4329 Personal Selling "
+    },
+    {
+        "desc": "This course recognizes the leadership role that HR professionals take on the issues of workplace health, safety, and workers compensation. It reviews current legislation, and good management practice re: hazard management, accident investigation, emergency preparedness, managing physical & psychological toxic elements in the workplace, and diversity management (e.g. attending to the health/safety concerns of special-needs populations).",
+        "docId": 119,
+        "title": "ADM 4336 Occupational Health and Safety "
+    },
+    {
+        "desc": "Organizations that wish to be globally competitive need to learn how to innovate sustainably. Both human resource development specialists and global managers need to know how to inculcate the competencies that will enable their employees require to perform their current jobs and maximize their career potential. Students will learn how to connect global sustainability strategies and performance appraisals to training needs; to resolve the staffing/training tradeoff; to diagnose learning styles and design training and career development plans; to deliver professional development programs; and to evaluate the effectiveness of such programs.",
+        "docId": 121,
+        "title": "ADM 4338 International Training and Development for Sustainability "
+    },
+    {
+        "desc": "This integrative, capstone course for the HRM option is designed to teach prospective human resource professionals how to plan and make decisions about the allocation and alignment of human resources, within a given organizational strategy. You will acquire technical knowledge related to traditional human resource planning activities, such as forecasting demand and ascertaining supply of human resources, and implementing a succession management program.",
+        "docId": 122,
+        "title": "ADM 4339 Strategic Human Resources Planning "
+    },
+    {
+        "desc": "The cases studied in this course present an opportunity for students to integrate the knowledge acquired in previous accounting, tax, auditing and finance courses while putting into practice the knowledge acquired in other management courses in the process of making multidisciplinary decisions . Students are also able to improve their ability to address problems in multisubject and comprehensive cases.",
+        "docId": 123,
+        "title": "ADM 4340 Cases Studies in Accounting "
+    },
+    {
+        "desc": "This advanced course in auditing examines the role of the auditing profession and audit in society. The general assurance framework and its concepts are addressed. Audit and assurance concepts are applied to a range of specific engagement types. Current issues facing the profession are explored.",
+        "docId": 124,
+        "title": "ADM 4341 Advanced Auditing "
+    },
+    {
+        "desc": "Discussions on the role of accounting in business and in society. Topics include relevant theories for accounting development and standard-setting, professional judgement and other emerging issues within accounting and the accounting profession.",
+        "docId": 125,
+        "title": "ADM 4342 Seminar in Accounting Theory "
+    },
+    {
+        "desc": "Gives an in-depth knowledge of corporate taxation and of tax planning for the company, its managers and shareholders. The course includes calculation of corporate income tax, tax implications of the distribution of retained earnings, and the tax implications of owner/manager decisions regarding remuneration, incorporation and succession planning.",
+        "docId": 126,
+        "title": "ADM 4344 Taxation II "
+    },
+    {
+        "desc": "Integrates the various concepts of procedures that make up a managerial planning and control system from an accounting, performance measurement, behavioural, organisational design, and strategy implementation point of view. The course emphasizes modern performance measurement and control techniques in the context of changing competitive environments.",
+        "docId": 127,
+        "title": "ADM 4345 Management Control Systems "
+    },
+    {
+        "desc": "Information technology and accounting information systems as they affect the internal and external auditor are introduced. The modifications to traditional compliance and substantive auditing techniques that are necessary to address the automated business world are explored.",
+        "docId": 128,
+        "title": "ADM 4346 Accounting Information Systems Auditing "
+    },
+    {
+        "desc": "Covers specialized topics in financial reporting, including accounting for not-for-profit organizations, leases, benefit plans, and corporate income taxes.",
+        "docId": 129,
+        "title": "ADM 4348 Special Topics in Financial Accounting "
+    },
+    {
+        "desc": "Covers advanced topics in financial reporting, including long-term investments, business combinations, consolidations, and foreign currency translation.",
+        "docId": 130,
+        "title": "ADM 4349 Advanced Accounting "
+    },
+    {
+        "desc": "Securities analysis, financial statement analysis, free cash flow and valuation, relative valuation, and value-enhancing strategies.",
+        "docId": 131,
+        "title": "ADM 4350 Equity Valuation "
+    },
+    {
+        "desc": "Derivatives markets, risk neutral valuation, option pricing models, option strategies, convertible securities and warrants, forward and futures contracts, index futures, and swaps.",
+        "docId": 132,
+        "title": "ADM 4351 Options and Futures "
+    },
+    {
+        "desc": "Advanced topics in capital budgeting and strategy, real options, capital structure, dividend policy, agency theory, corporate governance, mergers and acquisitions, and empirical studies of corporate performance.",
+        "docId": 133,
+        "title": "ADM 4352 Advanced Corporate Finance "
+    },
+    {
+        "desc": "Foreign exchange markets, exchange rate determination, international money and capital markets, currency futures, options, and swaps, corporate exposure management, and international investing.",
+        "docId": 134,
+        "title": "ADM 4354 International Financial Management "
+    },
+    {
+        "desc": "Ethical issues specific to the financial sector, ethical decision making, societal impact of finance decisions, impact of responsible investing, and links among corporate governance, reporting practices and socially responsible behavior.",
+        "docId": 135,
+        "title": "ADM 4355 Finance, Ethics and Social Responsibility "
+    },
+    {
+        "desc": "Non-traditional alternative investments such as mutual funds, hedge funds, real estate, commodities, and income trusts. Basic concepts of risk management, including risk identification and analysis; likelihood of risks; types of risks affecting property, income, responsibility, and decision-making in risk management.",
+        "docId": 136,
+        "title": "ADM 4356 Alternative Investments and Risk Management "
+    },
+    {
+        "desc": "Students will oversee a portfolio of Canadian equity securities, with investments made via funds donated to the program. Emphasis is on applied equity valuation and portfolio management. Comprising a two-academic year program, students must complete Module I (3 credits) in Fall of the two year program, attend financial presentations, trip to Toronto, portfolio team meetings and portfolio management activities on an ongoing basis throughout the remainder of the academic year, and end with completion of Module II (3 credits) in Winter of the second year of the program.",
+        "docId": 137,
+        "title": "ADM 4357 Applied Investment Fund Management Module II "
+    },
+    {
+        "desc": "Advanced prescriptive analytics techniques such as optimization and queuing theory in applied settings. Businesses are awash in data but often have little sense as to how that data ought to be used to develop policy. Students will also learn how to use these techniques to help businesses better manage processes in a data-driven fashion, while understanding the limitations of analytical tools.",
+        "docId": 138,
+        "title": "ADM 4363 Business Optimization Analytics "
+    },
+    {
+        "desc": "Networking fundamentals including elements of data communications, Internet and transport protocols. Internet applications. Local and Wide Area Networks. Virtual Private networks. Wireless LAN. Network Security. Network Management. Management of emerging technologies, and current market trends. Topics related to telecom equipment vendors, and service providers, their products and services, and the competitive environment in telecom market.",
+        "docId": 140,
+        "title": "ADM 4378 Business Communications Networks "
+    },
+    {
+        "desc": "Implementation of Web-based systems as a critical component of organizations.  Web-based technologies as central elements of organizational structures.  Critical analysis of the usage of web technologies in organizations and the integration of web technologies and business needs.  Internet-based computer systems for management and decision-making in organizations, principles of analysis, design and development of web-based systems, practical experience with web development tools and hand coding of web pages and web sites for organizational and management needs.",
+        "docId": 141,
+        "title": "ADM 4379 Management and Implementation of Web Technologies in Organizations "
+    },
+    {
+        "desc": "The seminars will focus on issues in administrative studies. The focus of these seminars should be expected to change from year to year.",
+        "docId": 142,
+        "title": "ADM 4396 Seminar in Administration "
+    },
+    {
+        "desc": "Stage coop / Co-op Work Term",
+        "docId": 181,
+        "title": "Co-op Work Term"
+    },
+    {
+        "desc": "Stage coop / Co-op Work Term",
+        "docId": 182,
+        "title": "Co-op Work Term"
+    },
+    {
+        "desc": "Working of the private and public sectors in modern societies and of their interrelations. Public decision-making at the federal, provincial and local level; impact of social and economic regulation; choice of governing instruments; government and business perspectives on government-business relations; lobbying and other mechanisms through which business can influence government. Government-business relations in international context.",
+        "docId": 192,
+        "title": "ADM 5310 Public Sector and Business "
+    },
+    {
+        "desc": "Theories, methods and applications of behaviour science in organizations. Work motivation, job design, group dynamics, leadership, contingency organization design, organization culture, conflict management and managing organizational change.",
+        "docId": 194,
+        "title": "ADM 5330 Organizational Behavior "
+    },
+    {
+        "desc": "Human Resource Management models, workforce diversity, human rights and employment equity, human resource strategies and planning, job analysis, recruitment, selection, orientation, training, appraisal, career planning and development, compensation and pay equity, employee and labour relations, occupational health and safety.",
+        "docId": 195,
+        "title": "ADM 5331 Human Resource Management "
+    },
+    {
+        "desc": "Conceptual framework of financial reporting, the accounting cycle, financial statements, accounting for assets and liabilities, measurement of income, accounting for partnerships and corporations, accounting for government and non-profit organizations, and analysis and interpretation of financial statements.",
+        "docId": 196,
+        "title": "ADM 5341 Financial Accounting "
+    },
+    {
+        "desc": "Cost analysis and estimation, cost/volume/profit relationships, profit planning, control of operations, motivation and performance measurement, relevant costs and decision-making, and managerial accounting in the new industrial environment.",
+        "docId": 197,
+        "title": "ADM 5342 Managerial Accounting "
+    },
+    {
+        "desc": "Canadian financial markets, the fiscal environment, present value analysis, risk and asset valuation, capital budgeting under certainty, long-term financing, leverage and the cost of capital, and working capital management.",
+        "docId": 198,
+        "title": "ADM 5350 Principles of Finance "
+    },
+    {
+        "desc": "Consumer demand, production, technology and cost functions, pricing and market structure, and economic analysis of Canadian public policy towards business.",
+        "docId": 199,
+        "title": "ADM 5351 Managerial Microeconomics "
+    },
+    {
+        "desc": "National accounting, aggregate economic models, fiscal and monetary policies in an open economy, inflation and unemployment, and economic indicators and forecasting.",
+        "docId": 200,
+        "title": "ADM 5352 Managerial Macroeconomics "
+    },
+    {
+        "desc": "The top management function in the organization, framework and methodology of strategic management, strategy formulation based on environmental analysis, organizational resources and competencies, and the values of the decision-makers.",
+        "docId": 201,
+        "title": "ADM 5360 Strategic Management and Policy I "
+    },
+    {
+        "desc": "This course completes ADM 5360. Problems of top management related to the implementation of strategy, relationships between strategy and organizational dimensions such as its structure, management systems and processes and organizational culture, evaluated from a global perspective; implementation of strategic change.",
+        "docId": 202,
+        "title": "ADM 5361 Strategic Management and Policy II "
+    },
+    {
+        "desc": "Conceptual and technical foundations for information systems; role of information systems at the operational, tactical and strategic levels in the organization; managerial overview of information systems technology, software, database management systems, and telecommunication systems; methodology for information systems development.",
+        "docId": 203,
+        "title": "ADM 5370 Information Management "
+    },
+    {
+        "desc": "Quantitative methods for the management of operations in service and production oriented organizations; models for operations planning, design and control; facility location, capacity, and distribution planning; project management; operations scheduling; inventory analysis and control; quality assurance.",
+        "docId": 204,
+        "title": "ADM 5380 Decision Models for Operations Management "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 220,
+        "title": "Internship"
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 221,
+        "title": "ADM 6110 Function. and Organization Government "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 222,
+        "title": "ADM 6117 Manpower Resource Development "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 223,
+        "title": "ADM 6141 Seminar Public Systems I Transport "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 224,
+        "title": "ADM 6190 Directed Studies Public Policy and Management "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 227,
+        "title": "ADM 6245 Analysis of International Financial Information "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 228,
+        "title": "ADM 6250 Applied Corporate Finance I "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 229,
+        "title": "ADM 6251 Applied Corporate Finance II "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 230,
+        "title": "ADM 6252 Investments: Equity Instruments "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 231,
+        "title": "ADM 6253 Investments: Fixed-Income Instruments "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 232,
+        "title": "ADM 6254 Futures and Options "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 233,
+        "title": "ADM 6255 Real Asset Valuation "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 234,
+        "title": "ADM 6256 Option Pricing "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 235,
+        "title": "ADM 6257 Advanced Derivatives "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 236,
+        "title": "ADM 6258 International Financial Markets "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 237,
+        "title": "ADM 6259 International Corporate Finance "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 240,
+        "title": "ADM 6262 Technology in the National and International Environments "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 241,
+        "title": "ADM 6263 Technology Adaptation and Innovation in a Corporate Environment "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 242,
+        "title": "ADM 6264 Technology R and D "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 243,
+        "title": "ADM 6266 Multinational Management I "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 244,
+        "title": "ADM 6267 Multinational Management II "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 246,
+        "title": "ADM 6269 Comparative Management II "
+    },
+    {
+        "desc": "Concepts of voice, data, image and video communications and their integration into local and long distance networks. Business communication systems examples.",
+        "docId": 247,
+        "title": "ADM 6271 Business Telecommunications Systems "
+    },
+    {
+        "desc": "International trends in the global economy together with assessment of risks, and associated international e-business opportunities. Strategies for translating international opportunities into e-businesses, including localizing international web-based content, developing international supply networks, international crowdsourcing, international payments and international collaboration. How to address local laws on privacy, intellectual property and business contracts.",
+        "docId": 248,
+        "title": "ADM 6274 International E-Business Strategies "
+    },
+    {
+        "desc": "Business Intelligence (BI) as a concept; review of major BI tools and methods; identification of the right types of BI for different types of decision making environments; introduction to Big Data; business applications of Big Data; review of the supporting technologies such as data bases and data warehouses and Big Data Platforms for integrating structured and unstructured data including Hadoop, sandbox analytics; streaming analytics, and advances in data warehousing appliances that accelerate analytics.",
+        "docId": 249,
+        "title": "ADM 6275 Business Intelligence Technologies and Big Data Analytics "
+    },
+    {
+        "desc": "Planning, process development and implementation of Enterprise Resource Planning (ERP) systems. Enterprise modeling. Workflow process management. ERP industry and trends. Selection of ERP systems. System implementation issues. Change management issues. Inter-organizational information systems. Post-implementation issues. Emerging trends and management issues. Cases in the public and private sector.",
+        "docId": 250,
+        "title": "ADM 6276 Enterprise Resource Planning Systems Management "
+    },
+    {
+        "desc": "This course explores the structural-, cultural- and process-based organizational change management challenges facing business strategists during new technology implementation initiatives. Toward this, the course draws upon management frameworks, support tools and best practices for the joint optimization of technology and social subsystems within organizations. Adopting a complex adaptive system viewpoint of the organization, the course will highlight issues of technological and social embeddedness, and illustrate the use of configuration modeling and analysis tools for enterprise engineering and strategy models to facilitate change sustainability and continuity.",
+        "docId": 252,
+        "title": "ADM 6279 Socio-Technical Change "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 253,
+        "title": "ADM 6280 Current Practices in Operations Management "
+    },
+    {
+        "desc": "Introduction to supply chain management; overview of its role in the organization as an operational, a strategic, and a competitive tool; role of information systems and technology in supply chain management; managing the flow of materials, and inventory management across the supply chain; developing and maintaining supply chain relationships; future challenges including sharing risks in inter-organizational relationships, managing the global supply chain and design for supply chain management.",
+        "docId": 254,
+        "title": "ADM 6281 Supply Chain Management "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 255,
+        "title": "ADM 6282 Introduction to Quality Management "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 256,
+        "title": "ADM 6284 Managing Technological Risk "
+    },
+    {
+        "desc": "International trends in the global economy together with assessment of risks, and associated international e-business opportunities. Strategies for translating international opportunities into e-businesses, including localizing international web-based content, developing international supply networks, international crowdsourcing, international payments and international collaboration. How to address local laws on privacy, intellectual property and business contracts. Courses ADM 6274, ADM 6286 cannot be combined for units.",
+        "docId": 257,
+        "title": "ADM 6286 International E-Business Strategies for EBT "
+    },
+    {
+        "desc": "Business Intelligence (BI) as a concept; review of major BI tools and methods; identification of the right types of BI for different types of decision making environments; introduction to Big Data; business applications of Big Data; review of the supporting technologies such as data bases and data warehouses and Big Data Platforms for integrating structured and unstructured data including Hadoop, sandbox analytics; Streaming Analytics, and advances in data warehousing appliances that accelerate analytics. Courses ADM 6275, ADM 6287 cannot be combined for units.",
+        "docId": 258,
+        "title": "ADM 6287 Business Intelligence Technologies and Big Data Analytics for EBT "
+    },
+    {
+        "desc": "Analysis and practice of commonly used multivariate statistical models, their characteristics, advantages, and limitations. Multiple regression analysis, analysis of variance and covariance, principal component analysis, factor analysis, discriminant analysis. Illustration of management problems through practical examples and hands-on experience with large-scale statistical analysis computer packages.",
+        "docId": 259,
+        "title": "ADM 6301 Multivariate Methods in Management "
+    },
+    {
+        "desc": "Quantitative and qualitative techniques and models for forecasting in business and economics. Time series analysis, Box-Jenkins analysis, econometric models, subjective assessment techniques, technology forecasting, future methods. Case studies and computer software are used extensively.",
+        "docId": 260,
+        "title": "ADM 6302 Business and Economic Forecasting "
+    },
+    {
+        "desc": "Basic functions and techniques used in the administration of public sector programs in Canada, the major differences and similarities between public and private sector management; detailed knowledge of the procedures, problems and opportunities in public sector management.",
+        "docId": 261,
+        "title": "ADM 6311 Public Management and Administration in Canada "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 262,
+        "title": "ADM 6313 Public Sector Financial Policy "
+    },
+    {
+        "desc": "Theory and practice of the evaluation of projects and programs. The techniques covered include benefit-cost analysis, cost effectiveness, tests of social soundness and political viability. Special emphasis is placed on performance criteria.",
+        "docId": 263,
+        "title": "ADM 6315 Project and Program Evaluation "
+    },
+    {
+        "desc": "Allows more in-depth coverage of the issues raised in earlier courses. It is divided in three sections dealing with specific contemporary issues in economic policy, social policy and administrative policy.",
+        "docId": 264,
+        "title": "ADM 6316 Issues in Public Policy and Administration "
+    },
+    {
+        "desc": "Principles and constraints of decision-making in international trade policy; emphasis on the management, implementation, and effects of Canadian trade policies both on a global scale and at the industry level and on the interaction between government and business.",
+        "docId": 265,
+        "title": "ADM 6319 Management of Trade Policy "
+    },
+    {
+        "desc": "Research tools, research methods, design of experiments, and surveys, gathering, analysis and interpretation of market-related data.",
+        "docId": 266,
+        "title": "ADM 6320 Marketing Research "
+    },
+    {
+        "desc": "Relationship between the marketing actions of a firm and the needs of society. Application of marketing tools to solve problems of profit and non-profit service organizations. Topics include social and ethical responsibilities, promotion and public conscience, tourism, and health services.",
+        "docId": 267,
+        "title": "ADM 6321 Services Marketing "
+    },
+    {
+        "desc": "Behavioural sciences applied to the consumer. Motivation, subliminal image, gestalt theory, risk taking behaviour, adoption processes, attitudes, brand loyalty, as well as the sociological and cultural aspects of behaviour.",
+        "docId": 268,
+        "title": "ADM 6322 Consumer Behavior "
+    },
+    {
+        "desc": "Theory and practice of advertising, personal selling and sales promotion. Analysis of media and publicity budgets, planning of promotional campaigns, utilization of research findings, evaluation of advertising effectiveness, and management of sales force.",
+        "docId": 269,
+        "title": "ADM 6323 Promotional Management "
+    },
+    {
+        "desc": "Synthesis course. Approaches and techniques for formulating marketing objectives, identifying alternative strategies, preparing the marketing plan, implementing and controlling the plan.",
+        "docId": 270,
+        "title": "ADM 6324 Marketing Strategy "
+    },
+    {
+        "desc": "Assessment of the firm's internationalization potential. Market segmentation and selection. Methods and techniques for foreign market research. Global marketing-mix strategies. International expansion strategies. Issues in export marketing. Organizing and planning for global marketing.",
+        "docId": 271,
+        "title": "ADM 6325 International Marketing "
+    },
+    {
+        "desc": "Formulation and implementation of decisions that have the greatest leverage in creating competitive advantages for an industrial firm. Topics addressed include profit and non-profit organizational buying behaviour, product strategy, innovation strategy, promotion strategy, pricing strategy and penetration of international markets. Particular attention will be given to the marketing of high technology products.",
+        "docId": 272,
+        "title": "ADM 6326 Industrial and Technology Marketing "
+    },
+    {
+        "desc": "A contingency perspective on constructing and changing an organization's structure under different conditions to achieve the organization's goals. Important underlying concepts covered include the organization's environment, technology, strategy, and its link to structural options; organization growth and decline, information processing and control, organization decision-making and effectiveness, organization learning and renewal.",
+        "docId": 273,
+        "title": "ADM 6330 Organization Design "
+    },
+    {
+        "desc": "Theories of industrial relations and labour movement, structure and functions of labour organizations, union-management relations, employer-employee relations, legislation regulating union-management relations, negotiations and outcomes, contract administration, causes and prevention of industrial conflict.",
+        "docId": 275,
+        "title": "ADM 6332 Industrial Relations "
+    },
+    {
+        "desc": "Focus on managing and improving performance; performance and organizational effectiveness; setting performance targets; performance measurement, performance and productivity; performance appraisal; group performance measures, performance for quality and results; rewarding for performance.",
+        "docId": 276,
+        "title": "ADM 6335 Performance Management "
+    },
+    {
+        "desc": "Equity and organizational effectiveness, labour force diversity, supply of skilled personnel, human resources information systems and forecasting, human resources development, pay differentials, job evaluation and pay adjustment, Employment Equity and Pay Equity Legislation in Canada.",
+        "docId": 277,
+        "title": "ADM 6336 Employment and Pay Equity "
+    },
+    {
+        "desc": "Accounting information and resource allocation, development and implementation of planning and control systems; the environment, the structure, transfer pricing. Planning and control in multinational firms, in not-for-profit organizations and in service organization.",
+        "docId": 278,
+        "title": "ADM 6340 Accounting for Managerial Planning and Control "
+    },
+    {
+        "desc": "Understanding published corporate financial statements, the development of concepts and principles for the analysis of financial reporting issues: the foundations of financial statements, assets evaluation and income measurement, financial statement and accounting policies, financial statement analysis and financial and investment decisions.",
+        "docId": 279,
+        "title": "ADM 6342 Corporate Accounting and Financial Analysis "
+    },
+    {
+        "desc": "Qualitative characteristics of tax systems, liability for tax, employment income including deferred compensation, business income and capital cost allowances, taxable capital gains and allowable capital losses, other inclusions and deductions, personal taxable income and taxes payable, corporate taxable income and taxes payable, corporate taxation and management decisions.",
+        "docId": 280,
+        "title": "ADM 6343 Tax Policy and Management "
+    },
+    {
+        "desc": "Principles of auditing, internal and the external audit functions. Strengths and weaknesses, dependency and interdependency, and the evolution of the audit function. Comprehensive auditing.",
+        "docId": 281,
+        "title": "ADM 6344 Auditing-Internal, External and Comprehensive "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 282,
+        "title": "ADM 6345 Creativity and Innovation "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 283,
+        "title": "ADM 6348 Tech. Policy and R and D Management "
+    },
+    {
+        "desc": "Elements of portfolio analysis and asset pricing, capital budgeting under uncertainty, capital structure theory, dividend policy, applications of options to corporate finance, and leasing.",
+        "docId": 284,
+        "title": "ADM 6350 Corporate Finance "
+    },
+    {
+        "desc": "Markets for debt instruments, interest rates and yield curves, bond valuation, fixed income derivative securities, interest rate swaps, bond portfolio management and immunization, and asset and liability management.",
+        "docId": 285,
+        "title": "ADM 6351 Management of Fixed Income Securities "
+    },
+    {
+        "desc": "Securities markets, common and preferred equity, options and convertibles, commodity and financial futures, mutual funds, portfolio management and performance measurement.",
+        "docId": 286,
+        "title": "ADM 6353 Financial Instruments and Investment Strategies "
+    },
+    {
+        "desc": "International financial environment, foreign exchange markets, international money and capital markets, exchange rate determination, currency swaps, and currency and interest rate exposure management.",
+        "docId": 287,
+        "title": "ADM 6354 International Corporate Finance "
+    },
+    {
+        "desc": "Design of arbitrage portfolios for asset valuation, risk neutral valuation, option pricing models, convertible securities and warrants, forward contracts and futures, option strategies, and use of derivative securities in portfolio management.",
+        "docId": 288,
+        "title": "ADM 6357 Options, Futures and Derivative Securities "
+    },
+    {
+        "desc": "Nature of investment in real estate property, valuation, risk, and income of real estate investments, methods of financing real estate transactions, structure of the mortgage market and role of financial institutions, and influence of the government on the real estate market.",
+        "docId": 289,
+        "title": "ADM 6358 Real Estate Investment and Finance "
+    },
+    {
+        "desc": "The relationship between R and D and economic progress; elements of the Canadian policy on technology; R and D activities in the private and public sectors; government incentives and support programs; comparison with the policie of other industrial countries; technology planning and R and D management in a Canadian setting: technology forecasting; staffing, structure, strategy and support for R and D.",
+        "docId": 292,
+        "title": "ADM 6367 Technology Policy and Research and Development Management "
+    },
+    {
+        "desc": "The importance of small business in Canada. Design of the business plan essentials, competition, planning, and financials. Startup, buying, or franchising the venture. Presentation and negociation of the plan with financiers.",
+        "docId": 293,
+        "title": "ADM 6368 Starting a Small Business "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 294,
+        "title": "ADM 6371 Computer Methods in Industrial Engineering "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 295,
+        "title": "ADM 6371I Computer Methods in Industrial Engineering "
+    },
+    {
+        "desc": "Concepts of voice, data, image and video communications and their integration into local and long distance networks. Business communication systems examples.",
+        "docId": 296,
+        "title": "ADM 6373 Business Telecommunication Systems "
+    },
+    {
+        "desc": "Main information systems at the higher levels of the organization: executive systems, strategic systems (inter-organizational systems, cooperative systems), decision support systems, group decision support and expert systems. Practical examples from the private sector and government.",
+        "docId": 297,
+        "title": "ADM 6376 Information Systems for Decision-Making "
+    },
+    {
+        "desc": "Management issues associated with the planning, development, and maintenance of information systems; methods and tools for systems planning and development; project management techniques and tools for information systems development with a life-cycle approach; methods and tools for systems maintenance.",
+        "docId": 298,
+        "title": "ADM 6377 Planning and Development of Information Systems "
+    },
+    {
+        "desc": "Efficient production of goods and services through the obtention, organization and transformation of inputs. Role of the production manager, facility and production planning, layout planning, inventory systems and quality control, supply and delivery.",
+        "docId": 300,
+        "title": "ADM 6382 Management Analysis and Control of Production Systems "
+    },
+    {
+        "desc": "Formulation and solution of decision problems in management. Linear programming methods and duality theory. Network optimization. Elements of integer and non-linear programming.",
+        "docId": 301,
+        "title": "ADM 6383 Mathematical Programming "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 302,
+        "title": "ADM 6385 Linear Optimization "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 303,
+        "title": "ADM 6385I Linear Optimization "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 304,
+        "title": "ADM 6386 Non-Linear Optimization "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 305,
+        "title": "ADM 6386I Non-Linear Optimization "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 306,
+        "title": "ADM 6387 Topics in Operations Research "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 307,
+        "title": "ADM 6387I Topics in Operations Research "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 308,
+        "title": "ADM 6391 Directed Readings in Administration I "
+    },
+    {
+        "desc": "Advanced study in an area of administrative sciences. Under the guidance of a professor, the student will select topics and investigate the area. A major term paper will be expected from the student.",
+        "docId": 309,
+        "title": "ADM 6392 Directed Readings in Administration II "
+    },
+    {
+        "desc": "A seminar on the problems of competition policy, regulation policy and the general interaction of law and economic measures.",
+        "docId": 310,
+        "title": "ADM 6393 Seminar in Administration I "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 311,
+        "title": "ADM 6394 Seminar in Administration II "
+    },
+    {
+        "desc": "Every year the University of Ottawa competes in several national and international MBA Case Competitions. This course prepares students for participation in these competitions. Entry into this course is limited and students will compete for placements. Only students who participate in the mini-case competitions schedule early September and are selected by the judges will be able to register to the course.",
+        "docId": 312,
+        "title": "ADM 6395 Seminar in Administration III "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 313,
+        "title": "ADM 63951 Seminar in Administration III "
+    },
+    {
+        "desc": "The seminars will focus on issues in administrative studies. The focus of these seminars should be expected to change from year to year.",
+        "docId": 314,
+        "title": "ADM 6396 Seminar in Administration IV "
+    },
+    {
+        "desc": "Fundamentals of using the Internet for marketing tasks. Strategic implications of the Internet for Marketing. Marketing models for Electronic Commerce. Customer retention, customization, value-based pricing, branding, advertising in the context of Electronic Commerce. WWW and the pricing, promotion and distribution of goods.",
+        "docId": 315,
+        "title": "ADM 6420 Electronic Marketing "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 316,
+        "title": "ADM 6450 Financial Management for High-Tech Firms "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 381,
+        "title": "International Law"
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 382,
+        "title": "Information Systems Management in an International Context"
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 383,
+        "title": "Multinational Logistics and Manufacturing"
+    }
+]
