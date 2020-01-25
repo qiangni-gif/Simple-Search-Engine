@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 from bs4 import BeautifulSoup as bs
@@ -38,38 +38,42 @@ def preProcess(dataPath):
     docId = 1
     for html in os.listdir(dataPath):
         ## temp, only process one file now
+
         with open(os.path.join(dataPath,html)) as f:
             print(os.path.join(dataPath,html))
-            file = bs(f,'html.parser')
-            mainDiv = file.find('div', attrs={'class':'sc_sccoursedescs'})
+            if not '.DS_Store' in os.path.join(dataPath,html):    
+                file = bs(f,'html.parser')
+                mainDiv = file.find('div', attrs={'class':'sc_sccoursedescs'})
 
-            
-            for courseblock in mainDiv.find_all('div', attrs={'class':'courseblock'}):
-                container = dict()
-                container['docId'] = docId
-                    #print(docId)
-                docId = docId+1
-                title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
-                #print(title)
-                desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
-                if not desc is None:
-                    for a in desc.findAll('a'):
-                        a.replaceWithChildren()
-                            #for some reasons desc.string sometimes returns NONE even though there indeed texts
-                    container['desc'] = desc.text.strip()
-                else:
-                    container['desc'] = 'Nothing to see here'
-                if '/' not in title:
-                    container['title'] = title
-                else:
-                    string = title.rsplit('/',1)
-                    temp = string[0].split(' ')
-                    container['title'] = temp[0]+' '+temp[1]+string[1]
-                    #print(container['title'])
-                    
-                    
-                if detect(container['title']) == 'en':
-                    data.append(container)
+
+                for courseblock in mainDiv.find_all('div', attrs={'class':'courseblock'}):
+                    container = dict()
+                    container['docId'] = docId
+                        #print(docId)
+                    docId = docId+1
+                    title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
+                    #print(title)
+                    desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
+                    if not desc is None:
+                        for a in desc.findAll('a'):
+                            a.replaceWithChildren()
+                                #for some reasons desc.string sometimes returns NONE even though there indeed texts
+                        container['desc'] = desc.text.strip()
+                    else:
+                        container['desc'] = 'Nothing to see here'
+                    if '/' not in title:
+                        container['title'] = title
+                    else:
+                        string = title.rsplit('/',1)
+                        temp = string[0].split(' ')
+                        container['title'] = temp[0]+' '+temp[1]+string[1]
+                        #print(container['title'])
+                    # usually a '/' means there are en and fr
+                    if '/' in container['desc']:
+                        if detect(container['title']) == 'en' and detect(container['desc'].split('/',1)[1]) == 'en':
+                            data.append(container)
+                    elif detect(container['title']) == 'en' and detect(container['desc']) == 'en':
+                        data.append(container)
                 
     return data
 
