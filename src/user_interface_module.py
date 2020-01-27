@@ -149,12 +149,12 @@ class Ui_mainWindow(object):
         else :
             db.stopWordFlag = False
 
-        if self.checkBox.isChecked():
+        if self.checkBox_2.isChecked():
             db.wordStemmingFlag = True
         else:
             db.wordStemmingFlag = False
 
-        if self.checkBox.isChecked():
+        if self.checkBox_3.isChecked():
             db.normalizationFlag = True
         else:
             db.normalizationFlag = False
