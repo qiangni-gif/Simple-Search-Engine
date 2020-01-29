@@ -142,23 +142,11 @@ print(t)
 # In[23]:
 
 
-buildPostings(t,[]) #before
+#buildPostings(t,[]) #before
 
 
 # In[18]:
 
 
-buildPostings(t,[])#after
-
-
-# In[43]:
-
-
-a = [(1,'A'),(1,'A'),(2,'V')]
-
-
-# In[44]:
-
-
-list(set(a))
+#buildPostings(t,[])#after
 
