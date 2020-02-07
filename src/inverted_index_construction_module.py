@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[11]:
+# In[2]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,20 +21,20 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[12]:
+# In[3]:
 
 
 indexPath = '../output/index.json'
 
 
-# In[13]:
+# In[4]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[14]:
+# In[5]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
@@ -48,7 +48,7 @@ def buildIndex():
         
 
 
-# In[15]:
+# In[6]:
 
 
 # not sure if we need this func
@@ -64,7 +64,7 @@ def buildIndex():
 #     return counter
 
 
-# In[16]:
+# In[8]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -95,7 +95,7 @@ def buildPostings(pairContainer,frequency,totalPostings):
     return postings
 
 
-# In[17]:
+# In[9]:
 
 
 # terms => terms[docId] = list(terms)
@@ -113,7 +113,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[18]:
+# In[10]:
 
 
 #get call if the file doesn;t exist (I think..)
@@ -138,8 +138,8 @@ terms = {1:['A','B','C'],2:['A','V'],3:['R','O','U','Q'],4:['S','Z','S','U'],5:[
 # In[14]:
 
 
-t = buildTermIdPair(terms)
-t = sorted(t, key = operator.itemgetter(0))
+# t = buildTermIdPair(terms)
+# t = sorted(t, key = operator.itemgetter(0))
 
 
 # In[15]:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[9]:
 
 
 import corpus_preprocess_module as cp
@@ -11,6 +11,7 @@ import importlib
 import string
 from langdetect import detect 
 from collections import Counter
+import re
 importlib.reload(cp)
 nltk.download('punkt')
 #nltk.download('wordnet')
@@ -29,6 +30,7 @@ ps = nltk.stem.PorterStemmer()
 #https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive
 #https://pythonprogramming.net/stemming-nltk-tutorial/
 #https://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item
+#https://stackoverflow.com/questions/17542152/python-split-without-creating-blanks
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
@@ -86,17 +88,23 @@ def tokenize(data):
     
 
 
-# In[7]:
+# In[30]:
 
 
 def removeFrenchWords(desc):
     newTokens = []
     newDesc = ""
-    descs = desc.split('/')
-    for d in descs:
+    desctemp = re.sub('[/]', '', desc)
+    for d in filter(None, desctemp.split('.')):
         if detect(d) == 'en':
-            newDesc = newDesc+" "+d
+            newDesc = newDesc+""+d
     return newDesc
+
+
+# In[31]:
+
+
+removeFrenchWords("A course of independent study under the supervision of a member of the School of Computer Science. Ce cours est équivalent à COMP 5901 à la Carleton University. / This course is equivalent to COMP 5901 at Carleton University.")
 
 
 # In[8]:
@@ -195,4 +203,16 @@ for k,v in dic.items():
 
 
 counter
+
+
+# In[18]:
+
+
+detect("Ce cours est équivalent à COMP 5901 à la Carleton University")
+
+
+# In[ ]:
+
+
+
 
