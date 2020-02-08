@@ -2,11 +2,19 @@
 
 # Created by: PyQt5 UI code generator 5.13.2
 
-import sys
-import dictionary_building_module as db
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox
+#https://stackoverflow.com/questions/41319407/how-do-i-add-a-layout-to-a-qtablewidget-in-pyqt
+#https://stackoverflow.com/questions/7782015/how-can-i-select-by-rows-instead-of-individual-cells-in-qtableview-in-pyqt
+#https://stackoverflow.com/questions/34258650/how-to-make-columns-and-rows-dynamically-in-pyqt
 
+import sys
+import json
+import dictionary_building_module as db
+import VSM_retrieval_module as vr
+import corpus_access_module as ca
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
+
+corpusPath = '../output/storage.json'
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
@@ -34,9 +42,12 @@ class Ui_mainWindow(object):
         self.gridLayout.setContentsMargins(5, 5, 5, 5)
         self.gridLayout.setSpacing(10)
         self.gridLayout.setObjectName("gridLayout")
-        self.listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents)
-        self.listWidget.setObjectName("listWidget")
-        self.gridLayout.addWidget(self.listWidget, 5, 0, 1, 5)
+        self.tableWidget = QtWidgets.QTableWidget(self.scrollAreaWidgetContents)
+        self.tableWidget.setObjectName("tableWidget")
+        self.gridLayout.addWidget(self.tableWidget, 5, 0, 1, 5)
+        self.tableWidget.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget.setSelectionBehavior(QtWidgets.QTableView.SelectRows)
+        self.tableWidget.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
 
         self.checkBox_3 = QtWidgets.QCheckBox(self.scrollAreaWidgetContents)
         self.checkBox_3.setEnabled(True)
@@ -190,9 +201,10 @@ class Ui_mainWindow(object):
     def onSearch_clicked(self):
         model = self.comboBox.currentText()
         collection = self.comboBox_2.currentText()
-        print("onSearch_clicked, module: "+model+" collection: "+ collection)
+        query = self.lineEdit.text()
+        print("onSearch_clicked, module: "+ model +" collection: "+ collection)
 
-        if self.lineEdit.text() == "":
+        if query == "":
             msg = QMessageBox()
             msg.setWindowTitle("warning!")
             msg.setText("Please fill out the search field!")
@@ -203,23 +215,45 @@ class Ui_mainWindow(object):
             
             x = msg.exec_()
         else:
-            query = self.lineEdit.text()
-            self.listWidget.addItem(query)
+            #self.tableWidget.addItem(query)
+            if model == "Vector Space Model":
+                self.tableWidget.removeRow(0)
+                self.tableWidget.setColumnCount(4)
+                self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
+                result = vr.comput_score(query)
+                print(result)
+                for i in result:
+                    currentRowCount = self.tableWidget.rowCount()
+                    doc = ca.getDocs([i[0]])
+                    #print(doc)
+                    self.tableWidget.insertRow(currentRowCount)
+                    self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(doc[0]['link'])))
+                    self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(doc[0]['title']))
+                    self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(doc[0]['desc']))
+                    self.tableWidget.setItem(currentRowCount,3,QTableWidgetItem(str(i[1])))
+            elif model == "Boolean Retrieval Model":
+                print("Boolean Retrieval Model")
 
     
     def onViewDetail_clicked(self):
-        print("onViewDetail_clicked")
-        item = self.listWidget.currentItem()
-
-        info = QMessageBox()
-        info.setWindowTitle("Doc")
-        info.setText(item.text())
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(10)
-        info.setFont(font)
+        with open(corpusPath, 'r') as file:
+            f = json.load(file)
+            print("onViewDetail_clicked")
+            id = self.tableWidget.item(self.tableWidget.currentRow(),0).text()
+            for i in f:
+                #print(i)
+                if i["docId"] == int(id):
+                    title = i["title"]
+                    desc = i["desc"]
+                    info = QMessageBox()
+                    info.setWindowTitle(title)
+                    info.setText(desc)
+                    font = QtGui.QFont()
+                    font.setFamily("Times New Roman")
+                    font.setPointSize(10)
+                    info.setFont(font)
             
-        y = info.exec_()
+                    y = info.exec_()
 
 
     
