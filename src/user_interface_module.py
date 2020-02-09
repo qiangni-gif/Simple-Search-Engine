@@ -11,6 +11,7 @@ import json
 import dictionary_building_module as db
 import VSM_retrieval_module as vr
 import corpus_access_module as ca
+import spelling_correction_module as sc
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 
@@ -199,6 +200,7 @@ class Ui_mainWindow(object):
         #print("normalizationFlag is %s" %db.normalizationFlag)
     
     def onSearch_clicked(self):
+        maxNum = 6
         model = self.comboBox.currentText()
         collection = self.comboBox_2.currentText()
         query = self.lineEdit.text()
@@ -215,7 +217,13 @@ class Ui_mainWindow(object):
             
             x = msg.exec_()
         else:
-            #self.tableWidget.addItem(query)
+            terms = vr.extractQueryTerms(query)
+            if sc.check(terms) != []:
+                correction = sc.getCorrection(terms)
+                for x,y in correction.items():
+                    correction[x] = y[:maxNum]
+                print(correction)
+                
             if model == "Vector Space Model":
                 self.tableWidget.removeRow(0)
                 self.tableWidget.setColumnCount(4)
