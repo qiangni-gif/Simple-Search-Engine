@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[40]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[2]:
+# In[30]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,20 +21,20 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[3]:
+# In[31]:
 
 
 indexPath = '../output/index.json'
 
 
-# In[4]:
+# In[32]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[5]:
+# In[33]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
@@ -48,7 +48,7 @@ def buildIndex():
         
 
 
-# In[6]:
+# In[34]:
 
 
 # not sure if we need this func
@@ -64,7 +64,7 @@ def buildIndex():
 #     return counter
 
 
-# In[8]:
+# In[35]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -95,7 +95,7 @@ def buildPostings(pairContainer,frequency,totalPostings):
     return postings
 
 
-# In[9]:
+# In[36]:
 
 
 # terms => terms[docId] = list(terms)
@@ -113,7 +113,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[10]:
+# In[37]:
 
 
 #get call if the file doesn;t exist (I think..)
@@ -123,10 +123,10 @@ def getIndex():
         json.dump(index, f, sort_keys=True, indent=4,ensure_ascii=False)
 
 
-# In[20]:
+# In[41]:
 
 
-# getIndex()
+#getIndex()
 
 
 # In[13]:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
+# In[32]:
 
 
 import corpus_preprocess_module as cp
@@ -18,7 +18,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
-# In[2]:
+# In[33]:
 
 
 storagePath = cp.dataStorage
@@ -34,28 +34,28 @@ ps = nltk.stem.PorterStemmer()
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
-# In[3]:
+# In[34]:
 
 
 def toggleStopWordFlag():
     return not stopWordFlag
 
 
-# In[4]:
+# In[35]:
 
 
 def toggleWordStemmingFlag():
     return not wordStemmingFlag
 
 
-# In[5]:
+# In[36]:
 
 
 def toggleNormalizationFlag():
     return not normalizationFlag
 
 
-# In[13]:
+# In[47]:
 
 
 def extractTerms():
@@ -76,7 +76,7 @@ def extractTerms():
     return data,container
 
 
-# In[6]:
+# In[48]:
 
 
 def tokenize(data):
@@ -88,7 +88,7 @@ def tokenize(data):
     
 
 
-# In[30]:
+# In[51]:
 
 
 def removeFrenchWords(desc):
@@ -101,13 +101,7 @@ def removeFrenchWords(desc):
     return newDesc
 
 
-# In[31]:
-
-
-removeFrenchWords("A course of independent study under the supervision of a member of the School of Computer Science. Ce cours est équivalent à COMP 5901 à la Carleton University. / This course is equivalent to COMP 5901 at Carleton University.")
-
-
-# In[8]:
+# In[41]:
 
 
 def stopWordRemoval(data):
@@ -122,7 +116,7 @@ def stopWordRemoval(data):
     return newData
 
 
-# In[9]:
+# In[42]:
 
 
 def wordStemming(data):
@@ -136,7 +130,7 @@ def wordStemming(data):
     return newData
 
 
-# In[10]:
+# In[43]:
 
 
 def normalization(data):
@@ -149,14 +143,14 @@ def normalization(data):
     return newData
 
 
-# In[26]:
+# In[44]:
 
 
 def pre_dictionary_building():
     cp.getCorpus()
 
 
-# In[11]:
+# In[45]:
 
 
 #dict('docId') -> dict{'word':frequency}
@@ -197,22 +191,4 @@ for k,v in dic.items():
     print(v)
     for x in v:
         counter.update({x:v[x]})
-
-
-# In[242]:
-
-
-counter
-
-
-# In[18]:
-
-
-detect("Ce cours est équivalent à COMP 5901 à la Carleton University")
-
-
-# In[ ]:
-
-
-
 
