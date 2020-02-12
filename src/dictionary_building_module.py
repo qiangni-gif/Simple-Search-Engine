@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[32]:
+# In[172]:
 
 
 import corpus_preprocess_module as cp
@@ -9,7 +9,7 @@ import nltk
 import json
 import importlib
 import string
-from langdetect import detect 
+from langdetect import detect,DetectorFactory
 from collections import Counter
 import re
 importlib.reload(cp)
@@ -18,7 +18,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
-# In[33]:
+# In[173]:
 
 
 storagePath = cp.dataStorage
@@ -26,6 +26,7 @@ stopWordFlag = True
 wordStemmingFlag = True
 normalizationFlag = True
 ps = nltk.stem.PorterStemmer()
+#DetectorFactory.seed = 0
 #https://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string
 #https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive
 #https://pythonprogramming.net/stemming-nltk-tutorial/
@@ -34,35 +35,35 @@ ps = nltk.stem.PorterStemmer()
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
-# In[34]:
+# In[65]:
 
 
 def toggleStopWordFlag():
     return not stopWordFlag
 
 
-# In[35]:
+# In[66]:
 
 
 def toggleWordStemmingFlag():
     return not wordStemmingFlag
 
 
-# In[36]:
+# In[67]:
 
 
 def toggleNormalizationFlag():
     return not normalizationFlag
 
 
-# In[54]:
+# In[68]:
 
 
 def getTermsForBoolean():
     return termsForBoolean
 
 
-# In[57]:
+# In[177]:
 
 
 def extractTerms():
@@ -82,11 +83,11 @@ def extractTerms():
             frequencyPerDoc(container,terms,d['docId'])
             #print(terms)
             data[d['docId']] = terms
-            
+    
     return data,container,termsForBoolean
 
 
-# In[48]:
+# In[178]:
 
 
 def tokenize(data):
@@ -98,20 +99,21 @@ def tokenize(data):
     
 
 
-# In[51]:
+# In[179]:
 
 
 def removeFrenchWords(desc):
     newTokens = []
     newDesc = ""
-    desctemp = re.sub('[/]', '', desc)
-    for d in filter(None, desctemp.split('.')):
-        if detect(d) == 'en':
-            newDesc = newDesc+""+d
+   # desctemp = re.sub('[/]', '', desc)
+    desctemp = desc.replace('/','').split('.')
+    for d in desctemp:
+        if d and (detect(d) == 'en' or detect(d) == 'ca'):
+            newDesc = newDesc+d
     return newDesc
 
 
-# In[41]:
+# In[180]:
 
 
 def stopWordRemoval(data):
@@ -126,7 +128,7 @@ def stopWordRemoval(data):
     return newData
 
 
-# In[42]:
+# In[181]:
 
 
 def wordStemming(data):
@@ -140,7 +142,7 @@ def wordStemming(data):
     return newData
 
 
-# In[43]:
+# In[182]:
 
 
 def normalization(data):
@@ -153,19 +155,18 @@ def normalization(data):
     return newData
 
 
-# In[44]:
+# In[183]:
 
 
 def pre_dictionary_building():
     cp.getCorpus()
 
 
-# In[45]:
+# In[184]:
 
 
 #dict('docId') -> dict{'word':frequency}
 def frequencyPerDoc(container,terms,docId):
     container[docId] = Counter(terms)
     return container
-    
 
