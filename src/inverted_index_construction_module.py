@@ -34,7 +34,7 @@ def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[125]:
+# In[126]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
