@@ -169,36 +169,3 @@ def frequencyPerDoc(container,terms,docId):
     return container
     
 
-
-# In[227]:
-
-
-b = ['one','three','one','four','five','six','six','one','nine']
-c = ['three','one','one','one','ten','seven','one','one','nine','two','two','three']
-d = ['right','cool','fuck','computer','go','what','the','hee']
-
-
-# In[228]:
-
-
-dic = dict()
-dic[1] = Counter(b)
-dic[2] = Counter(c)
-dic[3] = Counter(d)
-
-
-# In[243]:
-
-
-dic
-
-
-# In[241]:
-
-
-counter = Counter()
-for k,v in dic.items():
-    print(v)
-    for x in v:
-        counter.update({x:v[x]})
-

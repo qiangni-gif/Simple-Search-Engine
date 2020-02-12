@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[43]:
+# In[66]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[44]:
+# In[57]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,20 +21,20 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[45]:
+# In[58]:
 
 
 indexPath = '../output/index.json'
 
 
-# In[46]:
+# In[59]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[47]:
+# In[60]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
@@ -50,7 +50,7 @@ def buildIndex():
         
 
 
-# In[48]:
+# In[61]:
 
 
 # not sure if we need this func
@@ -66,7 +66,7 @@ def buildIndex():
 #     return counter
 
 
-# In[49]:
+# In[68]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -90,14 +90,14 @@ def buildPostings(pairContainer,frequency,totalPostings):
             postings[term] = []
             # [(docIds, wordCounts in that doc normalized by doc length)]
             # well.... when dumps into json, tuple becomes lisst
-        postings[term].append((pair[1], frequency[pair[1]][term]/sum(frequency[pair[1]].values())))
+        postings[term].append((pair[1], frequency[pair[1]][term]))
     # remove duplicates: if a word appear more than once in a doc, above algo will append it more than once
     for k,v in postings.items():
         postings.update({k:sorted(list(set(v)))})
     return postings
 
 
-# In[50]:
+# In[69]:
 
 
 # terms => terms[docId] = list(terms)
@@ -115,7 +115,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[51]:
+# In[70]:
 
 
 #get call if the file doesn;t exist (I think..)
@@ -123,41 +123,4 @@ def getIndex():
     index = buildIndex()
     with open(indexPath,'w') as f:
         json.dump(index, f, sort_keys=True, indent=4,ensure_ascii=False)
-
-
-# In[52]:
-
-
-#getIndex()
-
-
-# In[13]:
-
-
-terms = {1:['A','B','C'],2:['A','V'],3:['R','O','U','Q'],4:['S','Z','S','U'],5:['V','F','R','S','I'],6:['V','P','U','A']}
-
-
-# In[14]:
-
-
-# t = buildTermIdPair(terms)
-# t = sorted(t, key = operator.itemgetter(0))
-
-
-# In[15]:
-
-
-#print(t)
-
-
-# In[23]:
-
-
-#buildPostings(t,[]) #before
-
-
-# In[18]:
-
-
-#buildPostings(t,[])#after
 

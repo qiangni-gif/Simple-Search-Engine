@@ -62,7 +62,9 @@ def findPostings(logicalOp, p1, p2):
     elif logicalOp == 'AND':
         return list(set(p1) & set(p2))
     elif logicalOp == 'AND_NOT': # is it the correct way?
-        return p1
+        if p1:# p1 is not empty
+            return [x for x in p1 if x not in p2]
+        return return [x for x in p2 if x not in p1]
 
 
 # In[241]:
@@ -89,7 +91,6 @@ def wildCard_bigram_handle(token,index): # return a new string
         wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.startswith(temp)]
     else: #case where * not in the end or begining 
         temp = token.split('*')
-        print(temp)
         for bg in bigrams(" "+temp[0]): # $abc ???????
             t = "".join(bg).replace(" ","")
             wildCard.append(buildSecIndex(t,index,False))
@@ -163,7 +164,8 @@ def demo_processWithIndex(query, selectedCollection,index):
                     print("This is after: "+t)
                     if t in index:
                         p1 = [d[0] for d in index[t]]
-                        totalPostings.append(p1)
+                    #if no such token, append []
+                    totalPostings.append(p1)
             print("Printing tootalpostings")
             print(totalPostings)
             for token in totalPostings:
@@ -211,35 +213,4 @@ index = {'zeroknowledg':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[2
          'asdasetc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
          'zasdvctc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
         }
-
-
-# In[158]:
-
-
-temp = " () "
-for s in strl:
-    temp = temp[1]+" "+s+" "+temp[-2]
-print(temp)
-
-
-# In[234]:
-
-
-test = "( *ter OR ink )"
-if '*' in test:
-    pre = test.split(" ")
-    for t in pre:
-        if '*' in t:
-            print(t)
-            newStr = "a"
-            test = test.replace(t,"a")
-    print(test)
-
-
-# In[182]:
-
-
-for i in t.split('*'):
-    print(i)
-t.split('*')[0]
 
