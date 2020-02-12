@@ -35,12 +35,12 @@
         "title": "ADM 2302 Business Analytics "
     },
     {
-        "desc": "Introduction to the use of statistical methods and tools in business,  Data exploration. Descriptive statistics including graphical representation of data, measure of central tendency and dispersion.  Applications of random variables and their probability distribution in business.  Useful probability distributions in management, including binomial, Poisson, normal, exponential and uniform distributions.  Introduction to statistical process control and quality improvement.  Hands-on experience with Excel and/or Minitab. (The lab is optional.)",
+        "desc": "Introduction to the use of statistical methods and tools in business,  Data exploration. Descriptive statistics including graphical representation of data, measure of central tendency and dispersion.  Applications of random variables and their probability distribution in business.  Useful probability distributions in management, including binomial, Poisson, normal, exponential and uniform distributions.  Introduction to statistical process control and quality improvement.  Hands-on experience with Excel and/or Minitab. (The lab is optional)",
         "docId": 14,
         "title": "ADM 2303 Statistics for Management "
     },
     {
-        "desc": "Topics include the estimation (using confidence intervals) and hypothesis testing (including non-parametric methods); correlation and the simple linear regression model (with extensions to multiple regression); and chi-square tests on qualitative data. Emphasis on understanding when and how to use (and not misuse) various methods.  Hands-on experience with statistical software tools. (The lab is optional.)",
+        "desc": "Topics include the estimation (using confidence intervals) and hypothesis testing (including non-parametric methods); correlation and the simple linear regression model (with extensions to multiple regression); and chi-square tests on qualitative data. Emphasis on understanding when and how to use (and not misuse) various methods.  Hands-on experience with statistical software tools. (The lab is optional)",
         "docId": 15,
         "title": "ADM 2304 Applications of Statistical Methods in Business "
     },
@@ -103,6 +103,11 @@
         "desc": "Ideation, business modeling and validation; the business planning process, including: market evaluation and the marketing plan, physical, human resources and organizational planning, and the financial plan. Student projects in moving an actual business concept through the process from idea to plan, including: crafting a business idea; building a business model; implementing a validation plan; and, writing a business plan.",
         "docId": 45,
         "title": "ADM 3313 New Venture Creation "
+    },
+    {
+        "desc": "Main elements of competitive intelligence and understanding of fundamental issues.  Concepts of competitive intelligence, market insight, foresight, peripheral vision and analytics will be used to better understand and use relevant commercial information.",
+        "docId": 46,
+        "title": "ADM 3316 Competitive Intelligence "
     },
     {
         "desc": "Examines and evaluates the practices of merchants, traders, entrepreneurs, financiers, marketers and profit seekers of the 15th to the 19th centuries who contributed to the development of global business and trade. Emphasizes the dynamic intertwining of markets and their social, technological, political, economic and cultural context via the analysis and discussion of case studies, readings and other sources.",
@@ -255,17 +260,12 @@
         "title": "ADM 4312 Management in the New Economy "
     },
     {
-        "desc": "Strategic entrepreneurship, encompassing entrepreneurship in existing large and small firms and in not-for-profit organisations. Strategic entrepreneurship emphasises simultaneity in opportunity-seeking behaviours - supported by entrepreneurial leadership and an entrepreneurial culture - and advantage-seeking behaviours - supported by strategic management of resources.",
-        "docId": 109,
-        "title": "ADM 4315 Strategic Entrepreneurship "
-    },
-    {
         "desc": "The Innovation process, from discovery to diffusion; intellectual property, innovation financing, organization design and strategy for innovation. Successful frameworks, strategies, funding techniques, business models, risks, and barriers for introducing break-through products and services.",
         "docId": 110,
         "title": "ADM 4316 Management of Innovation "
     },
     {
-        "desc": "Corporate social responsibility (CSR) and sustainability at multiple levels  self, others, the organization and society. Personal values, ethics, beliefs and attitudes and their relation to CSR and sustainability. Emphasis upon action, with the opportunity for leadership development. Social entrepreneurship, B-Corps, carbon-negative enterprises, regenerative business models, cradle-to-cradle design thinking, the circular economy.",
+        "desc": "Corporate social responsibility (CSR) and sustainability at multiple levels self, others, the organization and society. Personal values, ethics, beliefs and attitudes and their relation to CSR and sustainability. Emphasis upon action, with the opportunity for leadership development. Social entrepreneurship, B-Corps, carbon-negative enterprises, regenerative business models, cradle-to-cradle design thinking, the circular economy.",
         "docId": 111,
         "title": "ADM 4317 Leadership, Strategy and Sustainability "
     },
@@ -480,6 +480,11 @@
         "title": "ADM 5351 Managerial Microeconomics "
     },
     {
+        "desc": "National accounting, aggregate economic models, fiscal and monetary policies in an open economy, inflation and unemployment, and economic indicators and forecasting.",
+        "docId": 200,
+        "title": "ADM 5352 Managerial Macroeconomics "
+    },
+    {
         "desc": "The top management function in the organization, framework and methodology of strategic management, strategy formulation based on environmental analysis, organizational resources and competencies, and the values of the decision-makers.",
         "docId": 201,
         "title": "ADM 5360 Strategic Management and Policy I "
@@ -523,11 +528,6 @@
         "desc": "Nothing to see here",
         "docId": 224,
         "title": "ADM 6190 Directed Studies Public Policy and Management "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 226,
-        "title": "ADM 6229 Export Marketing "
     },
     {
         "desc": "Nothing to see here",
@@ -825,6 +825,11 @@
         "title": "ADM 6358 Real Estate Investment and Finance "
     },
     {
+        "desc": "Legal framework of business. The legislative framework applicable to the different types of business enterprises (sole proprietorship, partnership, corporation), the system of protection of Canadian business enterprises, legislation related to foreign investment, federal and provincial legislation and manufactured products, advertising packaging and labelling, consumer protection, warranties at both the manufacturing and retail sales levels.",
+        "docId": 291,
+        "title": "ADM 6365 Business Law "
+    },
+    {
         "desc": "The relationship between R and D and economic progress; elements of the Canadian policy on technology; R and D activities in the private and public sectors; government incentives and support programs; comparison with the policie of other industrial countries; technology planning and R and D management in a Canadian setting: technology forecasting; staffing, structure, strategy and support for R and D.",
         "docId": 292,
         "title": "ADM 6367 Technology Policy and Research and Development Management "
@@ -983,11 +988,6 @@
         "desc": "Nothing to see here",
         "docId": 379,
         "title": "ADM 6961 International Business Policy II and Negotiations "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 380,
-        "title": "ADM 6964 Cross Culture Management "
     },
     {
         "desc": "Nothing to see here",
@@ -1670,6 +1670,11 @@
         "title": "MAT 5197 Stochastic Optimization "
     },
     {
+        "desc": "Markov systems, stochastic networks, queuing networks, spatial processes, approximation methods in stochastic processes and queuing theory. Applications to the modelling and analysis of computer-communications systems and other distributed networks. This course is equivalent to MATH 5701 at Carleton University.",
+        "docId": 620,
+        "title": "MAT 5198 Stochastic Models "
+    },
+    {
         "desc": "This course is equivalent to MATH 5609 at Carleton University.",
         "docId": 621,
         "title": "MAT 5301 Topics in Combinatorial Mathematics "
@@ -1763,11 +1768,6 @@
         "desc": "This course is equivalent to MATH 6009 at Carleton University.",
         "docId": 639,
         "title": "MAT 5329 Topics in Analysis "
-    },
-    {
-        "desc": "This course is equivalent to MATH 6102 at Carleton University.",
-        "docId": 640,
-        "title": "MAT 5330 Topics in Algebra "
     },
     {
         "desc": "This course is equivalent to MATH 6103 at Carleton University.",
@@ -1898,11 +1898,6 @@
         "desc": "Social perception, attitudes, prejudice, interpersonal attraction, social influence, aggression, groups and leadership. Current research in social psychology.",
         "docId": 728,
         "title": "PSY 2110 Social Psychology "
-    },
-    {
-        "desc": "Developmental psychology from birth to old age.",
-        "docId": 729,
-        "title": "PSY 2114 Lifespan Psychology "
     },
     {
         "desc": "Statistical inference:  simple and complex analysis of variance, multiple comparisons, trend analysis, power and covariance analysis. Application to psychology.",
@@ -2160,6 +2155,11 @@
         "title": "PSY 5102 Applied Psychopathology "
     },
     {
+        "desc": "Critical analysis of research trends in behavioural neuroscience and of the relations between neuroanatomy, functional systems, and complex behaviours (e.g., spatial orientation, memory, language, reasoning).",
+        "docId": 839,
+        "title": "PSY 5103 Fundamentals or Behavioural Neuroscience "
+    },
+    {
         "desc": "Integration of program evaluation practice, research and theory leading to a written report related to advances in program evaluation practice and theory.",
         "docId": 840,
         "title": "PSY 5104 Integration Seminar in Program Evaluation "
@@ -2345,11 +2345,6 @@
         "title": "PSY 6116 Community Psychology "
     },
     {
-        "desc": "Examination of the goals of comparative analysis of cognitive processes and the contribution of behavioural ecologists to the study of cognition in non-human species.  Topics to include the dynamics of choice and timing, memory and place learning, and concept formation.",
-        "docId": 902,
-        "title": "PSY 6117 Comparative Cognition "
-    },
-    {
         "desc": "Seminars on causal reasoning, deductive and inductive inference, hypothesis formation and evaluation, probabilistic judgment, and covariation detection. Examination of these cognitive activities in the light of theoretical models based on various concepts such as logic, formal or natural, heuristics, or connectionist mechanisms.",
         "docId": 903,
         "title": "PSY 6118 Reasoning, Judgement and Decision "
@@ -2363,11 +2358,6 @@
         "desc": "Constructs and measurements of stress and stressors. Critical analysis of theoretical models and empirical research of life events, cognitive appraisal, anticipation and coping strategies.",
         "docId": 905,
         "title": "PSY 6123 Psychosocial Stress Research "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 906,
-        "title": "PSY 6126 Neuropsychological Assessment "
     },
     {
         "desc": "Critical evaluation of studies in targeted domains of social psychology. Identification and evaluation of new orientations. Presentation and discussion of thesis projects and other personal research projects. Similarities and differences in the work of researchers working in academic and private sectors.",
@@ -2535,11 +2525,6 @@
         "title": "PSY 6905 Community Psychology "
     },
     {
-        "desc": "Examen des objectifs de l'analyse comparée des processus cognitifs et de la contribution de l'écologie du comportement dans l'étude de la cognition chez les espèces non humaines.  Les thèmes incluent la dynamique des choix et de la coordination temporelle, la mémoire et l'apprentissage des lieux, la formation des concepts. / Examination of the goals of comparative analysis of cognitive processes and the contribution of behavioural ecologists to the study of cognition in non-human species.  Topics to include the dynamics of choice and timing, memory and place learning, and concept formation.",
-        "docId": 972,
-        "title": "PSY 6906 Comparative Cognition "
-    },
-    {
         "desc": "Séminaires sur le raisonnement causal, l'inférence déductive et inductive, la formation et l'évaluation d'hypothèses, le jugement probabiliste et la détection des covariations.  Examen de ces activités cognitives à la lumière de modèles théoriques faisant appel des concepts variés tels que la logique, formelle ou naturelle, les processus heuristiques ou les mécanismes connexionnistes. / Seminars on causal reasoning, deductive and inductive inference, hypothesis formation and evaluation, probabilistic judgement, and covariation detection.  Examination of these cognitive activities in the light of theoretical models based on various concepts such as logic, formal or natural, heuristics, or connectionist mechanisms.",
         "docId": 973,
         "title": "PSY 6918 Reasoning, Judgement and Decision Making "
@@ -2590,11 +2575,6 @@
         "title": "PSY 6946 Social Psychology of Language "
     },
     {
-        "desc": "Introduction aux modèles et méthodes d'interventions psychologiques en milieu scolaire. Interventions à court terme pour améliorer l'attention, le travail scolaire, la solution de problèmes et les interactions sociales. Notions de difficultés d'apprentissage; élaboration et évaluation de programmes destinés à ceux qui ont des difficultés d'apprentissage. / An introduction to models and methods for psychological interventions in the schools. Short-term interventions to improve attention, study behaviour, problem solving and social interaction. Concepts of learning disabilities; design and evaluation of programs for the learning disabled.",
-        "docId": 984,
-        "title": "PSY 6947 School Psychology "
-    },
-    {
         "desc": "Les techniques neurochimiques et neuropharmacologiques utiles à l'étude du comportement normal et pathologique. Évaluation critique des techniques appliquées au comportement animal et humain. / A study of current neurochemical and neuropharmacological techniques applicable to the study of normal and pathological behaviour. A critical evaluation of these techniques as they relate to animal and human behaviour.",
         "docId": 985,
         "title": "PSY 6951 Seminar in Neuropharmacology and Behavior "
@@ -2633,6 +2613,11 @@
         "desc": "Facteurs psychosociaux dans la santé mentale et physique. Approche biopsychosociale. Notions d'épidémiologie. Facteurs de risque, de maintien et de rémission. Stratégies d'intervention. / Psychosocial factors in physical and mental health. Bio-Psycho-Social approach. Notions of epidemiology. Risk, maintenance, and remission factors. Intervention strategies.",
         "docId": 993,
         "title": "PSY 6982 Psychology and Health "
+    },
+    {
+        "desc": "Sujets choisis de psychologie contemporaine présentés et discutés en séminaires au niveau supérieur. / Selected topics on contemporary psychology presented and discussed as graduate seminars.",
+        "docId": 994,
+        "title": "PSY 6991 Psychology Seminars "
     },
     {
         "desc": "Sujets choisis de psychologie contemporaine présentés et discutés en séminaires au niveau supérieur. (Partie 2 de 2) / Selected topics on contemporary psychology presented and discussed as graduate seminars. (Part 2 of 2)",
@@ -2738,6 +2723,11 @@
         "desc": "Présentation de la recherche empirique qui porte sur l'adaptation des familles aux transitions, à partir de la perspective du cycle de vie familiale, avec discussion des défis auxquels font face les familles. / Examination of the empirical literature on how families deal with normative and non-normative life transitions across the family life cycle, with discussion of major challenges facing families.",
         "docId": 1030,
         "title": "PSY 7907 Psychology of the Family "
+    },
+    {
+        "desc": "Étude de questions relatives à l'évaluation et au counselling de populations multiculturelles. Aspects théoriques et appliqués du counselling multiculturel. / Issues related to the assessment and treatment of multicultural populations. Theoretical frameworks and practical aspects of multicultural counselling.",
+        "docId": 1031,
+        "title": "PSY 7908 Multicultural Clinical Psychology "
     },
     {
         "desc": "Étude des aspects théoriques, empiriques, et cliniques du traumatisme, tel que l'abus physique ou sexuel, le crime violent, la torture, et les expériences de guerre. Les effets de tels traumatismes (ex. le « post-traumatic stress disorder »), l'évaluation de ces effets, et les approches thérapeutiques. / Theoretical, empirical, and clinical aspects of traumas such as sexual or physical abuse, violent crime, torture, or war experiences. Effects of trauma, including post- traumatic stress disorder, the assessments of such effects, and methods of treatment.",
@@ -2860,7 +2850,7 @@
         "title": "CSI 4107 Information Retrieval and the Internet "
     },
     {
-        "desc": "The notion of secure communication.  Building secure cryptosystems based on the assumption of computational hardness. Cryptographic one-way functions, trap-door functions, pseudorandom generators, and public/private-key encryption schemes. Computational indistinguishable and unpredictability.  Digital signature and message authentication. Zero-knowledge/interactive proof systems. Application to e-commerce and e-trade.",
+        "desc": "The notion of secure communication.  Building secure cryptosystems based on the assumption of computational hardness. Cryptographic one-way functions, trap-door functions, pseudorandom generators, and public/private-key encryption schemes. Computational indistinguishable and unpredictability.  Digital signature and message authentication. Zero-knowledge interactive proof systems. Application to e-commerce and e-trade.",
         "docId": 1075,
         "title": "CSI 4108 Cryptography "
     },
