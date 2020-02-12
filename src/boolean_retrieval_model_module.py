@@ -1,29 +1,33 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[130]:
+# In[227]:
 
 
 import inverted_index_construction_module as iic
+import dictionary_building_module as db
 import importlib
 importlib.reload(iic)
+importlib.reload(db)
 import os
 import json
+import nltk
+from nltk import bigrams
 
 
-# In[109]:
+# In[243]:
 
 
-s = 'printer AND ( laser OR ink )'
 #https://stackoverflow.com/questions/1059559/split-strings-into-words-with-multiple-word-boundary-delimiters
 #https://runestone.academy/runestone/books/published/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html
 #https://stackoverflow.com/questions/1720421/how-do-i-concatenate-two-lists-in-python
 #https://stackoverflow.com/questions/3697432/how-to-find-list-intersection
 #Assume there are always spaces between Brackets and words, all connectors are cap
 # NOT is phrased as AND_NOT as shown in description
+#https://www.programiz.com/python-programming/methods/string/startswith
 
 
-# In[57]:
+# In[6]:
 
 
 def queryToPostfix(query):
@@ -49,7 +53,7 @@ def queryToPostfix(query):
     return postfixList
 
 
-# In[120]:
+# In[7]:
 
 
 def findPostings(logicalOp, p1, p2):
@@ -57,18 +61,75 @@ def findPostings(logicalOp, p1, p2):
         return list(set(p1+p2))
     elif logicalOp == 'AND':
         return list(set(p1) & set(p2))
-    elif logicalOp == 'AND_NOT':
+    elif logicalOp == 'AND_NOT': # is it the correct way?
         return p1
 
 
-# In[ ]:
+# In[241]:
 
 
-def wildCard_bigram_handle(token):
+def wildCard_bigram_handle(token,index): # return a new string
+    # remember to filter our the incorrect word!!!!!!
+    # are we guaranted that there is only one * in a token?
+    wildCard = []
     
+    if token[0] == "*": #ends with token *abc
+        temp = token[1:]
+        for bg in bigrams(temp+" "):
+            t = "".join(bg).replace(" ","")
+            wildCard.append(buildSecIndex(t,index,True))
+        # postfilter
+        wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.endswith(temp)]
+                
+    elif token[len(token)-1] == '*': # abx*
+        temp = token[:-1]
+        for bg in bigrams(" "+temp):
+            t = "".join(bg).replace(" ","")
+            wildCard.append(buildSecIndex(t,index,False))
+        wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.startswith(temp)]
+    else: #case where * not in the end or begining 
+        temp = token.split('*')
+        print(temp)
+        for bg in bigrams(" "+temp[0]): # $abc ???????
+            t = "".join(bg).replace(" ","")
+            wildCard.append(buildSecIndex(t,index,False))
+        for bg in bigrams(temp[1]+" "): # zxc$
+            t = "".join(bg).replace(" ","")
+            wildCard.append(buildSecIndex(t,index,True))
+        wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.startswith(temp[0]) and x.endswith(temp[1])]
+
+    
+    return listToString(wildCard)
 
 
-# In[128]:
+# In[205]:
+
+
+def listToString(strList):
+    return "( "+" AND ".join(strList)+" )"
+
+
+# In[238]:
+
+
+def buildSecIndex(bg,index, isEnd):
+    secPosting = []
+    if len(bg)==1 and not isEnd:
+        for k in index:
+            if k.startswith(bg): # abc*
+                secPosting.append(k)
+    elif len(bg)==1 and isEnd:
+        for k in index:
+            if k.endswith(bg): # *abc
+                secPosting.append(k)
+    else:
+        for k in index:
+            if bg in k:
+                secPosting.append(k)
+    return secPosting
+
+
+# In[239]:
 
 
 def demo_processWithIndex(query, selectedCollection,index):
@@ -76,13 +137,19 @@ def demo_processWithIndex(query, selectedCollection,index):
 #         with open(iic.indexPath, 'r') as file:
 #             f = json.load(file)
             
-            terms = []
-            resultList = []
+            termsPostings = []
+            #resultList = []
             totalPostings = []
+            # need to apply stemming etc on query
+            if '*' in query:
+                completeTerms = getCompleteTerms()
+                pre = query.split(" ")
+                for t in pre:
+                    if '*' in t:
+                        newStr = wildCard_bigram_handle(t,index)
+                        query = query.replace(t,newStr)
+            print(query)
             postfixList = queryToPostfix(query)
-            for token in postfixList:
-                if '*' in token:
-                    wildCard_bigram_handle(token)
             
             # I would rather manipulate on list of postings rathe then on words
             for token in postfixList:
@@ -91,68 +158,88 @@ def demo_processWithIndex(query, selectedCollection,index):
                 else:
                     p1 = []
                     print(token+'!!!')
-                    if token in index:
-                        p1 = [d[0] for d in index[token]]
-                    totalPostings.append(p1)
+                    #atemming should be done here
+                    t = db.normalization(db.wordStemming([token]))[0]
+                    print("This is after: "+t)
+                    if t in index:
+                        p1 = [d[0] for d in index[t]]
+                        totalPostings.append(p1)
+            print("Printing tootalpostings")
             print(totalPostings)
             for token in totalPostings:
-                print(terms)
+                print(termsPostings)
                 if token[0] == "OR" or token[0] == "AND" or token[0] == "AND_NOT":
-                    p1 = terms.pop()
-                    p2 = terms.pop()
-                    terms.append(findPostings(token[0],p1,p2))
+                    p1 = termsPostings.pop()
+                    p2 = termsPostings.pop()
+                    termsPostings.append(findPostings(token[0],p1,p2))
                 else:
-                    terms.append(token)
-            return terms
+                    termsPostings.append(token)
+            return termsPostings[0]
 
 
-# In[129]:
+# In[114]:
 
 
-demo_processWithIndex(s,[],index)
+def getCompleteTerms():
+    with open('../output/terms.json', 'r') as file:
+        f = json.load(file)
+        temp = []
+        for l in f["terms"]:
+            temp = list(set(temp+l))
+    return temp
 
 
-# In[72]:
+# In[247]:
 
 
-l = [[1,2],[3,4],[5,6],[7,8],[9,0]]
-print([d[0] for d in l])
+#"( *er OR ink )"
+demo_processWithIndex("printer AND ( laser OR ink )",[],index)
 
 
-# In[74]:
+# In[246]:
 
 
-p1 = [1,2,3,5,6]
-p2 = [1,3,5,6,9,8]
-print(list(set(p1+p2)))
-
-
-# In[78]:
-
-
-y = [3,4,6,7,0]
-t = [1,2,3,4,5,6,7,8,9,0]
-pt = [2,3,5,7,9,0]
-print(list(set(y) & set([p for p in t if p not in pt])))
-
-
-# In[125]:
-
-
-index = {'printer':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+index = {'zeroknowledg':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'printer':[[2,4]],
          'laser':[[2,0],[3,0],[5,0],[11,0],[12,0],[16,0],[17,0],[18,0],[20,0],[22,0],[23,0]],
-         'ink': [[4,0],[5,0],[9,0],[10,0],[15,0],[19,0],[20,0]]         
+         'ink': [[4,0],[5,0],[9,0],[10,0],[15,0],[19,0],[20,0]],
+         'printas':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'prin':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'pri':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'goetc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'zxctc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'asdasetc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
+         'zasdvctc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
         }
 
 
-# In[127]:
+# In[158]:
 
 
-list(set([2,3,4,5,9,10,11,12,15,16,19,20,17,18,22,23]) & set([1,3,6,11,13,16,18,19,20]))
+temp = " () "
+for s in strl:
+    temp = temp[1]+" "+s+" "+temp[-2]
+print(temp)
 
 
-# In[132]:
+# In[234]:
 
 
-'*' in 'zx*c'
+test = "( *ter OR ink )"
+if '*' in test:
+    pre = test.split(" ")
+    for t in pre:
+        if '*' in t:
+            print(t)
+            newStr = "a"
+            test = test.replace(t,"a")
+    print(test)
+
+
+# In[182]:
+
+
+for i in t.split('*'):
+    print(i)
+t.split('*')[0]
 

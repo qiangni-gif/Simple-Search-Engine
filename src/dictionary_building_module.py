@@ -55,25 +55,35 @@ def toggleNormalizationFlag():
     return not normalizationFlag
 
 
-# In[47]:
+# In[54]:
+
+
+def getTermsForBoolean():
+    return termsForBoolean
+
+
+# In[57]:
 
 
 def extractTerms():
     # encoding="utf8" is required on win 
     data = dict()
     container = dict()
+    termsForBoolean = []
     with open(storagePath, 'r') as file:
         f = json.load(file)
         for d in f:
             terms = tokenize(d['desc'])
             terms = stopWordRemoval(terms)
+            termsForBoolean.append(terms)
+            
             terms = wordStemming(terms)
             terms = normalization(terms)
             frequencyPerDoc(container,terms,d['docId'])
             #print(terms)
             data[d['docId']] = terms
             
-    return data,container
+    return data,container,termsForBoolean
 
 
 # In[48]:
