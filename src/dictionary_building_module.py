@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[35]:
+# In[79]:
 
 
 import corpus_preprocess_module as cp
@@ -18,7 +18,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
-# In[36]:
+# In[80]:
 
 
 storagePath = cp.dataStorage
@@ -35,35 +35,35 @@ DetectorFactory.seed = 0
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
-# In[3]:
+# In[81]:
 
 
 def toggleStopWordFlag():
     return not stopWordFlag
 
 
-# In[4]:
+# In[82]:
 
 
 def toggleWordStemmingFlag():
     return not wordStemmingFlag
 
 
-# In[5]:
+# In[83]:
 
 
 def toggleNormalizationFlag():
     return not normalizationFlag
 
 
-# In[6]:
+# In[84]:
 
 
 def getTermsForBoolean():
     return termsForBoolean
 
 
-# In[45]:
+# In[85]:
 
 
 def extractTerms():
@@ -87,26 +87,26 @@ def extractTerms():
     return data,container,termsForBoolean
 
 
-# In[47]:
+# In[86]:
 
 
 def tokenize(data):
-    desc = removeFrenchWords(data)
-    tokens = [i for i in nltk.word_tokenize(desc) if not all(j in set(string.punctuation) for j in i)]
+   # desc = removeFrenchWords(data)
+    tokens = [i for i in nltk.word_tokenize(data) if not all(j in set(string.punctuation) for j in i)]
     #
     #return list(set(tokens))
     return tokens
     
 
 
-# In[49]:
+# In[87]:
 
 
 def removeFrenchWords(desc):
     newTokens = []
     newDesc = ""
    # desctemp = re.sub('[/]', '', desc)
-    desctemp = desc.replace('/','')
+    #desctemp = desc.replace('/','')
     #print(desctemp)
     for d in filter(None, desctemp.split('.')):
         if detect(d) == 'en':
@@ -114,7 +114,7 @@ def removeFrenchWords(desc):
     return newDesc
 
 
-# In[40]:
+# In[88]:
 
 
 def stopWordRemoval(data):
@@ -129,7 +129,7 @@ def stopWordRemoval(data):
     return newData
 
 
-# In[41]:
+# In[89]:
 
 
 def wordStemming(data):
@@ -143,7 +143,7 @@ def wordStemming(data):
     return newData
 
 
-# In[42]:
+# In[90]:
 
 
 def normalization(data):
@@ -156,14 +156,14 @@ def normalization(data):
     return newData
 
 
-# In[43]:
+# In[91]:
 
 
 def pre_dictionary_building():
     cp.getCorpus()
 
 
-# In[44]:
+# In[92]:
 
 
 #dict('docId') -> dict{'word':frequency}
