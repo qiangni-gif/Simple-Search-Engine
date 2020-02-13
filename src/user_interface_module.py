@@ -21,6 +21,11 @@ import boolean_retrieval_model_module as br
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 
+reBuildFlag = False
+stopWordFlag = True
+wordStemmingFlag = True
+normalizationFlag = True
+
 corpusPath = '../output/storage.json'
 
 class Ui_mainWindow(object):
@@ -229,10 +234,16 @@ class Ui_mainWindow(object):
             msg.setFont(font)
             
             x = msg.exec_()
-        else:                
+        else:
+            print("begin")
             if model == "Vector Space Model":
+                print("Vector Space Model")
                 terms = vr.extractQueryTerms(query)
+
+                print(terms)
                 w = sc.check(terms)
+                
+                print(w)
                 if w != []:
                     correction = sc.getCorrection(w)
                     for i in correction.items():
@@ -264,7 +275,9 @@ class Ui_mainWindow(object):
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
             elif model == "Boolean Retrieval Model":
+                print("Boolean Retrieval Model")
                 result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
+                print(result)
                 if result != []:
                     self.tableWidget.setRowCount(0)
                     self.tableWidget.setColumnCount(3)
@@ -394,19 +407,17 @@ def rebuild():
     reBuildFlag = False
     print("done....")
 
-reBuildFlag = False
-stopWordFlag = True
-wordStemmingFlag = True
-normalizationFlag = True
 
 def main():
+    print("corpus preprocessing....")
+    db.pre_dictionary_building()
+    vr.wc.getinvertedindex()
+    vr.gettf_idf()
+    
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QMainWindow()
     ui = Ui_mainWindow()
     ui.setupUi(w)
-    print("corpus preprocessing....")
-    db.pre_dictionary_building()
-    rebuild()
     w.show()
     sys.exit(app.exec_())
 
