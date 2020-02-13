@@ -64,7 +64,7 @@ def findPostings(logicalOp, p1, p2):
     elif logicalOp == 'AND_NOT': # is it the correct way?
         if p1:# p1 is not empty
             return [x for x in p1 if x not in p2]
-        return return [x for x in p2 if x not in p1]
+        return [x for x in p2 if x not in p1]
 
 
 # In[241]:
@@ -190,14 +190,6 @@ def getCompleteTerms():
             temp = list(set(temp+l))
     return temp
 
-
-# In[247]:
-
-
-#"( *er OR ink )"
-demo_processWithIndex("printer AND ( laser OR ink )",[],index)
-
-
 # In[246]:
 
 
@@ -213,4 +205,12 @@ index = {'zeroknowledg':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[2
          'asdasetc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
          'zasdvctc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
         }
+# In[247]:
+
+
+#"( *er OR ink )"
+#print(demo_processWithIndex("printer AND ( laser AND ink )",[],index))
+#print(demo_processWithIndex("printer OR ( laser OR ink )",[],index))
+#print(demo_processWithIndex("printer OR ( laser AND ink )",[],index))
+
 
