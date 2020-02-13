@@ -38,23 +38,25 @@ DetectorFactory.seed = 0
 # In[81]:
 
 
-def toggleStopWordFlag():
-    return not stopWordFlag
+def toggleStopWordFlag(boolean):
+    global stopWordFlag
+    stopWordFlag = boolean
 
 
 # In[82]:
 
 
-def toggleWordStemmingFlag():
-    return not wordStemmingFlag
+def toggleWordStemmingFlag(boolean):
+    global wordStemmingFlag
+    wordStemmingFlag = boolean
 
 
 # In[83]:
 
 
-def toggleNormalizationFlag():
-    return not normalizationFlag
-
+def toggleNormalizationFlag(boolean):
+    global normalizationFlag
+    normalizationFlag = boolean
 
 # In[84]:
 
