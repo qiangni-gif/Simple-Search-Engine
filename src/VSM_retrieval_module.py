@@ -2,7 +2,6 @@ import importlib
 import os
 import json
 import operator
-import dictionary_building_module as db
 import weight_calculation_module as wc
 
 #https://stackoverflow.com/questions/26924812/python-sort-list-of-json-by-value
@@ -15,11 +14,12 @@ def gettf_idf():
 
 
 def extractQueryTerms(query):
+    print("!!!!")
     w = {}
-    query = db.nltk.word_tokenize(query)
-    query = db.stopWordRemoval(query)
-    query = db.wordStemming(query)
-    query = db.normalization(query)
+    query = wc.iic.db.nltk.word_tokenize(query)
+    query = wc.iic.db.stopWordRemoval(query)
+    query = wc.iic.db.wordStemming(query)
+    query = wc.iic.db.normalization(query)
     return query
 
 def count(query):
@@ -58,3 +58,5 @@ def comput_score(query):
         #print(rank)
     return rank
 
+#print(comput_score(extractQueryTerms("text")))
+#print(count(extractQueryTerms("text")))
