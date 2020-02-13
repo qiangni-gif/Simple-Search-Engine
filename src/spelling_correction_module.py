@@ -1,4 +1,5 @@
 #https://stackoverflow.com/questions/53015099/calculating-minimum-edit-distance-for-unequal-strings-python
+#https://web.stanford.edu/class/cs124/lec/med.pdf
 
 import math
 import numpy
