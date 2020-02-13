@@ -13,6 +13,8 @@ sub_vowel_consonant = 1
 
 indexPath = '../output/index.json'
 
+maxNum = 6
+
 def weightedEditDistance(source, target): 
 
     matrix = numpy.zeros((len(source)+1,len(target)+1), dtype=numpy.int)
@@ -60,8 +62,10 @@ def getCorrection(terms):
                 if distance < len(q) and distance != False:
                     list[i] = distance
             list = sorted(list.items(), key=lambda item:item[1], reverse=False)
-            #print(list[0])
-            correction[q] = list 
+            correction[q] = list
+            for a,b in correction.items():
+                if len(correction[a]) >= maxNum:
+                    correction[a] = b[:maxNum]
     return correction
 
 
@@ -74,8 +78,9 @@ def check(terms):
                 l.append(q)
     return l
 
-print(getCorrection(["operot"]))
-print(getCorrection(["lienar"]))
+#print(getCorrection(["operot"]))
+#print(getCorrection(["lienar"]))
+#print("operot lienar")
 
-print(weightedEditDistance('neihgbor','neighbour'))
-print(weightedEditDistance('levenshtein','levels'))
+#print(weightedEditDistance('neihgbor','neighbour'))
+#print(weightedEditDistance('levenshtein','levels'))
