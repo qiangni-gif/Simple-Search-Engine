@@ -50,6 +50,11 @@
         "title": "ADM 2313 The Entrepreneurial Society "
     },
     {
+        "desc": "Focus on the evolution of the marketing concept, segmentation and positioning, strategic decisions involving product, price, distribution and promotion, important environmental variables affecting marketing decision-making, as well as marketing planning and ethical issues.",
+        "docId": 11,
+        "title": "ADM 2320 Marketing "
+    },
+    {
         "desc": "Concepts and approaches for diagnosing and predicting events in organizations. Work motivation, job satisfaction and performance, group dynamics, leadership, decision-making, power, conflict and culture.",
         "docId": 12,
         "title": "ADM 2336 Organizational Behaviour "
@@ -68,6 +73,11 @@
         "desc": "This course extends, at a more advanced level, the material covered in ADM 1340. Concepts and procedures, including current and proposed accounting practices, are studied within the context of specific balance sheet and income statement items with specific emphasis on the assets of an organization. In conjunction with ADM 3340, it enhances the student's understanding of accounting practices and financial reporting.",
         "docId": 15,
         "title": "ADM 2342 Intermediate Accounting I "
+    },
+    {
+        "desc": "Financial environment and markets, concepts of valuation, risk and return, cost of capital, capital budgeting under certainty, long-term financing, working capital management, and short-term financing.",
+        "docId": 16,
+        "title": "ADM 2350 Financial Management "
     },
     {
         "desc": "Key theoretical paradigms of modern finance. Arbitrage, expected utility, risk aversion, trade-offs between risk and return, behavioural and the concepts of prospect theory, framing, mental accounting, agency relationships, and information asymmetry.",
@@ -90,6 +100,11 @@
         "title": "ADM 2901 Co-op Work Term "
     },
     {
+        "desc": "Nature and context of Operations Management for the manufacturing and service sectors.  Operations strategy and competitiveness.  Introduction to supply chain management: supply chain strategy and design, just-in-time systems.  Planning, managing and controlling operations: forecasting, aggregate planning, inventory control, Material Requirements Planning and introduction to Enterprise Requirement Planning.  Introduction to quality management and control.",
+        "docId": 21,
+        "title": "ADM 3301 Operations Management "
+    },
+    {
         "desc": "Study of supply chain management and of its impact on the competitive success and profitability of modern organizations. The integration of information and materials flows across multiple organizations. The roles of business logistics functions, including forecasting and planning, procurement, purchasing, inventory management, warehousing and materials handling, transportation management, and after sales service and customer relationships in the integrated supply chain. Issues of global logistics and reverse logistics.",
         "docId": 22,
         "title": "ADM 3302 Supply Chain Management "
@@ -100,9 +115,19 @@
         "title": "ADM 3305 Business Simulation Analytics "
     },
     {
+        "desc": "Introduction to the data mining process, data mining tasks including classification, clustering and association rules, as well as data mining modeling techniques such as decision trees, neural networks, and regression analysis. Introduction to the management of Big Data and Big Data Analytics. Examples in various managerial applications including Customer Relationship Management, marketing, sales, credit scoring, churn, and survival analysis.",
+        "docId": 24,
+        "title": "ADM 3308 Business Data Mining "
+    },
+    {
         "desc": "Ideation, business modeling and validation; the business planning process, including: market evaluation and the marketing plan, physical, human resources and organizational planning, and the financial plan. Student projects in moving an actual business concept through the process from idea to plan, including: crafting a business idea; building a business model; implementing a validation plan; and, writing a business plan.",
         "docId": 25,
         "title": "ADM 3313 New Venture Creation "
+    },
+    {
+        "desc": "Main elements of competitive intelligence and understanding of fundamental issues.  Concepts of competitive intelligence, market insight, foresight, peripheral vision and analytics will be used to better understand and use relevant commercial information.",
+        "docId": 26,
+        "title": "ADM 3316 Competitive Intelligence "
     },
     {
         "desc": "Examines and evaluates the practices of merchants, traders, entrepreneurs, financiers, marketers and profit seekers of the 15th to the 19th centuries who contributed to the development of global business and trade. Emphasizes the dynamic intertwining of markets and their social, technological, political, economic and cultural context via the analysis and discussion of case studies, readings and other sources.",
@@ -113,6 +138,11 @@
         "desc": "Study of the changing international business environment, from a competitive and economic perspective. With a regional and a global approach, trade patterns, the role of international institutions (IMF, WTO, CNUCED, etc.) and trading blocks (EU, NAFTA, APEC, etc.) are analyzed. Questions related to ethics, environmental issues and corporate responsibility are also considered.",
         "docId": 28,
         "title": "ADM 3318 International Business "
+    },
+    {
+        "desc": "Diagnostic of intercultural situations in international contexts. Theoretical aspects of various disciplines linked to comparative management.  Concepts of culture, values, behaviour, intercultural communication and their relation to the dynamics of management, organizational structure, human resources, technology transfer, ethics in an intercultural context.  The intercultural team and synergy. Profile of the interculturally effective person.  The feminine entrepreneurship in international management. Monograph on the socio-political situation and the business culture of various countries.  Enterprise and Canadian diversity, Charter of Human Rights and Freedoms, legislation and policies on multiculturalism. Acculturation.",
+        "docId": 29,
+        "title": "ADM 3319 Cross-Cultural Management "
     },
     {
         "desc": "Synthesis of the behavioural analysis of the consumer (psychology, sociology, social psychology). Recent applications of behavioural theory will be investigated in light of the consumer's behaviour, individually and as mediated by group processes. Behavioural impact of the corporate and marketing strategies on the consumer.",
@@ -180,6 +210,11 @@
         "title": "ADM 3351 Fixed Income Investments "
     },
     {
+        "desc": "Modern portfolio theory, the capital asset pricing model, the arbitrage pricing theory, portfolio selection, efficient markets, active portfolio management and performance measurement.",
+        "docId": 43,
+        "title": "ADM 3352 Portfolio Management "
+    },
+    {
         "desc": "Students will oversee a portfolio of Canadian equity securities, with investments made via funds donated to the program. Emphasis is on applied equity valuation and portfolio management. Comprising a two-academic year program, students must complete Module I (3 credits) in Fall of the two year program, attend financial presentations, trip to Toronto, portfolio team meetings and portfolio management activities on an ongoing basis throughout the remainder of the academic year, and end with completion of Module II (3 credits) in Winter of the second year of the program.",
         "docId": 44,
         "title": "ADM 3357 Applied Investment Fund Management Module I "
@@ -240,6 +275,11 @@
         "title": "ADM 3998 Applied Research in Management "
     },
     {
+        "desc": "An overview of project management including; projects selection, project scope definition, stakeholders analysis, the logical framework method, the project charter, project design and feasibility studies project planning and monitoring, risk management, and lessons learned with special emphasis on Information Technology projects. ADM courses at the 4000 level are reserved for: 1) B.Com. students who have completed at least 33 units from ADM core courses, including ADM 2381/2781; 2) Students completing a minor in Business Administration or a minor in Management Information Systems; 3) Students in the certificate programs of the Telfer School when these courses are part of certificate requirements.",
+        "docId": 56,
+        "title": "ADM 4103 Project Management "
+    },
+    {
         "desc": "Advanced predictive analytics methods for business and management; time series analysis, econometric modeling, growth models, substitution and diffusion models, opinion polling, technology forecasting; selection of appropriate prediction techniques, collection and use of data, critical evaluation of results. Overview of advanced quantitative and qualitative techniques and of their context of utilization via presentations, projects and in-class discussions.",
         "docId": 57,
         "title": "ADM 4307 Business Forecasting Analytics "
@@ -290,6 +330,11 @@
         "title": "ADM 4325 Promotional Planning Practicum "
     },
     {
+        "desc": "The Internet and a wide range of related digital technologies have changed the way businesses design and implement marketing strategies. This course focuses on the strategic and tactical applications of these ever-changing digital marketing technologies on decision-making and strategy formulation in areas such as business intelligence gathering, competitive analysis, customer analysis, customer relationship management, supply chain management, new product development, branding, positioning, promotion, and advertising, services management, and e-commerce. Hands-on experience with selected technologies/tools may be provided.",
+        "docId": 67,
+        "title": "ADM 4326 Digital Marketing Technologies "
+    },
+    {
         "desc": "Strategic approach for international markets. Markets selection and segmentation: formulation of the international marketing mix programs; international marketing strategies for small, medium and multinational firms.",
         "docId": 68,
         "title": "ADM 4328 International Marketing "
@@ -303,6 +348,11 @@
         "desc": "This course recognizes the leadership role that HR professionals take on the issues of workplace health, safety, and workers compensation. It reviews current legislation, and good management practice re: hazard management, accident investigation, emergency preparedness, managing physical & psychological toxic elements in the workplace, and diversity management (e.g. attending to the health/safety concerns of special-needs populations).",
         "docId": 70,
         "title": "ADM 4336 Occupational Health and Safety "
+    },
+    {
+        "desc": "Strategic management of change in organizations: change agent-client relationships, managing large scale systems change, process consulting skills, intervention techniques and change management, evaluation of change efforts and effectiveness.",
+        "docId": 71,
+        "title": "ADM 4337 Managing Change "
     },
     {
         "desc": "Organizations that wish to be globally competitive need to learn how to innovate sustainably. Both human resource development specialists and global managers need to know how to inculcate the competencies that will enable their employees require to perform their current jobs and maximize their career potential. Students will learn how to connect global sustainability strategies and performance appraisals to training needs; to resolve the staffing/training tradeoff; to diagnose learning styles and design training and career development plans; to deliver professional development programs; and to evaluate the effectiveness of such programs.",
@@ -395,6 +445,11 @@
         "title": "ADM 4363 Business Optimization Analytics "
     },
     {
+        "desc": "Current trends and case studies in technology enabled business models and strategies; Usability principles for web and mobile environments; Cyber security and risk management; Mobile commerce applications; Business applications and ecosystems for cloud computing and web services; Enterprise applications and best practices for social media; requirements and solutions for web and social analytics.",
+        "docId": 90,
+        "title": "ADM 4377 Digital Enterprise Systems and Strategies "
+    },
+    {
         "desc": "Networking fundamentals including elements of data communications, Internet and transport protocols. Internet applications. Local and Wide Area Networks. Virtual Private networks. Wireless LAN. Network Security. Network Management. Management of emerging technologies, and current market trends. Topics related to telecom equipment vendors, and service providers, their products and services, and the competitive environment in telecom market.",
         "docId": 91,
         "title": "ADM 4378 Business Communications Networks "
@@ -425,6 +480,16 @@
         "title": "ADM 4903 New Venture Creation in Practicum "
     },
     {
+        "desc": "Internship program that bridges the gap between the university and the workplace. Students work an average of one day (eight hours) per week for one semester in a private or public organization. The internship will be related to their field of study: students must submit a work plan for approval by the Program before registering for this internship. A written paper will be expected from the student. Student receives a grade of S (satisfactory) or NS (non satisfactory).",
+        "docId": 97,
+        "title": "ADM 4904 Connexions I "
+    },
+    {
+        "desc": "\\Internship program that bridges the gap between the University and the work place. Students work an average of one day (eight hours) per week for one semester in a private or public organization. The internship will be related to their field of study: students must submit a work plan for approval by the Program before registering for this internship. A written paper will be expected from the student. Student receives a grade of S (satisfactory) or NS (non satisfactory).",
+        "docId": 98,
+        "title": "ADM 4905 Connexions II "
+    },
+    {
         "desc": "Predictive, prescriptive, and descriptive analytics. A project will be carried out under the supervision of a faculty member. Students interested in pursuing a graduate education will conduct a research project whereas those interested in a management career will conduct a consulting project.",
         "docId": 99,
         "title": "ADM 4964 Application of Business Analytics "
@@ -445,9 +510,24 @@
         "title": "ADM 4999 Directed Readings in Management II "
     },
     {
+        "desc": "Nothing to see here",
+        "docId": 103,
+        "title": "ADM 5102 Labour Management Relation "
+    },
+    {
+        "desc": "Managerial methods and applications of manual and computer based data collection and presentation techniques. Descriptive statistics, probability concepts, uniform and normal probability distributions, sampling and the central limit theorem, point and interval estimation, large and small sample inferences for means and proportions, type I and type II errors, linear regression.",
+        "docId": 104,
+        "title": "ADM 5300 Data Analysis "
+    },
+    {
         "desc": "Working of the private and public sectors in modern societies and of their interrelations. Public decision-making at the federal, provincial and local level; impact of social and economic regulation; choice of governing instruments; government and business perspectives on government-business relations; lobbying and other mechanisms through which business can influence government. Government-business relations in international context.",
         "docId": 105,
         "title": "ADM 5310 Public Sector and Business "
+    },
+    {
+        "desc": "Marketing decision-making for managers. The marketing concept; segmentation; product differentiation; consumer and industrial buyer behaviour; marketing planning; product decisions, pricing decisions; advertising and promotion decisions; selling and distribution decisions; social, legal and ethical issues in marketing.",
+        "docId": 106,
+        "title": "ADM 5320 Marketing "
     },
     {
         "desc": "Theories, methods and applications of behaviour science in organizations. Work motivation, job design, group dynamics, leadership, contingency organization design, organization culture, conflict management and managing organizational change.",
@@ -531,6 +611,16 @@
     },
     {
         "desc": "Nothing to see here",
+        "docId": 123,
+        "title": "ADM 6228 Global Marketing "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 124,
+        "title": "ADM 6229 Export Marketing "
+    },
+    {
+        "desc": "Nothing to see here",
         "docId": 125,
         "title": "ADM 6245 Analysis of International Financial Information "
     },
@@ -583,6 +673,16 @@
         "desc": "Nothing to see here",
         "docId": 135,
         "title": "ADM 6259 International Corporate Finance "
+    },
+    {
+        "desc": "Project management methods based on standards, including the Guide to Project Management Body of Knowledge (PMBOK) of the Project Management Institute (PMI); project success and stakeholders; project charter and project plan; managing a project throughout its life cycle (identification, design, planning, realization and close-out). Students will have hands-on experience using MS Project.",
+        "docId": 136,
+        "title": "ADM 6260 Project Management I "
+    },
+    {
+        "desc": "Focus on projects that have incomplete and/or unstable requirements such as IT projects or software development projects. Topics covered include: portfolio management; risk management; determining requirements and solutions; quality management; communication management; design methods (Quality Function Deployment, Value Analysis); iterative and adaptive project management; fast tracking and concurrent methods of project management.",
+        "docId": 137,
+        "title": "ADM 6261 Project Management II "
     },
     {
         "desc": "Nothing to see here",
@@ -640,6 +740,11 @@
         "title": "ADM 6276 Enterprise Resource Planning Systems Management "
     },
     {
+        "desc": "Reduction of e-business power requirements by locating data centres in areas with low cost electricity and where cold outside air can be used for cooling, e.g. British Columbia, Québec, Finland, Iceland and Sweden. Reduction of power requirements in other industries, e.g. using smart grid, smart buildings and smart cities. Calculation of energy requirements for specific e-business services, e.g. e-banking, e-newspapers, media download, media streaming and web-based advertising. Review of current international standardization work on sustainability for and by IT.",
+        "docId": 149,
+        "title": "ADM 6277 E-Business Energy Management "
+    },
+    {
         "desc": "This course explores the structural-, cultural- and process-based organizational change management challenges facing business strategists during new technology implementation initiatives. Toward this, the course draws upon management frameworks, support tools and best practices for the joint optimization of technology and social subsystems within organizations. Adopting a complex adaptive system viewpoint of the organization, the course will highlight issues of technological and social embeddedness, and illustrate the use of configuration modeling and analysis tools for enterprise engineering and strategy models to facilitate change sustainability and continuity.",
         "docId": 150,
         "title": "ADM 6279 Socio-Technical Change "
@@ -658,6 +763,11 @@
         "desc": "Nothing to see here",
         "docId": 153,
         "title": "ADM 6282 Introduction to Quality Management "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 154,
+        "title": "ADM 6284 Managing Technological Risk "
     },
     {
         "desc": "International trends in the global economy together with assessment of risks, and associated international e-business opportunities. Strategies for translating international opportunities into e-businesses, including localizing international web-based content, developing international supply networks, international crowdsourcing, international payments and international collaboration. How to address local laws on privacy, intellectual property and business contracts. Courses ADM 6274, ADM 6286 cannot be combined for units.",
@@ -745,6 +855,11 @@
         "title": "ADM 6330 Organization Design "
     },
     {
+        "desc": "Changing organizations from a consulting perspective, organizational entry and contracting, consultant-client relations, data collection, diagnosis and feedback, evaluation of organization development interventions.",
+        "docId": 172,
+        "title": "ADM 6331 Managing Organizational Change "
+    },
+    {
         "desc": "Theories of industrial relations and labour movement, structure and functions of labour organizations, union-management relations, employer-employee relations, legislation regulating union-management relations, negotiations and outcomes, contract administration, causes and prevention of industrial conflict.",
         "docId": 173,
         "title": "ADM 6332 Industrial Relations "
@@ -818,6 +933,16 @@
         "desc": "Nature of investment in real estate property, valuation, risk, and income of real estate investments, methods of financing real estate transactions, structure of the mortgage market and role of financial institutions, and influence of the government on the real estate market.",
         "docId": 187,
         "title": "ADM 6358 Real Estate Investment and Finance "
+    },
+    {
+        "desc": "The project cycle; identification of need and initial design, evaluation of proposal, the end of the project, planning and execution of operation, the human and organizational dimensions of project management. Major cases to illustrate concepts.",
+        "docId": 188,
+        "title": "ADM 6362 Project Management "
+    },
+    {
+        "desc": "Legal framework of business. The legislative framework applicable to the different types of business enterprises (sole proprietorship, partnership, corporation), the system of protection of Canadian business enterprises, legislation related to foreign investment, federal and provincial legislation and manufactured products, advertising packaging and labelling, consumer protection, warranties at both the manufacturing and retail sales levels.",
+        "docId": 189,
+        "title": "ADM 6365 Business Law "
     },
     {
         "desc": "The relationship between R and D and economic progress; elements of the Canadian policy on technology; R and D activities in the private and public sectors; government incentives and support programs; comparison with the policie of other industrial countries; technology planning and R and D management in a Canadian setting: technology forecasting; staffing, structure, strategy and support for R and D.",
@@ -945,6 +1070,16 @@
         "title": "ADM 6450 Financial Management for High-Tech Firms "
     },
     {
+        "desc": "In-depth study of a particular area of public management or governance. Case studies or project to be conducted in collaboration with one or more public sector organizations. Written report. Graded S (Satisfactory) / NS (Not satisfactory) by the professor in charge.",
+        "docId": 215,
+        "title": "ADM 6901 Project "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 216,
+        "title": "ADM 6925 Global Marketing "
+    },
+    {
         "desc": "Nothing to see here",
         "docId": 217,
         "title": "ADM 6931 International Human Resources Management "
@@ -1020,6 +1155,21 @@
         "title": "MAT 1308 Introduction to Calculus "
     },
     {
+        "desc": "Polynomial and rational functions: factoring, the remainder theorem, families of polynomials with specified zeros, odd and even polynomial functions. Logarithms and exponentials to various bases, their laws. Trigonometric functions: radian measure, values of primary trigonometric ratios, compound angle formulae, trigonometric identities. Solving equations and inequalities involving absolute values, polynomial, rational, logarithmic, exponential and trigonometric functions. Their graphs.  Operations on functions: point-wise addition and multiplication, composition; inverse functions. Average and instantaneous rate of change, approximating instantaneous rate of change, secants and tangents to graphs. Applications to graphing and finding maxima and minima of functions. Using functions to model, interpolate, and extrapolate data.   MAT1318 may be taken for upgrading purposes as an admission requirement. In all cases, credits for this course do not count as part of any program requirements. S/NS grading scheme.",
+        "docId": 232,
+        "title": "MAT 1318 Functions "
+    },
+    {
+        "desc": "Intuitive definition of limits; continuity, statement of intermediate value theorem.  Quick review of basic derivative formulas: products, chain rule, exponentials, and trigonometric functions. Derivatives of quotients, logarithms, inverse trigonometric functions. Finite difference approximations of derivatives. Analysis of functions via the first and the second derivatives; statements of extreme and mean value theorems.  L'Hospital's rule. Implicit differentiation, related rates, optimization, linear approximation, Newton s method. The definite integral and the fundamental theorem of calculus. Antiderivatives of elementary functions, techniques of integration (integration by parts, substitutions, partial fractions).  Numerical integration: mid-point, trapezoidal rule and Simpson's rule; error analysis.",
+        "docId": 233,
+        "title": "MAT 1320 Calculus I "
+    },
+    {
+        "desc": "Improper integrals.  Applications of the integral.  Separable differential equations.  Euler's method for differential equations. Sequences, series.  Taylor's formula and series.  Functions of two and three variables.  Partial derivatives, the chain rule, directional derivatives, tangent planes and normal lines.",
+        "docId": 234,
+        "title": "MAT 1322 Calculus II "
+    },
+    {
         "desc": "A second course in calculus emphasizing geometric and physical intuition in which attention is also given to the conceptual foundations of calculus-analysis. Review of inequalities. Sequences. Completeness axiom of the real numbers. Continuity.  Proofs of some of: the intermediate and extreme value theorems, the mean value theorem. Taylor's theorem. Standard curves and surfaces in 2 and 3-space. Tangent vectors, planes and normals. Partial derivatives, directional derivatives, derivatives as linear maps.",
         "docId": 235,
         "title": "MAT 1325 Calculus II and an Introduction to Analysis "
@@ -1033,6 +1183,11 @@
         "desc": "Integrals: numerical integration; improper integrals. Introduction to differential equations: some techniques to solve simple differential equations, numerical solution of differential equations and models in the life sciences using differential equations. Introduction to linear algebra: matrices and matrix algebra, determinants, eigenvalues and eigenvectors (in two or three dimensions). Functions of several variables: graphical representations, partial derivatives. Systems of differential equations: equilibrium points, stability, phase portrait and global analysis.",
         "docId": 237,
         "title": "MAT 1332 Calculus for the Life Sciences II "
+    },
+    {
+        "desc": "Instantaneous rate of change as a limit, derivatives of polynomials using limits, derivatives of sums, products, the chain rule, derivatives of rational, trigonometric, exponential, logarithmic, and radical functions. Applications to finding maxima and minima and graph sketching. Concavity and points of inflection, the second derivative. Optimization in models involving polynomial, rational, and exponential functions. Vectors in two and three dimensions. Cartesian, polar and geometric forms. Algebraic operations on vectors, dot product, cross product. Applications to projections, area of parallelograms, volume of parallelepipeds. Scalar and vector parametric form of equations of lines and planes in two and three dimensions. Intersections of lines and planes.  Solution of up to three equations in three unknowns by elimination or substitution. Geometric interpretation of the solutions. Prerequisite: Ontario 4U Functions (MHF4U) or MAT1318 or equivalent. The courses MAT1339, Ontario 4U Calculus and Vectors (MCV4U) or any equivalent cannot be combined for credits. MAT1339 may be taken for upgrading purposes or as an admission requirement In all cases, credits for this course do not count as part of any program requirements. S/NS grading scheme.",
+        "docId": 238,
+        "title": "MAT 1339 Introduction to Calculus and Vectors "
     },
     {
         "desc": "Review of complex numbers. The fundamental theorem of algebra. Review of vector and scalar products, projections. Introduction to vector spaces, linear independence, bases; function spaces. Solution of systems of linear equations, matrix algebra, determinants, eigenvalues and eigenvectors. Gram Schmidt,  orthogonal projections. Linear transformations, kernel and image, their standard matrices. Applications (e.g. geometry, networks, differential equations)",
@@ -1073,6 +1228,11 @@
         "desc": "Selected topics from modern and ancient mathematics. Course content varies from year to year. Chosen themes may include, but are not limited to: classical geometry, number theory, chaos theory and mathematics for elementary school teachers.  See the Department of Mathematics and Statistics for the current year's offering.",
         "docId": 246,
         "title": "MAT 1395 The Beauty of Mathematics "
+    },
+    {
+        "desc": "Derivatives as linear maps, the chain rule. The Clairaut-Schwarz theorem. Taylor's theorem. Implicit function theorem. Extrema, critical points. Lagrange multipliers. Double and triple integrals, Fubini's theorem, polar, spherical and cylindrical coordinates. Change of variables. Line integrals, Green's theorem. Parametric surfaces and surface integrals. Curl and Stokes's theorem, existence of potentials. Divergence and Gauss's theorem. Applications.",
+        "docId": 247,
+        "title": "MAT 2122 Multivariable Calculus "
     },
     {
         "desc": "Review of the completeness properties of real numbers. Supremum and infimum, lim sup, lim inf. The topology of R¢n.  Uniform continuity. Compactness, Heine-Borel.  The Riemann integral, the fundamental theorem of calculus, improper integrals. Sequences and series of functions, uniform convergence. Fourier series.",
@@ -1203,6 +1363,11 @@
         "desc": "Vector and matrix norms. Schur canonical form, QR, LU, Cholesky and singular value decomposition, generalized inverses, Jordan form, Cayley-Hamilton theorem, matrix analysis and exponentials of matrices, eigenvalue estimation and the Gershgorin Circle Theorem; quadratic forms, Rayleigh and minima principles. This course includes proofs and applications of computational methods.",
         "docId": 273,
         "title": "MAT 3341 Applied Linear Algebra "
+    },
+    {
+        "desc": "Groups and finite fields; binary codes: Hamming and BCH codes; other topics in applied algebra.",
+        "docId": 274,
+        "title": "MAT 3343 Applied Algebra "
     },
     {
         "desc": "Trees and applications, applications of graphs, networks and flows, matching theory, introduction to linear programming.",
@@ -1415,9 +1580,14 @@
         "title": "MAT 4399 Special Topics in Mathematics "
     },
     {
-        "desc": "L'étudiant(e) réalisera un projet de recherche d'un semestre sous la supervision d'un ou plusieurs membres du département.  Létudiant(e)  écrira un rapport sur sa recherche et présentera un séminaire sur le sujet de son projet et sa contribution.  Ce cours est conçu pour l'étudiant(e) intéressé(e) à poursuivre des études supérieures. / The student will undertake a one-semester project carried out under the supervision of one or more faculty members in the department.  The student will write a report and present a seminar on some aspect of the research and his/her participation.  This course is intended for students interested in pursuing graduate studies.",
+        "desc": "The student will undertake a one-semester project carried out under the supervision of one or more faculty members in the department.  The student will write a report and present a seminar on some aspect of the research and his/her participation.  This course is intended for students interested in pursuing graduate studies.",
         "docId": 317,
         "title": "MAT 4900 Undergraduate Research Project "
+    },
+    {
+        "desc": "Student presentation of selected topics.",
+        "docId": 318,
+        "title": "MAT 4992 Seminar "
     },
     {
         "desc": "Selected advanced topics.",
@@ -1435,6 +1605,11 @@
         "title": "MAT 5105 Discrete Applied Mathematics I: Gra. Theory "
     },
     {
+        "desc": "Network flow theory and related material. Topics will include shortest paths, minimum spanning trees, maximum flows, minimum cost flows. Optimal matching in bipartite graphs. This course is equivalent to MATH 5808 at Carleton University.",
+        "docId": 322,
+        "title": "MAT 5106 Combinatorial Optimization "
+    },
+    {
         "desc": "Ordinary and exponential generating functions; product formulas; permutations; partitions; rooted trees; cycle index; WZ method. Lagrange Inversions; singularity analysis of generating functions and asymptotics. Selected topics from one or more of the following areas: random graphs, random combinatorial structures, hypergeometric functions. This course is equivalent to MATH 5819 at Carleton University.",
         "docId": 323,
         "title": "MAT 5107 Discrete Applied Mathematics II: Combinatorial Enumeration "
@@ -1443,6 +1618,11 @@
         "desc": "This course is equivalent to MATH 5009 at Carleton University.",
         "docId": 324,
         "title": "MAT 5121 Introduction to Hilbert Space "
+    },
+    {
+        "desc": "This course is equivalent to MATH 5003 at Carleton University.",
+        "docId": 325,
+        "title": "MAT 5122 Banach Algebras "
     },
     {
         "desc": "General measure and integral, Lebesgue measure and integration on R, Fubini's theorem, Lebesgue-Radon-Nikodym theorem, absolute continuity and differentiation, Lp-Spaces. Selected topics such as Daniell-Stone theory. This course is equivalent to MATH 5007 at Carleton University.",
@@ -1465,6 +1645,11 @@
         "title": "MAT 5131 Ordinary Differential Equations I "
     },
     {
+        "desc": "First-order equations, characteristics method, classification of second-order equations, separation of variables, Green's functions. Lp and Soboloev spaces, distributions, variational formulation and weak solutions, Lax-Milgram theorem, Galerkin approximation. Parabolic PDes. Wave equations, hyperbolic systems, nonlinear PDes, reaction diffusion equations, infinite-dimensional dynamical systems, regularity. This course is equivalent to MATH 5406 at Carleton University.",
+        "docId": 330,
+        "title": "MAT 5133 Partial Differential Equations I "
+    },
+    {
         "desc": "This course is equivalent to MATH 5407 at Carleton University.",
         "docId": 331,
         "title": "MAT 5134 Topics in Differential Equations "
@@ -1478,6 +1663,11 @@
         "desc": "Group actions, class equation, Sylow theorems, central, composition and derived series, Jordan-Holder theorem, field extensions and minimal polynomials, algebraic closure, separable extensions, integral ring extensions, Galois groups, fundamental theorem of Galois theory, finite fields, cyclotomic field extensions, fundamental theorem of algebra, transcendental extensions. This course is equivalent to MATH 5109 at Carleton University.",
         "docId": 333,
         "title": "MAT 5142 Algebra II: Groups and Galois Theory "
+    },
+    {
+        "desc": "This course is equivalent to MATH 5104 at Carleton University.",
+        "docId": 334,
+        "title": "MAT 5143 Lie Algebras "
     },
     {
         "desc": "Prime spectrum of a commutative ring (as a topological space); localization of rings and modules; tensor product of modules and algebras; Hilbert's Nullstellensatz and consequences for finitely generated algebras; Krull dimension of a ring; integral dependence, going-up, going-down; Noether Normalization Lemma and dimension theory for finitely generated algebras over a field; noetherian rings and Hilbert Basis Theorem; introduction to affine algebraic varieties and their morphisms. This course is equivalent to MATH 5001 at Carleton University.",
@@ -1528,6 +1718,11 @@
         "desc": "This course is equivalent to MATH 5208 at Carleton University.",
         "docId": 344,
         "title": "MAT 5155 Differentiable Manifolds "
+    },
+    {
+        "desc": "This course is equivalent to MATH 6104 at Carleton University.",
+        "docId": 345,
+        "title": "MAT 5158 Lie Groups "
     },
     {
         "desc": "Analysis of cryptographic methods used in authentication and data protection, with particular attention to the underlying mathematics, e.g. Algebraic Geometry, Number Theory, and Finite Fields. Advanced topics on Public-Key Cryptography: RSA and integer factorization, Diffie-Hellman, discrete logarithms, elliptic curves. Topics in current research. This course is equivalent to MATH 5300 at Carleton University.",
@@ -1620,6 +1815,11 @@
         "title": "MAT 5180 Numerical Analysis for Differential Equations "
     },
     {
+        "desc": "Visualization and knowledge discovery in massive datasets; unsupervised learning: clustering algorithms; dimension reduction; supervised learning: pattern recognition, smoothing techniques, classification. Computer software will be used. This course is equivalent to STAT 5703 at Carleton University.",
+        "docId": 364,
+        "title": "MAT 5181 Data Mining I "
+    },
+    {
         "desc": "Resampling and computer intensive methods: bootstrap, jackknife with applications to bias estimation, variance estimation, confidence intervals, and regression analysis. Smoothing methods in curve estimation; statistical classification and pattern recognition: error counting methods, optimal classifiers, bootstrap estimates of the bias of the misclassification error. This course is equivalent to STAT 5702 at Carleton University.",
         "docId": 365,
         "title": "MAT 5182 Modern Applied and Computational Statistics "
@@ -1648,6 +1848,11 @@
         "desc": "Unequal probability sampling with and without replacement; unified theory of standard errors; prediction approach; ratio and regression estimation; stratification and optimal designs; multistage cluster sampling; double sampling; domains of study; post-stratification; non-response; measurement errors. Related topics. This course is equivalent to STAT 5502 at Carleton University.",
         "docId": 370,
         "title": "MAT 5192 Sampling Theory and Methods "
+    },
+    {
+        "desc": "Theory of non-full-rank linear models: estimable functions, best linear unbiased estimators, hypothesis testing, confidence regions; multi-way classification; analysis of covariance; variance component models: maximum likelihood estimation, MINQUE, ANOVA methods. Miscellaneous topics. This course is equivalent to STAT 5503 at Carleton University.",
+        "docId": 371,
+        "title": "MAT 5193 Linear Models "
     },
     {
         "desc": "This course is equivalent to STAT 5504 at Carleton University.",
@@ -1770,9 +1975,19 @@
         "title": "MAT 5329 Topics in Analysis "
     },
     {
+        "desc": "This course is equivalent to MATH 6102 at Carleton University.",
+        "docId": 396,
+        "title": "MAT 5330 Topics in Algebra "
+    },
+    {
         "desc": "This course is equivalent to MATH 6103 at Carleton University.",
         "docId": 397,
         "title": "MAT 5331 Topics in Algebra "
+    },
+    {
+        "desc": "Space of quantum bits; entanglement. Observables in quantum mechanics. Density matrix and Schmidt decomposition. Quantum cryptography. Classical and quantum logic gates. Quantum Fourier transform. Shor's quantum algorithm for factorization of integers. This course is equivalent to MATH 5821 at Carleton University.",
+        "docId": 398,
+        "title": "MAT 5341 Quantum Computing "
     },
     {
         "desc": "Lossless compression methods. Discrete Fourier transform and Fourier-based compression methods. JPEG and MPEG. Wavelet analysis. Digital filters and discrete wavelet transform. Daubechies wavelets. Wavelet compression. This course is equivalent to MATH 5822 at Carleton University.",
@@ -1790,6 +2005,21 @@
         "title": "MAT 5375 Mathematical Statistics "
     },
     {
+        "desc": "his course is equivalent to MATH 5900 at Carleton University.",
+        "docId": 402,
+        "title": "MAT 5990 Seminar "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 403,
+        "title": "MAT 5990S Seminar M.A. "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 404,
+        "title": "MAT 5990T Seminar "
+    },
+    {
         "desc": "This course is equivalent to MATH 5901 at Carleton University.",
         "docId": 405,
         "title": "MAT 5991 Directed Studies "
@@ -1800,82 +2030,97 @@
         "title": "MAT 5992 Seminar in Biostatistics "
     },
     {
-        "desc": "Cours visant à donner à l'étudiant la possibilité d'entreprendre de la recherche mathématique dans le contexte d'un projet en collaboration avec un organisme parrain des secteurs public ou privé. Inclut des séminaires sur des sujets pertinents au projet de l'étudiant. Note finale S (satisfaisant) ou NS (non satisfaisant), à décider par le professeur responsable du cours en consultation avec le superviseur du stage, fondée sur le contenu mathématique et sur la présentation orale et écrite des résultats. / Project-oriented course affording students the opportunity to undertake research in applied mathematics as a cooperative project with governmental or industrial sponsors. Project work and seminars on related topics. Grade S (Satisfactory) or NS (Not satisfactory) to be assigned based upon the mathematical content as well as upon the oral and written presentation of results, and to be determined by the professor in charge of the course in consultation with the internship supervisor.",
+        "desc": "Project-oriented course affording students the opportunity to undertake research in applied mathematics as a cooperative project with governmental or industrial sponsors. Project work and seminars on related topics. Grade S (Satisfactory) or NS (Not satisfactory) to be assigned based upon the mathematical content as well as upon the oral and written presentation of results, and to be determined by the professor in charge of the course in consultation with the internship supervisor.",
         "docId": 407,
         "title": "MAT 5996 Research Internship "
     },
     {
-        "desc": "Ce cours est équivalent à MATH 6901 à la Carleton University. / This course is equivalent to MATH 6901 at Carleton University.",
+        "desc": "This course is equivalent to MATH 6900 at Carleton University.",
+        "docId": 408,
+        "title": "MAT 6990 Seminar "
+    },
+    {
+        "desc": "This course is equivalent to MATH 6901 at Carleton University.",
         "docId": 409,
         "title": "MAT 6991 Directed Studies "
     },
     {
-        "desc": "Projet en mathématiques et statistique dirigé par un professeur approuvé par le directeur des études supérieures et donnant lieu à la rédaction d'un rapport approfondi (30-40 pages approx). Noté S (satisfaisant) ou NS (non satisfaisant) par le directeur du projet et un autre professeur nommé par le directeur des études supérieures en mathématiques et statistique. Le projet est normalement complété en une session. Ce cours est équivalent à MATH 5910 à la Carleton University. / Project in mathematics and statistics supervised by a professor approved by the director of graduate studies and leading to the writing of an in-depth report (approx. 30-40 pages). Graded S (Satisfactory) or NS (Not satisfactory) by the supervisor and by another professor appointed by the director of graduate studies in mathematics and statistics. The project will normally be completed in one session. This course is equivalent to MATH 5910 at Carleton University.",
+        "desc": "Project in mathematics and statistics supervised by a professor approved by the director of graduate studies and leading to the writing of an in-depth report (approx. 30-40 pages). Graded S (Satisfactory) or NS (Not satisfactory) by the supervisor and by another professor appointed by the director of graduate studies in mathematics and statistics. The project will normally be completed in one session. This course is equivalent to MATH 5910 at Carleton University.",
         "docId": 410,
         "title": "MAT 6997 Project in Mathematics and Statistics "
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT 5525. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5525 et MAT 5526 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5125. This exam is the final exam of the course and is graded by the professors who teach MAT 5125 and MAT 5126 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5125. This exam is the final exam of the course and is graded by the professors who teach MAT 5125 and MAT 5126 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 411,
         "title": "MAT 9900 Comprehensive Exam: Real Analysis 1"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT 5526. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5525 et MAT 5526 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5126. This exam is the final exam of the course and is graded by the professors who teach MAT 5125 and MAT 5126 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5126. This exam is the final exam of the course and is graded by the professors who teach MAT 5125 and MAT 5126 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 412,
         "title": "MAT 9901 Comprehensive Exam: Real Analysis II"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT 5551. Cet examenn est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5551 et MAT 5552 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant) / This exam covers the content of the course MAT 5151. This exam is the final exam of the course and is graded by the professors who teach MAT 5151 and MAT 5152 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5141. This exam is the final exam of the course and is graded by the professors who teach MAT 5141 and MAT 5142 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "docId": 413,
+        "title": "MAT 9902 Comprehensive Exam: Algebra I"
+    },
+    {
+        "desc": "This exam covers the content of the course MAT 5142. This exam is the final exam of the course and is graded by the professors who teach MAT 5141 and MAT 5142 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "docId": 414,
+        "title": "MAT 9903 Comprehensive Exam: Algebra II"
+    },
+    {
+        "desc": "This exam covers the content of the course MAT 5151. This exam is the final exam of the course and is graded by the professors who teach MAT 5151 and MAT 5152 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 415,
         "title": "MAT 9904 Comprehensive Exam: Topology I"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT 5552. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5551 et MAT 5552 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5152. This exam is the final exam of the course and is graded by the professors who teach MAT 5151 and MAT 5152 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5152. This exam is the final exam of the course and is graded by the professors who teach MAT 5151 and MAT 5152 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 416,
         "title": "MAT 9905 Comprehensive Exam: Topology II"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT 5531. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5531 et MAT 5533 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5131. This exam is the final exam of the course and is graded by the professors who teach MAT 5131 and MAT 5133 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5131. This exam is the final exam of the course and is graded by the professors who teach MAT 5131 and MAT 5133 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 417,
         "title": "MAT 9906 Comprehensive Exam: Differential Equations I"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT5533. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5531 et MAT 5533 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5133. This exam is the final exam of the course and is graded by the professors who teach MAT 5131 and MAT 5133 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5133. This exam is the final exam of the course and is graded by the professors who teach MAT 5131 and MAT 5133 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 418,
         "title": "MAT 9907 Comprehensive Exam: Differential Equations II"
     },
     {
-        "desc": "Cet examen porte sur le contenuu du cours MAT5505. Cet examen est l'examen final sur cours et est corrigé par les professeurs qui enseignent MAT 5505 et MAT5507 dans l'année acedémique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5105. This exam is the final exam of the course and is graded by the professors who teach MAT 5105 and MAT 5107 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5105. This exam is the final exam of the course and is graded by the professors who teach MAT 5105 and MAT 5107 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 419,
         "title": "MAT 9908 Comprehensive Exam: Discrete Mathematics I"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT5507. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT5505 et MAT5507 dans l'année académique. Noté S (Satisfaisant) et NS (non satisfaisant). / This exam covers the content of the course MAT 5107. This exam is the final exam of the course and is graded by the professors who teach MAT 5105 and MAT 5107 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5107. This exam is the final exam of the course and is graded by the professors who teach MAT 5105 and MAT 5107 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 420,
         "title": "MAT 9909 Comprehensive Exam: Discrete Mathematics II"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT5570. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT 5570 et MAT5571 dans l'année académique. Noté S (satisfaiant) et NS (non satisfaisant). / This exam covers the content of the course MAT 5170. This exam is the final exam of the course and is graded by the professors who teach MAT 5170 and MAT 5171 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5170. This exam is the final exam of the course and is graded by the professors who teach MAT 5170 and MAT 5171 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 421,
         "title": "MAT 9910 Comprehensive Exam: Probability Theory I"
     },
     {
-        "desc": "Cet examen porte sur le contenu du sours MAT5571. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT5570 et MAT5571 dans l'année académique. Noté S (satisfansant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5171. This exam is the final exam of the course and is graded by the professors who teach MAT 5170 and MAT 5171 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5171. This exam is the final exam of the course and is graded by the professors who teach MAT 5170 and MAT 5171 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 422,
         "title": "MAT 9911 Comprehensive Exam: Probability Theory II"
     },
     {
-        "desc": "cet examen porte sur le contenu du cours MAT5590. Cet examen est l'examen final du cours et est corrigé par les professerus qui enseignent MAT5590 et MAT5591 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant).. / This exam covers the content of the course MAT 5190. This exam is the final exam of the course and is graded by the professors who teach MAT 5190 and MAT 5191 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5190. This exam is the final exam of the course and is graded by the professors who teach MAT 5190 and MAT 5191 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 423,
         "title": "MAT 9912 Comprehensive Exam: Mathematical Statistics I"
     },
     {
-        "desc": "Cet examen porte sur le contenu du cours MAT5591. Cet examen est l'examen final du cours et est corrigé par les professeurs qui enseignent MAT5590 et MAT5591 dans l'année académique. Noté S (satisfaisant) ou NS (non satisfaisant). / This exam covers the content of the course MAT 5191. This exam is the final exam of the course and is graded by the professors who teach MAT 5190 and MAT 5191 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
+        "desc": "This exam covers the content of the course MAT 5191. This exam is the final exam of the course and is graded by the professors who teach MAT 5190 and MAT 5191 in the academic year. Graded S (satisfactory) or NS (not satisfactory).",
         "docId": 424,
         "title": "MAT 9913 Comprehensive Exam: Mathematical Statistics II"
     },
     {
-        "desc": "Le syllabus pour l'examen de synthèse avancé est déterminé par le comité consultatif de thèse (CCT). Le syllabus devrait être fournni à l'étudiant au moins six mois avant la date de l'examen. Le syllabus doit contenir la forme, le contenu et les attentes pour l'examen de synthèse avancé. L'examen de synthèse avancé peut être écrit ou/et oral. Noté S (satisfaisant) ou NS (non satisfaisant). / The syllabus of the advanced comprehensive examination is prescribe by the thesis advisory committee (TAC). The syllabus should be given to the student at least six months before the date of the examination. The syllabus must provide the form, contents and expectations for the advanced comprehensive examination. The advanced comprehensive examination can be written and/or oral. Graded S (satisfactory) or NS (non satisfactory).",
+        "desc": "The syllabus of the advanced comprehensive examination is prescribe by the thesis advisory committee (TAC). The syllabus should be given to the student at least six months before the date of the examination. The syllabus must provide the form, contents and expectations for the advanced comprehensive examination. The advanced comprehensive examination can be written and/or oral. Graded S (satisfactory) or NS (non satisfactory).",
         "docId": 425,
         "title": "MAT 9998 Advanced Comprehensive Examination"
     },
@@ -1888,6 +2133,11 @@
         "desc": "Heredity, environment, and human development. Intelligence. Personality. Mental health, abnormal behaviour and therapeutic approaches. Social psychology.",
         "docId": 427,
         "title": "PSY 1102 Introduction to Psychology: Applications "
+    },
+    {
+        "desc": "Physical, cognitive, linguistic, emotional and social development in childhood studied from different empirical and theoretical perspectives in psychology. Current research in child development.",
+        "docId": 428,
+        "title": "PSY 2105 Child Development "
     },
     {
         "desc": "Descriptive statistics: frequency distributions, measures of central tendency and variability, normal curve, correlation and regression. Introduction to inferential statistics: hypothesis testing, t-test and chi-square. Application to psychology.  Leads to PSY 2116.",
@@ -1950,6 +2200,11 @@
         "title": "PSY 3108 Perception "
     },
     {
+        "desc": "Theories of motivation. Emotions as motives and indicators of motivational states. Self-efficacy, success expectancy, and outcome importance in motivated behaviour. Gender differences. Motivational bases of current concerns: obesity, phobias, self-handicapping, over achievement behaviours. Current research in social motivation.",
+        "docId": 441,
+        "title": "PSY 3109 Social Motivation "
+    },
+    {
         "desc": "Theoretical and methodological issues concerning women. Sexual dimorphism, biology and socialization experiences. Gender stereotypes. Familial, occupational, and other societal roles. Identity and self-concept in relation to social norms. Mental health and well-being. Violence against women. Current research in psychology of women.",
         "docId": 442,
         "title": "PSY 3121 Psychology of Women "
@@ -1990,9 +2245,19 @@
         "title": "PSY 3135 Social Development of the Child "
     },
     {
+        "desc": "Language development from the prenatal period to adulthood, the development of the components of language from speech perception to complex grammar, the theoretical approaches to language acquisition, and the processes that underlie both typical and atypical language development. Interactions between cognitive, social, and linguistic development. Current research in language development.",
+        "docId": 450,
+        "title": "PSY 3136 Language Development "
+    },
+    {
         "desc": "Behavioural pharmacology, psychotropic drugs, drug classes, therapeutic indications, abuse potential, societal impact of drugs. Current research in drugs and behaviour.",
         "docId": 451,
         "title": "PSY 3142 Drugs and Behaviour "
+    },
+    {
+        "desc": "An introduction to the study of psychological disorders: causes, assessment, and treatment. Integration of biological, psychological, and social perspectives. Current research in psychopathology.",
+        "docId": 452,
+        "title": "PSY 3171 Psychopathology "
     },
     {
         "desc": "Introduction to the study of individual human behaviour as it relates to law and justice systems. Current research in forensic psychology.",
@@ -2003,6 +2268,11 @@
         "desc": "Empirical research and preventive approaches in psychology of postsecondary education. Challenges and obstacles during the transition from high school to postsecondary education. Risk and protective factors. Academic success, perseverance, retention, and dropout. Course includes laboratory activities.",
         "docId": 454,
         "title": "PSY 3174 Psychology of Postsecondary Education "
+    },
+    {
+        "desc": "Neural communication and synaptic integration. Biochemistry and pharmacology of synaptic transmission. Brain mechanisms underlying reward and punishment, aggression, memory and sleep-waking processes.",
+        "docId": 455,
+        "title": "PSY 3301 Behavioural Neuroscience "
     },
     {
         "desc": "Major theories in personality. Main schools of thought and study of general characteristics of each theory. Leading representative of each school. Current research in personality.",
@@ -2140,7 +2410,7 @@
         "title": "PSY 43912 Special Topics in Psychology (Part 2 of 2) "
     },
     {
-        "desc": "Formation pratique : chaque période de 30 heures équivaut à 1 crédit. / Practical training: each 30 hour period is equivalent to 1 unit.",
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
         "docId": 483,
         "title": "PSY 5023 Master's Level Research Practicum "
     },
@@ -2153,6 +2423,11 @@
         "desc": "Major conceptual and empirical issues in the field of psychopathology. Contemporary diagnostic systems and procedures (e.g., DSM).",
         "docId": 485,
         "title": "PSY 5102 Applied Psychopathology "
+    },
+    {
+        "desc": "Critical analysis of research trends in behavioural neuroscience and of the relations between neuroanatomy, functional systems, and complex behaviours (e.g., spatial orientation, memory, language, reasoning).",
+        "docId": 486,
+        "title": "PSY 5103 Fundamentals or Behavioural Neuroscience "
     },
     {
         "desc": "Integration of program evaluation practice, research and theory leading to a written report related to advances in program evaluation practice and theory.",
@@ -2250,32 +2525,52 @@
         "title": "PSY 54242 Contemporary Issues and Professional Skills in the Psychological Sciences (Part 2 of 2) "
     },
     {
-        "desc": "Analyse critique et comparative des principales théories de la personnalité, depuis la psychoanalyse et la psychologie analytique jusqu'aux approches phénoménologiques et existentielles, le néo- behavioriste, sociale, dialectique, et autres. / Contemporary personality theory and research concerning the structure, heritability, social and biological determinants, and social and psychiatric manifestation of fundamental personality traits.",
+        "desc": "Contemporary personality theory and research concerning the structure, heritability, social and biological determinants, and social and psychiatric manifestation of fundamental personality traits.",
         "docId": 506,
         "title": "PSY 5911 Theories of Personality "
     },
     {
-        "desc": "Étude de la neuroanatomie fonctionnelle par le biais de la description de différents syndromes neurocomportementaux et déficits neuropsychologiques. Vue d'ensemble sur les fondements théoriques proposés pour chacun des troubles neuropsychologiques décrits. Les sujets traités incluent : histoire et principes de la neuropsychologie, neuroanatomie et neuropathologie, aphasie, apraxie, agnosie, alexie, agraphie, troubles visuo-spatiaux / perceptuels / constructifs déficits attentionnels et négligence, mémoire et apprentissage. fonctions du système limbique, atteintes du corps calleux et fonctions exécutives. / Focus on understanding brain behaviour relationships by examining major neurobehavioural syndromes and associated neuropsychological deficits. Review of the current theoretical assumptions underlying the syndromes. Topics include: History and principles of neuropsychology, gross neuroanatomy and neuropathology, aphasia, apraxia, agnosia, alexia, agraphia, visuo-spatial/perceptual/construction disorders, attention/neglect, memory and learning, limbic system functions, callosal syndromes, and executive functions.",
+        "desc": "Focus on understanding brain behaviour relationships by examining major neurobehavioural syndromes and associated neuropsychological deficits. Review of the current theoretical assumptions underlying the syndromes. Topics include: History and principles of neuropsychology, gross neuroanatomy and neuropathology, aphasia, apraxia, agnosia, alexia, agraphia, visuo-spatial/perceptual/construction disorders, attention/neglect, memory and learning, limbic system functions, callosal syndromes, and executive functions.",
         "docId": 507,
         "title": "PSY 5924 Principles of Neuropsychology "
     },
     {
-        "desc": "Ce practicum de recherche doit se dérouler dans un milieu de recherche appliquée (ex. industrie pharmaceutique ou de haute technologie, service de gestion des ressources humaines, milieu hospitalier ou scolaire). On reconnaît aux étudiants un total de 90 heures de travail dans un ou plusieurs projets de recherche liés à leur domaine de spécialisation. Ce practicum constitue une approximation d'un système co-op et fournit aux étudiants l'occasion de profiter d'une expérience dans le marché du travail et de mettre à l'épreuve la pertinence de leurs connaissances et de leurs habiletés. / This research practicum is to take place in an applied research setting off campus (e.g. pharmaceutical or high-technology industry, human resources management service, hospitals or school setting). Students are credited for a total of 90 hours of work on one or several research projects related to their area of expertise. This practicum is intended as an approximation of a co-op system whereby students have the opportunity to gain some experience in the work force and test the relevance of their knowledge base and skills.",
+        "desc": "Current research in assertion and social skills training is studied through student and staff participation in research projects.",
+        "docId": 508,
+        "title": "PSY 5958 Practicum de recherche en relations interpersonnelles "
+    },
+    {
+        "desc": "This research practicum is to take place in an applied research setting off campus (e.g. pharmaceutical or high-technology industry, human resources management service, hospitals or school setting). Students are credited for a total of 90 hours of work on one or several research projects related to their area of expertise. This practicum is intended as an approximation of a co-op system whereby students have the opportunity to gain some experience in the work force and test the relevance of their knowledge base and skills.",
         "docId": 509,
         "title": "PSY 6002 Practicum in Applied Research "
     },
     {
-        "desc": "Formation pratique : chaque période de 30 heures équivaut à 1 crédit. / Practical training: each 30 hour period is equivalent to 1 unit.",
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
+        "docId": 510,
+        "title": "PSY 6007 Clinical Practicum "
+    },
+    {
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
+        "docId": 511,
+        "title": "PSY 6008 External Clinical Practicum "
+    },
+    {
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
         "docId": 512,
         "title": "PSY 6009 Advanced External Clinical Practicum "
     },
     {
-        "desc": "Formation pratique : chaque période de 30 heures équivaut à 1 crédit. / Practical training: each 30 hour period is equivalent to 1 unit.",
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
         "docId": 513,
         "title": "PSY 6010 Advanced Internal Clinical Practicum "
     },
     {
-        "desc": "Formation pratique : chaque période de 30 heures équivaut à 1 crédit. / Practical training: each 30 hour period is equivalent to 1 unit.",
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
+        "docId": 514,
+        "title": "PSY 6022 Stage consult.-clinique psychologie "
+    },
+    {
+        "desc": "Practical training: each 30 hour period is equivalent to 1 unit.",
         "docId": 515,
         "title": "PSY 6032 Hospital Internship "
     },
@@ -2365,6 +2660,11 @@
         "title": "PSY 6123 Psychosocial Stress Research "
     },
     {
+        "desc": "Nothing to see here",
+        "docId": 533,
+        "title": "PSY 6126 Neuropsychological Assessment "
+    },
+    {
         "desc": "Critical evaluation of studies in targeted domains of social psychology. Identification and evaluation of new orientations. Presentation and discussion of thesis projects and other personal research projects. Similarities and differences in the work of researchers working in academic and private sectors.",
         "docId": 534,
         "title": "PSY 6127 Research Seminars in Social Psychology "
@@ -2403,6 +2703,11 @@
         "desc": "The study of language as an interactive communication process. Integrated review of the production and interpretation mechanisms as function of social and cognitive contexts.  Analysis of the methodological problems posed by the study of interaction.",
         "docId": 541,
         "title": "PSY 6146 Social Psychology of Language "
+    },
+    {
+        "desc": "An introduction to models and methods for psychological interventions in the schools. Short-term interventions to improve attention, study behaviour, problem-solving and social interaction. Concepts of learning disabilities; design and evaluation of programs for the learning disabled.",
+        "docId": 542,
+        "title": "PSY 6147 School Psychology "
     },
     {
         "desc": "A study of current neurochemical and neuropharmacological techniques applicable to the study of normal and pathological behaviour. A critical evaluation of these techniques as they relate to animal and human behaviour.",
@@ -2525,6 +2830,11 @@
         "title": "PSY 6905 Community Psychology "
     },
     {
+        "desc": "Examination of the goals of comparative analysis of cognitive processes and the contribution of behavioural ecologists to the study of cognition in non-human species.  Topics to include the dynamics of choice and timing, memory and place learning, and concept formation.",
+        "docId": 567,
+        "title": "PSY 6906 Comparative Cognition "
+    },
+    {
         "desc": "Seminars on causal reasoning, deductive and inductive inference, hypothesis formation and evaluation, probabilistic judgement, and covariation detection.  Examination of these cognitive activities in the light of theoretical models based on various concepts such as logic, formal or natural, heuristics, or connectionist mechanisms.",
         "docId": 568,
         "title": "PSY 6918 Reasoning, Judgement and Decision Making "
@@ -2538,6 +2848,11 @@
         "desc": "Constructs and measurements of stress and stressors. Critical analysis of theoretical models and empirical research of life events, cognitive appraisal, anticipation and coping strategies.",
         "docId": 570,
         "title": "PSY 6923 Psychosocial Stress Research "
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 571,
+        "title": "PSY 6926 Neuropsychological Assessment "
     },
     {
         "desc": "Critical evaluation of studies in targeted domains of social psychology. Identification and evaluation of new orientations. presentation and discussion of thesis project and other personal research projects. Similarities and differences in the work of researchers working in academic and private sectors.",
@@ -2575,6 +2890,11 @@
         "title": "PSY 6946 Social Psychology of Language "
     },
     {
+        "desc": "An introduction to models and methods for psychological interventions in the schools. Short-term interventions to improve attention, study behaviour, problem solving and social interaction. Concepts of learning disabilities; design and evaluation of programs for the learning disabled.",
+        "docId": 579,
+        "title": "PSY 6947 School Psychology "
+    },
+    {
         "desc": "A study of current neurochemical and neuropharmacological techniques applicable to the study of normal and pathological behaviour. A critical evaluation of these techniques as they relate to animal and human behaviour.",
         "docId": 580,
         "title": "PSY 6951 Seminar in Neuropharmacology and Behavior "
@@ -2600,6 +2920,11 @@
         "title": "PSY 6962 Human and Social Motivation: Theory and Research "
     },
     {
+        "desc": "Seminars/ tutorials on the experimental techniques that apply to the psychophysiological and cognitive study of sleep. Selected topics to include the use of these techniques in the study of the time course of sleeping episodes, neurophysiological correlates of sleep stages, the phenomenon of dreaming, and sleep disorders.",
+        "docId": 585,
+        "title": "PSY 6963 Experimental Techniques in Sleep Research "
+    },
+    {
         "desc": "Overview of the main computer simulation techniques of cognitive processes with hands-on exercises on the microcomputer. Detailed analysis of object-oriented programming and its potential as a simulation tool in cognitive science.",
         "docId": 586,
         "title": "PSY 6964 Computer Simulation of Cognitive Processes "
@@ -2615,6 +2940,16 @@
         "title": "PSY 6982 Psychology and Health "
     },
     {
+        "desc": "Selected topics on contemporary psychology presented and discussed as graduate seminars.",
+        "docId": 589,
+        "title": "PSY 6991 Psychology Seminars "
+    },
+    {
+        "desc": "Selected topics on contemporary psychology presented and discussed as graduate seminars. (Part 1 of 2)",
+        "docId": 590,
+        "title": "PSY 69911 Psychology Seminars "
+    },
+    {
         "desc": "Selected topics on contemporary psychology presented and discussed as graduate seminars. (Part 2 of 2)",
         "docId": 591,
         "title": "PSY 69912 Psychology Seminars (Part 2 of 2) "
@@ -2628,6 +2963,11 @@
         "desc": "Practical experience in carrying out applied research and program evaluation in a community agency or organization.",
         "docId": 593,
         "title": "PSY 7102 Field Research in Social and Community Interventions "
+    },
+    {
+        "desc": "Concept of a health service program. Evaluation in relation to the development of health service programs. Organizational context of evaluation. Needs assessment and community program planning. Evaluation of program outcomes. Evaluation of service quality.",
+        "docId": 594,
+        "title": "PSY 7103 Program Evaluation "
     },
     {
         "desc": "An introduction to concepts and practices in systemic therapy that may be used with individuals, couples or families. Emphasis on the context of problems and therapeutic practices enabling clients to have more choices in their lives.",
@@ -2745,6 +3085,11 @@
         "title": "PSY 7967 Family psychotherapy "
     },
     {
+        "desc": "Nothing to see here",
+        "docId": 618,
+        "title": "PSY 7990 Séminaires en psychologie II "
+    },
+    {
         "desc": "Directed readings on selected topics in Psychology (topic must be different from that of PSY 7916).",
         "docId": 619,
         "title": "PSY 8916 Directed Readings in Psychology II "
@@ -2780,6 +3125,16 @@
         "title": "CSI 2110 Data Structures and Algorithms "
     },
     {
+        "desc": "Presentation of the major programming paradigms: object-oriented, imperative, logic, functional. Related programming languages, their essential properties and typical applications. Programming in imperative, logic and functional languages. Influence of programming paradigms on problem solving and program design strategies. An overview of other paradigms, such as constraint-based, rule-based and event-driven programming.",
+        "docId": 626,
+        "title": "CSI 2120 Programming Paradigms "
+    },
+    {
+        "desc": "Fundamental database concepts. Entity-Relationship modeling. Relational algebra and relational calculus. Relational databases. Database definition and manipulation using SQL. Embedded SQL. Functional dependencies and normalization. Introduction to physical database design. Design and implementation of a database application in a team project.",
+        "docId": 627,
+        "title": "CSI 2132 Databases I "
+    },
+    {
         "desc": "Differences between C++ and Java programming.  C++ data types. Pointers and memory management.  Object oriented programming in C++. File and stream I/O.  Pre-processor macros. Templates and the Standard Template Library.  Numerical computation in C++.  Interfacing with hardware.  Engineering applications.",
         "docId": 628,
         "title": "CSI 2372 Advanced Programming Concepts With C++ "
@@ -2803,6 +3158,11 @@
         "desc": "Design and evaluation criteria for programming languages. Introduction to syntactic and semantic description of programming languages. Basics of programming language implementation. Scripting languages. A comparison of design choices across programming paradigms: data objects, data types, control structures, sub-programs. Basics of concurrency.",
         "docId": 632,
         "title": "CSI 3120 Programming Language Concepts "
+    },
+    {
+        "desc": "Advanced physical database design. Access right, privacy and security. Query processing and optimization. Transaction processing, concurrency control and recovery. Object-oriented databases. Distributed and multi-databases. Data warehousing.  Data integration. Design and implementation of a database component in a team project.",
+        "docId": 633,
+        "title": "CSI 3130 Databases II "
     },
     {
         "desc": "Principles of operating systems. Operating systems design issues. Process management, process scheduling, concurrency issues. CPU scheduling. Memory management. Virtual memory. Mass storage systems. Input/Output system. File system. Security and protection. Examples of operating systems.",
@@ -2928,6 +3288,11 @@
         "desc": "A one-semester project, individual or for a small group, carried out under the supervision of a faculty member.  Projects are posted and selected in the preceding semester.  The students are required to participate in project presentations scheduled at the end of the semester.",
         "docId": 658,
         "title": "CSI 4900 Honours Project "
+    },
+    {
+        "desc": "Materialized and virtual approaches to integration of heterogeneous and independent data sources. Emphasis on data models, architectures, logic-based techniques for query processing, metadata and consistency management, the role of XML and ontologies in data integration; connections to schema mapping, data exchange, and P2P systems. This course is equivalent to COMP 5306 at Carleton University.",
+        "docId": 659,
+        "title": "CSI 5100 Data Integration "
     },
     {
         "desc": "KR is concerned with representing knowledge and using it in computers. Emphasis on logic-based languages for KR, and automated reasoning techniques and systems; important applications of this traditional area of AI to ontologies and semantic web. This course is equivalent to COMP 5307 at Carleton University.",
@@ -3085,6 +3450,11 @@
         "title": "CSI 5149 Graphical Models and Applications "
     },
     {
+        "desc": "Basic concepts. Virtual worlds. Hardware and software support. World modeling. Geometric modeling. Light modeling. Kinematic and dynamic models. Other physical modeling modalities. Multi-sensor data fusion. Anthropomorphic avatars. Animation: modeling languages, scripts, real-time computer architectures. Virtual environment interfaces. Case studies. Courses ELG 5124 (EACJ 5204), CSI 5151 (COMP 5205) cannot be combined for units. This course is equivalent to COMP 5205 at Carleton University.",
+        "docId": 691,
+        "title": "CSI 5151 Virtual Environments "
+    },
+    {
         "desc": "Convergence of social and technological networks with WWW. Interplay between information content, entities creating it and technologies supporting it. Structure and analysis of such networks, models abstracting their properties, link analysis, search, mechanism design, power laws, cascading, clustering and connections with work in social sciences. This course is equivalent to COMP 5310 at Carleton University.",
         "docId": 692,
         "title": "CSI 5152 Evolving Information Networks "
@@ -3135,6 +3505,11 @@
         "title": "CSI 5167 Human-Computer Interaction Models, Theories and Frameworks "
     },
     {
+        "desc": "Overview of recent advances in watermarking of image, video, audio, and other media. Spatial, spectral, and temporal watermarking algorithms. Perceptual models. Use of cryptography in steganography and watermarking. Robustness, security, imperceptibility, and capacity of watermarking. Content authentication, copy control, intellectual property, digital rights management, and other applications. This course is equivalent to COMP 5309 at Carleton University.",
+        "docId": 702,
+        "title": "CSI 5168 Digital Watermarking "
+    },
+    {
         "desc": "Computational aspects and applications of design and analysis of mobile and wireless networking. Topics include Physical, Link Layer, Media Access Control, Wireless, Mobile LANs (Local Area Networks), Ad-Hoc, Sensor Networks, Power Consumption optimization, Routing, Searching, Service Discovery, Clustering, Multicasting, Localization, Mobile IP/TCP (Internet Protocol/Transmission Control Protocol), File Systems, Mobility Models, Wireless Applications. Courses CSI 5169, ELG 6168 cannot be combined for units. This course is equivalent to COMP 5304 at Carleton University.",
         "docId": 703,
         "title": "CSI 5169 Wireless Networks and Mobile Computing "
@@ -3148,6 +3523,11 @@
         "desc": "Review of formal specification and description techniques for distributed and open systems. Verification techniques. Correctness proofs. Verification of general properties of distributed systems. Analysis and relief strategies. Testing techniques. Test generation strategies. Test architectures. This course is equivalent to COMP 5604 at Carleton University.",
         "docId": 705,
         "title": "CSI 5174 Validation Methods for Distributed Systems "
+    },
+    {
+        "desc": "Wireless networks support for m-commerce; m-commerce architectures and applications; mobile payment support systems; business models; mobile devices and their operating systems; mobile content presentation; security issues and solutions; relevant cross layer standards and protocols; case studies. Courses EBC 5175, CSI 5175 cannot be combined for units. This course is equivalent to COMP 5900 at Carleton University.",
+        "docId": 706,
+        "title": "CSI 5175 Mobile Commerce Technologies "
     },
     {
         "desc": "Selected topics in Artificial Intelligence (A.I.); could include A.I. programming techniques, pattern matching systems, natural language systems, rule-based systems, constraint systems, machine learning systems, and cognitive systems. Applications could include areas in Finance, Medicine, Manufacturing, Smart Cities, Semantic Web, Healthcare, Fraud Detection, Intrusion Detection, Autonomous Vehicles, Opinion mining, Sentiment Analysis or similar areas. Assignments will be both (a) programming-oriented, requiring implementation and/or extensions of prototypes in Lisp and/or Prolog and (b) research-oriented, requiring readings of special topics in current A.I. journals. This course is equivalent to COMP 5100 at Carleton University.",
@@ -3287,15 +3667,25 @@
     {
         "desc": "This course is equivalent to COMP 6901 at Carleton University.",
         "docId": 734,
-        "title": "CSI Directed Studies "
+        "title": "CSI 7901 CSI Directed Studies "
     },
     {
-        "desc": "Within 8 terms following initial registration in the program, a document, generally defining the problem addressed, relating it to the literature, outlining the hypotheses, goals, research methodology, initial results and validation approach, must be submitted to an examination committee and successfully defended. Ce cours est équivalent à COMP 6908 à la Carleton University. This course is equivalent to COMP 6908 at Carleton University.",
+        "desc": "Nothing to see here",
+        "docId": 735,
+        "title": "CSI 9901 Seminar"
+    },
+    {
+        "desc": "Nothing to see here",
+        "docId": 736,
+        "title": "CSI 9902 Seminar"
+    },
+    {
+        "desc": "Within 8 terms following initial registration in the program, a document, generally defining the problem addressed, relating it to the literature, outlining the hypotheses, goals, research methodology, initial results and validation approach, must be submitted to an examination committee and successfully defended. This course is equivalent to COMP 6908 at Carleton University.",
         "docId": 737,
         "title": "CSI 9997 Doctoral Thesis Proposal"
     },
     {
-        "desc": "A committee must be assembled and must approve at least 3 topics for written examination: typically, a major and two minor areas. An oral examination occurs if the written exam is passed. Both elements must take place within the first 4 terms following initial registration in the program. The comprehensive examination may be failed, passed conditionally (i.e., with extra course requirements) or passed unconditionally. If failed, this course may be retaken at most one time. Ce cours est équivalent à COMP 6907 à la Carleton University. This course is equivalent to COMP 6907 at Carleton University.",
+        "desc": "A committee must be assembled and must approve at least 3 topics for written examination: typically, a major and two minor areas. An oral examination occurs if the written exam is passed. Both elements must take place within the first 4 terms following initial registration in the program. The comprehensive examination may be failed, passed conditionally (i.e., with extra course requirements) or passed unconditionally. If failed, this course may be retaken at most one time. This course is equivalent to COMP 6907 at Carleton University.",
         "docId": 738,
         "title": "CSI 9998 Ph.D. Comprehensive"
     }
