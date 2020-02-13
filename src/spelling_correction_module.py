@@ -4,6 +4,7 @@
 import math
 import numpy
 import json
+import importlib
 
 vowel = ["a","e","i","o","u"]
 ins_cost = 1
@@ -13,7 +14,6 @@ sub_consonant_consonant = 1
 sub_vowel_consonant = 1
 
 indexPath = '../output/index.json'
-
 maxNum = 6
 
 def weightedEditDistance(source, target): 
@@ -54,34 +54,34 @@ def weightedEditDistance(source, target):
 
 def getCorrection(terms):
     correction = {}
-    with open(indexPath, 'r') as file:
-        f = json.load(file)
-        for q in terms:
-            list = {}
-            for i in f:
-                distance = weightedEditDistance(q,i)
-                if distance < len(q) and distance != False:
-                    list[i] = distance
-            list = sorted(list.items(), key=lambda item:item[1], reverse=False)
-            correction[q] = list
-            for a,b in correction.items():
-                if len(correction[a]) >= maxNum:
-                    correction[a] = b[:maxNum]
+    f = json.load(open(indexPath, 'rb'))
+    for q in terms:
+        list = {}
+        for i in f:
+            distance = weightedEditDistance(q,i)
+            if distance < len(q) and distance != False:
+                list[i] = distance
+        list = sorted(list.items(), key=lambda item:item[1], reverse=False)
+        correction[q] = list
+        for a,b in correction.items():
+            if len(correction[a]) >= maxNum:
+                correction[a] = b[:maxNum]
     return correction
 
 
 def check(terms):
     l = []
-    with open(indexPath, 'r') as file:
-        f = json.load(file)
-        for q in terms:
-            if q not in f:
-                l.append(q)
+    f = json.load(open(indexPath, 'rb'))
+    for q in terms:
+        if q not in f:
+            l.append(q)
+        print(q)
     return l
 
-#print(getCorrection(["operot"]))
-#print(getCorrection(["lienar"]))
-#print("operot lienar")
+# print(getCorrection(["operot"]))
+# print(getCorrection(["lienar"]))
+# print(check(['text']))
+# print("operot lienar")
 
-#print(weightedEditDistance('neihgbor','neighbour'))
-#print(weightedEditDistance('levenshtein','levels'))
+# print(weightedEditDistance('neihgbor','neighbour'))
+# print(weightedEditDistance('levenshtein','levels'))
