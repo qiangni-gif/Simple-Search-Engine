@@ -190,6 +190,11 @@
         "title": "ADM 3358 Multinational Business Finance "
     },
     {
+        "desc": "A foundation course in law that aims to introduce the student to the fundamental concepts of the common law. It comprises a study of the Canadian legal system, principles of statutory interpretation, the role of precedent in judicial decisions, the basic elements of contract law, negligence and product liability, and certain important concepts in property law such as land tenure, mortgages, landlords and tenant and personal property.",
+        "docId": 46,
+        "title": "ADM 3360 Business Law "
+    },
+    {
         "desc": "Assess healthcare analytics from a data perspective, specifically how patient data is acquired, turned into information and translated into knowledge; how healthcare information systems are designed and evaluated; how different systems such as clinical, electronic health records and public health systems function and are integrated; how the benefits and barriers of e-health systems including security, privacy, ethical and legal issues are assessed.",
         "docId": 47,
         "title": "ADM 3363 Healthcare Informatics for Managers "
@@ -283,11 +288,6 @@
         "desc": "A highly applied course with a mix of formal lectures and group research activities, in which students work in groups to address the strategic promotional mandate from a major corporate sponsor. Each group will first develop and implement a primary and/or secondary market research project to gather a portion of the necessary intelligence. Then, using the pooled research reports, each group will develop a detailed strategic promotional plan. At the conclusion of the course, the teams with the three best promotional plans will compete in a public presentation known as the Michel Cloutier Marketing Competition.",
         "docId": 66,
         "title": "ADM 4325 Promotional Planning Practicum "
-    },
-    {
-        "desc": "The Internet and a wide range of related digital technologies have changed the way businesses design and implement marketing strategies. This course focuses on the strategic and tactical applications of these ever-changing digital marketing technologies on decision-making and strategy formulation in areas such as business intelligence gathering, competitive analysis, customer analysis, customer relationship management, supply chain management, new product development, branding, positioning, promotion, and advertising, services management, and e-commerce. Hands-on experience with selected technologies/tools may be provided.",
-        "docId": 67,
-        "title": "ADM 4326 Digital Marketing Technologies "
     },
     {
         "desc": "Strategic approach for international markets. Markets selection and segmentation: formulation of the international marketing mix programs; international marketing strategies for small, medium and multinational firms.",
@@ -658,11 +658,6 @@
         "desc": "Nothing to see here",
         "docId": 153,
         "title": "ADM 6282 Introduction to Quality Management "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 154,
-        "title": "ADM 6284 Managing Technological Risk "
     },
     {
         "desc": "International trends in the global economy together with assessment of risks, and associated international e-business opportunities. Strategies for translating international opportunities into e-businesses, including localizing international web-based content, developing international supply networks, international crowdsourcing, international payments and international collaboration. How to address local laws on privacy, intellectual property and business contracts. Courses ADM 6274, ADM 6286 cannot be combined for units.",
@@ -1205,6 +1200,11 @@
         "title": "MAT 3320 Mathematics for Engineers "
     },
     {
+        "desc": "Vector and matrix norms. Schur canonical form, QR, LU, Cholesky and singular value decomposition, generalized inverses, Jordan form, Cayley-Hamilton theorem, matrix analysis and exponentials of matrices, eigenvalue estimation and the Gershgorin Circle Theorem; quadratic forms, Rayleigh and minima principles. This course includes proofs and applications of computational methods.",
+        "docId": 273,
+        "title": "MAT 3341 Applied Linear Algebra "
+    },
+    {
         "desc": "Trees and applications, applications of graphs, networks and flows, matching theory, introduction to linear programming.",
         "docId": 275,
         "title": "MAT 3348 Applied Discrete Mathematics "
@@ -1670,6 +1670,11 @@
         "title": "MAT 5197 Stochastic Optimization "
     },
     {
+        "desc": "Markov systems, stochastic networks, queuing networks, spatial processes, approximation methods in stochastic processes and queuing theory. Applications to the modelling and analysis of computer-communications systems and other distributed networks. This course is equivalent to MATH 5701 at Carleton University.",
+        "docId": 376,
+        "title": "MAT 5198 Stochastic Models "
+    },
+    {
         "desc": "This course is equivalent to MATH 5609 at Carleton University.",
         "docId": 377,
         "title": "MAT 5301 Topics in Combinatorial Mathematics "
@@ -1765,9 +1770,9 @@
         "title": "MAT 5329 Topics in Analysis "
     },
     {
-        "desc": "This course is equivalent to MATH 6102 at Carleton University.",
-        "docId": 396,
-        "title": "MAT 5330 Topics in Algebra "
+        "desc": "This course is equivalent to MATH 6103 at Carleton University.",
+        "docId": 397,
+        "title": "MAT 5331 Topics in Algebra "
     },
     {
         "desc": "Lossless compression methods. Discrete Fourier transform and Fourier-based compression methods. JPEG and MPEG. Wavelet analysis. Digital filters and discrete wavelet transform. Daubechies wavelets. Wavelet compression. This course is equivalent to MATH 5822 at Carleton University.",
@@ -2015,6 +2020,11 @@
         "title": "PSY 3307 Psychometric Methods "
     },
     {
+        "desc": "Introduction to contemporary cognitive psychology. Origin of cognitive and symbolic processes. Historic foundations. Acquisition of various kinds of knowledge. Analysis of cognitive strategies. The course includes laboratory activities. Current research in cognition.",
+        "docId": 459,
+        "title": "PSY 3377 Cognition "
+    },
+    {
         "desc": "Development of children s cognitive abilities beginning in infancy and progressing through the preschool and early school years. Theories of cognitive development including Piagetian, Vygotskyan, information-processing, and theory-theory. Development of reasoning about the physical world, representational skills, memory, planning and problem-solving, language, and social cognition. Current research in cognitive development.",
         "docId": 460,
         "title": "PSY 3378 Cognitive Development "
@@ -2143,11 +2153,6 @@
         "desc": "Major conceptual and empirical issues in the field of psychopathology. Contemporary diagnostic systems and procedures (e.g., DSM).",
         "docId": 485,
         "title": "PSY 5102 Applied Psychopathology "
-    },
-    {
-        "desc": "Critical analysis of research trends in behavioural neuroscience and of the relations between neuroanatomy, functional systems, and complex behaviours (e.g., spatial orientation, memory, language, reasoning).",
-        "docId": 486,
-        "title": "PSY 5103 Fundamentals or Behavioural Neuroscience "
     },
     {
         "desc": "Integration of program evaluation practice, research and theory leading to a written report related to advances in program evaluation practice and theory.",
@@ -2290,6 +2295,11 @@
         "title": "PSY 60422 Practicum in Basic Research (Part 2 of 2) "
     },
     {
+        "desc": "A review of current issues in the literature on social development in childhood. Topics to include the development of attachment, influence of parents and peers, social competence, and social cognition.",
+        "docId": 519,
+        "title": "PSY 6102 Social Development "
+    },
+    {
         "desc": "Review and critical evaluation of theoretical models and empirical research in the study of socialization, gender differences, and other individual differences during childhood and adolescence.",
         "docId": 520,
         "title": "PSY 6103 Socialization and Individual Differences "
@@ -2335,6 +2345,11 @@
         "title": "PSY 6116 Community Psychology "
     },
     {
+        "desc": "Examination of the goals of comparative analysis of cognitive processes and the contribution of behavioural ecologists to the study of cognition in non-human species.  Topics to include the dynamics of choice and timing, memory and place learning, and concept formation.",
+        "docId": 529,
+        "title": "PSY 6117 Comparative Cognition "
+    },
+    {
         "desc": "Seminars on causal reasoning, deductive and inductive inference, hypothesis formation and evaluation, probabilistic judgment, and covariation detection. Examination of these cognitive activities in the light of theoretical models based on various concepts such as logic, formal or natural, heuristics, or connectionist mechanisms.",
         "docId": 530,
         "title": "PSY 6118 Reasoning, Judgement and Decision "
@@ -2348,11 +2363,6 @@
         "desc": "Constructs and measurements of stress and stressors. Critical analysis of theoretical models and empirical research of life events, cognitive appraisal, anticipation and coping strategies.",
         "docId": 532,
         "title": "PSY 6123 Psychosocial Stress Research "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 533,
-        "title": "PSY 6126 Neuropsychological Assessment "
     },
     {
         "desc": "Critical evaluation of studies in targeted domains of social psychology. Identification and evaluation of new orientations. Presentation and discussion of thesis projects and other personal research projects. Similarities and differences in the work of researchers working in academic and private sectors.",
@@ -2515,11 +2525,6 @@
         "title": "PSY 6905 Community Psychology "
     },
     {
-        "desc": "Examination of the goals of comparative analysis of cognitive processes and the contribution of behavioural ecologists to the study of cognition in non-human species.  Topics to include the dynamics of choice and timing, memory and place learning, and concept formation.",
-        "docId": 567,
-        "title": "PSY 6906 Comparative Cognition "
-    },
-    {
         "desc": "Seminars on causal reasoning, deductive and inductive inference, hypothesis formation and evaluation, probabilistic judgement, and covariation detection.  Examination of these cognitive activities in the light of theoretical models based on various concepts such as logic, formal or natural, heuristics, or connectionist mechanisms.",
         "docId": 568,
         "title": "PSY 6918 Reasoning, Judgement and Decision Making "
@@ -2533,11 +2538,6 @@
         "desc": "Constructs and measurements of stress and stressors. Critical analysis of theoretical models and empirical research of life events, cognitive appraisal, anticipation and coping strategies.",
         "docId": 570,
         "title": "PSY 6923 Psychosocial Stress Research "
-    },
-    {
-        "desc": "Nothing to see here",
-        "docId": 571,
-        "title": "PSY 6926 Neuropsychological Assessment "
     },
     {
         "desc": "Critical evaluation of studies in targeted domains of social psychology. Identification and evaluation of new orientations. presentation and discussion of thesis project and other personal research projects. Similarities and differences in the work of researchers working in academic and private sectors.",
@@ -2575,11 +2575,6 @@
         "title": "PSY 6946 Social Psychology of Language "
     },
     {
-        "desc": "An introduction to models and methods for psychological interventions in the schools. Short-term interventions to improve attention, study behaviour, problem solving and social interaction. Concepts of learning disabilities; design and evaluation of programs for the learning disabled.",
-        "docId": 579,
-        "title": "PSY 6947 School Psychology "
-    },
-    {
         "desc": "A study of current neurochemical and neuropharmacological techniques applicable to the study of normal and pathological behaviour. A critical evaluation of these techniques as they relate to animal and human behaviour.",
         "docId": 580,
         "title": "PSY 6951 Seminar in Neuropharmacology and Behavior "
@@ -2603,11 +2598,6 @@
         "desc": "Epistemological, theoretical and experimental aspects of the concept of motivation as an explanatory construct of social behaviour. Study of its development.",
         "docId": 584,
         "title": "PSY 6962 Human and Social Motivation: Theory and Research "
-    },
-    {
-        "desc": "Seminars/ tutorials on the experimental techniques that apply to the psychophysiological and cognitive study of sleep. Selected topics to include the use of these techniques in the study of the time course of sleeping episodes, neurophysiological correlates of sleep stages, the phenomenon of dreaming, and sleep disorders.",
-        "docId": 585,
-        "title": "PSY 6963 Experimental Techniques in Sleep Research "
     },
     {
         "desc": "Overview of the main computer simulation techniques of cognitive processes with hands-on exercises on the microcomputer. Detailed analysis of object-oriented programming and its potential as a simulation tool in cognitive science.",
@@ -2638,11 +2628,6 @@
         "desc": "Practical experience in carrying out applied research and program evaluation in a community agency or organization.",
         "docId": 593,
         "title": "PSY 7102 Field Research in Social and Community Interventions "
-    },
-    {
-        "desc": "Concept of a health service program. Evaluation in relation to the development of health service programs. Organizational context of evaluation. Needs assessment and community program planning. Evaluation of program outcomes. Evaluation of service quality.",
-        "docId": 594,
-        "title": "PSY 7103 Program Evaluation "
     },
     {
         "desc": "An introduction to concepts and practices in systemic therapy that may be used with individuals, couples or families. Emphasis on the context of problems and therapeutic practices enabling clients to have more choices in their lives.",
@@ -2783,6 +2768,11 @@
         "desc": "Computing and computers. Problem solving and algorithm development. Introduction to programming. Use of application, communication, and database software.",
         "docId": 623,
         "title": "CSI 1390 Introduction to Computers "
+    },
+    {
+        "desc": "Discrete structures as they apply to computer science, algorithm analysis and design. Predicate logic. Review of proof techniques; application of induction to computing problems. Graph theory applications in information technology. Program correctness, preconditions, postconditions and invariants. Analysis of recursive programs using recurrence relations. Properties of integers and basic cryptographical applications.",
+        "docId": 624,
+        "title": "CSI 2101 Discrete Structures "
     },
     {
         "desc": "The concept of abstract data types. Simple methods of complexity analysis. Trees. The search problem: balanced trees, binary-trees, hashing. Sorting. Graphs and simple graph algorithms: traversal, minimum spanning tree. Strings and pattern matching.",
@@ -3193,6 +3183,11 @@
         "desc": "Design issues of advanced multiprocessor distributed operating systems: multiprocessor system architectures; process and object models; synchronization and message passing primitives; memory architectures and management; distributed file systems; protection and security; distributed concurrency control; deadlock; recovery; remote tasking; dynamic reconfiguration; performance measurement, modeling, and system tuning. This course is equivalent to COMP 5102 at Carleton University.",
         "docId": 713,
         "title": "CSI 5312 Distributed Operating Systems Engineering "
+    },
+    {
+        "desc": "Issues in modeling and verifying quality and variability in object-oriented systems. Testable models in model-driven and test-driven approaches. System family engineering. Functional conformance: scenario modeling and verification, design by contract. Conformance to non-functional requirements: goals, forces and tradeoffs, metrics. This course is equivalent to COMP 5104 at Carleton University.",
+        "docId": 714,
+        "title": "CSI 5314 Object-Oriented Software Development "
     },
     {
         "desc": "E-commerce system architecture with a focus on relevant design patterns. Web servers, containers, and application frameworks. Web protocols, services, and client technologies. Scalability through load balancing, clustering, and code optimization. Internationalization, accessibility, and privacy. Data mining and sharing approaches for digital targeted advertising. E-commerce user interface design and evaluation. Current research issues. Hands-on experience with an integrated set of current e-commerce tools. E-commerce development project. Courses EBC 5380, CSI 5380 cannot be combined for units. This course is equivalent to COMP 5405 at Carleton University.",
