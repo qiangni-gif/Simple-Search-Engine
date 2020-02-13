@@ -412,12 +412,12 @@ def rebuild():
 
 def main():
     #setup corpus, index, terms, and weighted index when open up search engine
-    print("corpus preprocessing....")
-    db.pre_dictionary_building()
-    print("creating inverted index....")
-    vr.wc.getinvertedindex()
-    print("creating weighted index....")
-    vr.gettf_idf()
+    #print("corpus preprocessing....")
+    #db.pre_dictionary_building()
+    #print("creating inverted index....")
+    #vr.wc.getinvertedindex()
+    #print("creating weighted index....")
+    #vr.gettf_idf()
     
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QMainWindow()
