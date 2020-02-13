@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[172]:
+# In[35]:
 
 
 import corpus_preprocess_module as cp
@@ -18,7 +18,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
-# In[173]:
+# In[36]:
 
 
 storagePath = cp.dataStorage
@@ -26,7 +26,7 @@ stopWordFlag = True
 wordStemmingFlag = True
 normalizationFlag = True
 ps = nltk.stem.PorterStemmer()
-#DetectorFactory.seed = 0
+DetectorFactory.seed = 0
 #https://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string
 #https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive
 #https://pythonprogramming.net/stemming-nltk-tutorial/
@@ -35,35 +35,35 @@ ps = nltk.stem.PorterStemmer()
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
-# In[65]:
+# In[3]:
 
 
 def toggleStopWordFlag():
     return not stopWordFlag
 
 
-# In[66]:
+# In[4]:
 
 
 def toggleWordStemmingFlag():
     return not wordStemmingFlag
 
 
-# In[67]:
+# In[5]:
 
 
 def toggleNormalizationFlag():
     return not normalizationFlag
 
 
-# In[68]:
+# In[6]:
 
 
 def getTermsForBoolean():
     return termsForBoolean
 
 
-# In[177]:
+# In[45]:
 
 
 def extractTerms():
@@ -87,7 +87,7 @@ def extractTerms():
     return data,container,termsForBoolean
 
 
-# In[178]:
+# In[47]:
 
 
 def tokenize(data):
@@ -99,21 +99,22 @@ def tokenize(data):
     
 
 
-# In[179]:
+# In[49]:
 
 
 def removeFrenchWords(desc):
     newTokens = []
     newDesc = ""
    # desctemp = re.sub('[/]', '', desc)
-    desctemp = desc.replace('/','').split('.')
-    for d in desctemp:
-        if d and (detect(d) == 'en' or detect(d) == 'ca'):
-            newDesc = newDesc+d
+    desctemp = desc.replace('/','')
+    #print(desctemp)
+    for d in filter(None, desctemp.split('.')):
+        if detect(d) == 'en':
+            newDesc = newDesc+""+d
     return newDesc
 
 
-# In[180]:
+# In[40]:
 
 
 def stopWordRemoval(data):
@@ -128,7 +129,7 @@ def stopWordRemoval(data):
     return newData
 
 
-# In[181]:
+# In[41]:
 
 
 def wordStemming(data):
@@ -142,7 +143,7 @@ def wordStemming(data):
     return newData
 
 
-# In[182]:
+# In[42]:
 
 
 def normalization(data):
@@ -155,14 +156,14 @@ def normalization(data):
     return newData
 
 
-# In[183]:
+# In[43]:
 
 
 def pre_dictionary_building():
     cp.getCorpus()
 
 
-# In[184]:
+# In[44]:
 
 
 #dict('docId') -> dict{'word':frequency}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[115]:
+# In[3]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[116]:
+# In[4]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,20 +21,20 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[117]:
+# In[5]:
 
 
 indexPath = '../output/index.json'
 
 
-# In[118]:
+# In[6]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[126]:
+# In[13]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
@@ -50,7 +50,7 @@ def buildIndex():
         
 
 
-# In[120]:
+# In[8]:
 
 
 # not sure if we need this func
@@ -66,7 +66,7 @@ def buildIndex():
 #     return counter
 
 
-# In[121]:
+# In[9]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -97,7 +97,7 @@ def buildPostings(pairContainer,frequency,totalPostings):
     return postings
 
 
-# In[122]:
+# In[10]:
 
 
 # terms => terms[docId] = list(terms)
@@ -115,7 +115,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[123]:
+# In[11]:
 
 
 #get call if the file doesn;t exist (I think..)
