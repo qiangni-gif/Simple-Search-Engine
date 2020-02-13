@@ -190,7 +190,8 @@ class Ui_mainWindow(object):
         self.checkBox_2.setText(_translate("mainWindow", "Stemming"))
         self.checkBox.setText(_translate("mainWindow", "Stopword "))
         self.pushButton.setText(_translate("mainWindow", "Search"))
-    
+        
+    #change the rebuild flag when setting is toggled
     def onCheckBox_Toggled(self):
         global reBuildFlag
         global stopWordFlag
@@ -221,6 +222,7 @@ class Ui_mainWindow(object):
         print("onSearch_clicked, module: "+ model +" collection: "+ collection)
         self.tableWidget.setRowCount(0)
 
+        #reBuild index if the setting is changed
         if reBuildFlag == True:
             rebuild()
         
@@ -238,9 +240,11 @@ class Ui_mainWindow(object):
             if model == "Vector Space Model":
                 print("Vector Space Model")
                 terms = vr.extractQueryTerms(query)
+                #check weather the imput query is in the index.
                 w = sc.check(terms)
                 
                 if w != []:
+                    #ask user to pick a different query 
                     correction = sc.getCorrection(w)
                     for i in correction.items():
                         c = get_correction(i)
@@ -252,7 +256,7 @@ class Ui_mainWindow(object):
                                     if i == c[0]:
                                         terms.remove(i)
                         #print(terms)
-                    
+                #set up table
                 self.tableWidget.setRowCount(0)
                 self.tableWidget.setColumnCount(4)
                 self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
@@ -274,6 +278,7 @@ class Ui_mainWindow(object):
                 print("Boolean Retrieval Model")
                 result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
                 if result != []:
+                    #set up table
                     self.tableWidget.setRowCount(0)
                     self.tableWidget.setColumnCount(3)
                     self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc'])
@@ -320,6 +325,7 @@ class Ui_mainWindow(object):
             
                         y = info.exec_()
 
+#message popup box with spelling correction table
 class MyMessageBox(QtWidgets.QMessageBox):
     #get_word = QtCore.pyqtSignal(dict)
     def __init__(self,lis):
@@ -372,6 +378,7 @@ class MyMessageBox(QtWidgets.QMessageBox):
         return result   
 
 def get_correction(correction):
+    #create a popup messagebox with option for user to pick desired query
     sc_msg = MyMessageBox(correction)
     currentClick = sc_msg.exec_()
     word = None
@@ -387,6 +394,7 @@ def get_correction(correction):
         word = [correction[0],None]
     return word
 
+#rebuild the index and reset the Flag
 def rebuild():
     global reBuildFlag
     print("building index this may take a few seconds....")
@@ -403,6 +411,7 @@ def rebuild():
 
 
 def main():
+    #setup corpus, index, terms, and weighted index when open up search engine
     print("corpus preprocessing....")
     db.pre_dictionary_building()
     print("creating inverted index....")
