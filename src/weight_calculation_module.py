@@ -6,6 +6,7 @@ import inverted_index_construction_module as iic
 
 indexPath = '../output/index.json'
 storagePath = '../output/storage.json'
+termPath = '../output/terms.json'
 weightedindexPath = '../output/weightedindex.json'
 
 def getinvertedindex():
@@ -16,36 +17,38 @@ def tf_idf():
     tfidf = {}
     docId = 0
     tfreq = 0
-    with open(indexPath, 'r') as file:
-        f = json.load(file)
-        for q in f:
-            lis = []
-            try:
-                idf = math.log10(numberOfdoc() / len(f[q]))
-                for t in f[q]:
-                    docId = t[0]
-                    tfreq = t[1]/findMaxfrequency(f,docId)
-                    lis.append([docId,tfreq*idf])
-                tfidf[q] = lis
-            except KeyError:
-                print(q+" is not in the collection")
-        return tfidf
+    indexf = json.load(open(indexPath, 'r'))
+    termf = json.load(open(termPath, 'r'))
+    storagef = json.load(open(storagePath, 'r'))
+    n = len(storagef)
+    for q in indexf:
+        lis = []
+        idf = math.log10(n / len(indexf[q]))
+        for t in indexf[q]:
+            docId = t[0]
+            #tfreq = t[1]/findMaxfrequency(f,docId)
+            num = findNumOfterms(docId,termf)
+            tfreq = t[1]/num
+            lis.append([docId,tfreq*idf,num])
+        tfidf[q] = lis
+    return tfidf
 
 
 
 
-def findMaxfrequency(file, docId):
-    maxfreq = 0
-    for f in file:
-        for t in file[f]:
-            if docId == t[0] and maxfreq <= t[1]:
-                maxfreq = t[1]
-    return maxfreq
+#def findMaxfrequency(file, docId):
+#    maxfreq = 0
+#    for f in file:
+#        for t in file[f]:
+#            if docId == t[0] and maxfreq <= t[1]:
+#                maxfreq = t[1]
+#    return maxfreq
 
-def numberOfdoc():
-    with open(storagePath, 'r') as doc:
-        d = json.load(doc)
-        return len(d)
+def findNumOfterms(docId,termf):
+    maxNum = 0
+    for g in termf:
+        maxNum = len(termf[g][docId-1])
+    return maxNum
 
 def getweightedindex():
     weightedindex = tf_idf()
