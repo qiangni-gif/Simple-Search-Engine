@@ -17,21 +17,22 @@ def tf_idf():
     tfidf = {}
     docId = 0
     tfreq = 0
-    indexf = json.load(open(indexPath, 'r'))
-    termf = json.load(open(termPath, 'r'))
-    storagef = json.load(open(storagePath, 'r'))
-    n = len(storagef)
-    for q in indexf:
-        lis = []
-        idf = math.log10(n / len(indexf[q]))
-        for t in indexf[q]:
-            docId = t[0]
-            #tfreq = t[1]/findMaxfrequency(f,docId)
-            num = findNumOfterms(docId,termf)
-            tfreq = t[1]/num
-            lis.append([docId,tfreq*idf,num])
-        tfidf[q] = lis
-    return tfidf
+    with open(indexPath, 'r') as inde, open(termPath, 'r') as ter , open(storagePath, 'r') as storag:
+        indexf = json.load(inde)
+        termf = json.load(ter)
+        storagef = json.load(storag)
+        n = len(storagef)
+        for q in indexf:
+            lis = []
+            idf = math.log10(n / len(indexf[q]))
+            for t in indexf[q]:
+                docId = t[0]
+                #tfreq = t[1]/findMaxfrequency(f,docId)
+                num = findNumOfterms(docId,termf)
+                tfreq = t[1]/num
+                lis.append([docId,tfreq*idf,num])
+            tfidf[q] = lis
+        return tfidf
 
 
 
