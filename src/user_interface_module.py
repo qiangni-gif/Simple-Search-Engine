@@ -235,15 +235,11 @@ class Ui_mainWindow(object):
             
             x = msg.exec_()
         else:
-            print("begin")
             if model == "Vector Space Model":
                 print("Vector Space Model")
                 terms = vr.extractQueryTerms(query)
-
-                print(terms)
                 w = sc.check(terms)
                 
-                print(w)
                 if w != []:
                     correction = sc.getCorrection(w)
                     for i in correction.items():
@@ -277,7 +273,6 @@ class Ui_mainWindow(object):
             elif model == "Boolean Retrieval Model":
                 print("Boolean Retrieval Model")
                 result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
-                print(result)
                 if result != []:
                     self.tableWidget.setRowCount(0)
                     self.tableWidget.setColumnCount(3)
@@ -379,10 +374,9 @@ class MyMessageBox(QtWidgets.QMessageBox):
 def get_correction(correction):
     sc_msg = MyMessageBox(correction)
     currentClick = sc_msg.exec_()
-    print("at this point")
     word = None
     if currentClick == 0 :
-        print ('Accept')
+        print ('Accepted')
         if sc_msg.tableWidget2.rowCount() == 0:
             print("M table is empty")
         elif not sc_msg.tableWidget2.selectionModel().selectedRows():
@@ -411,7 +405,9 @@ def rebuild():
 def main():
     print("corpus preprocessing....")
     db.pre_dictionary_building()
+    print("creating inverted index....")
     vr.wc.getinvertedindex()
+    print("creating weighted index....")
     vr.gettf_idf()
     
     app = QtWidgets.QApplication(sys.argv)
