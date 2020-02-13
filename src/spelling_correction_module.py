@@ -54,7 +54,7 @@ def weightedEditDistance(source, target):
 
 def getCorrection(terms):
     correction = {}
-    f = json.load(open(indexPath, 'rb'))
+    f = json.load(open(indexPath, 'r'))
     for q in terms:
         list = {}
         for i in f:
@@ -71,11 +71,10 @@ def getCorrection(terms):
 
 def check(terms):
     l = []
-    f = json.load(open(indexPath, 'rb'))
+    f = json.load(open(indexPath, 'r'))
     for q in terms:
         if q not in f:
             l.append(q)
-        print(q)
     return l
 
 # print(getCorrection(["operot"]))
