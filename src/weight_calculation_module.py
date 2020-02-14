@@ -27,9 +27,11 @@ def tf_idf():
             idf = math.log10(n / len(indexf[q]))
             for t in indexf[q]:
                 docId = t[0]
-                #tfreq = t[1]/findMaxfrequency(f,docId)
                 num = findNumOfterms(docId,termf)
+                #comput term frequency
+                #tfreq = t[1]/findMaxfrequency(f,docId)
                 tfreq = t[1]/num
+                #tfreq = 1 + math.log10(t[1])
                 lis.append([docId,tfreq*idf,num])
             tfidf[q] = lis
         return tfidf
