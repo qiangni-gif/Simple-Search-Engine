@@ -30,8 +30,8 @@ def getDocs(docIds):
             d = dict()
             if len(s) > excerptLength:
                 s = s[:excerptLength]+'...'
-                d['link'] = course['docId']
-                d['title'] = course['title']
+            d['link'] = course['docId']
+            d['title'] = course['title']
             d['desc'] = s
             output.append(d)
     return output
