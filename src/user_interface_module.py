@@ -271,11 +271,14 @@ class Ui_mainWindow(object):
                         currentRowCount = self.tableWidget.rowCount()
                         doc = ca.getDocs([i[0]])
                         #print(doc)
-                        self.tableWidget.insertRow(currentRowCount)
-                        self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(doc[0]['link'])))
-                        self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(doc[0]['title']))
-                        self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(doc[0]['desc']))
-                        self.tableWidget.setItem(currentRowCount,3,QTableWidgetItem(str(i[1]))) 
+                        if 'link' in doc[0] and 'title' in doc[0] and 'desc' in doc[0]:
+                            self.tableWidget.insertRow(currentRowCount)
+                            self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(doc[0]['link'])))
+                            self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(doc[0]['title']))
+                            self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(doc[0]['desc']))
+                            self.tableWidget.setItem(currentRowCount,3,QTableWidgetItem(str(i[1])))
+                        else:
+                            print(doc[0])
                 else:
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
@@ -284,6 +287,7 @@ class Ui_mainWindow(object):
                 result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
                 if result != []:
                     #set up table
+                    print(result)
                     self.tableWidget.setRowCount(0)
                     self.tableWidget.setColumnCount(3)
                     self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc'])
@@ -291,10 +295,13 @@ class Ui_mainWindow(object):
                     for i in doc:
                         currentRowCount = self.tableWidget.rowCount()
                         #print(doc)
-                        self.tableWidget.insertRow(currentRowCount)
-                        self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(i['link'])))
-                        self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(i['title']))
-                        self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(i['desc']))
+                        if 'link' in i and 'title' in i and 'desc' in i:
+                            self.tableWidget.insertRow(currentRowCount)
+                            self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(i['link'])))
+                            self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(i['title']))
+                            self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(i['desc']))
+                        else:
+                            print(i)
                 else:
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
