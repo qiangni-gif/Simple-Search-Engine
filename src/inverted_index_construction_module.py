@@ -40,6 +40,7 @@ def getTermsAndFrequency():
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
 def buildIndex():
     terms,frequency,t = getTermsAndFrequency()
+    # create all terms to be used in wildcard
     with open('../output/terms.json','w') as f:
         json.dump({"terms":t}, f, sort_keys=True, indent=4,ensure_ascii=False)
      #return a posting list dict (with weight in it)
@@ -71,19 +72,7 @@ def buildIndex():
 
 def buildPostings(pairContainer,frequency,totalPostings):
     postings = dict()
-#     for pair in pairContainer:
-#         term = pair[0]
-#         if term not in postings:
-#             postings[term]=[]
 
-#        #print(postings)
-#         for p in pairContainer:
-#             if p[0] in postings: # curious why if p[0] in postings and p[1] not in postings[p[0]] gives wrong result
-#                 if p[1] not in postings[p[0]]:
-#                     #p[0] is term, here we append corresponding docId and frequency of word in that doc as tuple
-#                     postings[p[0]].append((p[1],frequency[p[1]]))
-#             else:
-#                 break
     for pair in pairContainer:
         term=pair[0]
         if term not in postings:
