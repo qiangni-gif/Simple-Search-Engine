@@ -13,7 +13,9 @@
 
 import sys
 import json
+import os
 import dictionary_building_module as db
+import inverted_index_construction_module as iic
 import VSM_retrieval_module as vr
 import corpus_access_module as ca
 import spelling_correction_module as sc
@@ -27,6 +29,9 @@ wordStemmingFlag = True
 normalizationFlag = True
 
 corpusPath = '../output/storage.json'
+indexPath = '../output/index.json'
+weightedIndexPath = '../output/weightedindex.json'
+
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
@@ -418,7 +423,13 @@ def main():
     #vr.wc.getinvertedindex()
     #print("creating weighted index....")
     #vr.gettf_idf()
-    
+    if not os.path.exists(corpusPath):
+        db.pre_dictionary_building()
+    if not os.path.exists(indexPath):
+        iic.getinvertedindex()
+    if not os.path.exists(weightedIndexPath):
+        vr.gettf_idf()
+        
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QMainWindow()
     ui = Ui_mainWindow()
