@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[257]:
+# In[2]:
 
 
 import inverted_index_construction_module as iic
@@ -15,7 +15,7 @@ import nltk
 from nltk import bigrams
 
 
-# In[243]:
+# In[3]:
 
 
 #https://stackoverflow.com/questions/1059559/split-strings-into-words-with-multiple-word-boundary-delimiters
@@ -27,7 +27,7 @@ from nltk import bigrams
 #https://www.programiz.com/python-programming/methods/string/startswith
 
 
-# In[6]:
+# In[4]:
 
 
 def queryToPostfix(query):
@@ -53,7 +53,7 @@ def queryToPostfix(query):
     return postfixList
 
 
-# In[7]:
+# In[5]:
 
 
 def findPostings(logicalOp, p1, p2):
@@ -67,7 +67,7 @@ def findPostings(logicalOp, p1, p2):
         return [x for x in p2 if x not in p1]
 
 
-# In[241]:
+# In[32]:
 
 
 def wildCard_bigram_handle(token,index): # return a new string
@@ -80,12 +80,13 @@ def wildCard_bigram_handle(token,index): # return a new string
         for bg in bigrams(temp+" "):
             t = "".join(bg).replace(" ","")
             wildCard.append(buildSecIndex(t,index,True))
-        # postfilter
+        # postfilter                    intersection here will find intersection of these lists
         wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.endswith(temp)]
                 
     elif token[len(token)-1] == '*': # abx*
         temp = token[:-1]
         for bg in bigrams(" "+temp):
+            print(bg)
             t = "".join(bg).replace(" ","")
             wildCard.append(buildSecIndex(t,index,False))
         wildCard = [x for x in list(set.intersection(*map(set,wildCard))) if x.startswith(temp)]
@@ -103,14 +104,14 @@ def wildCard_bigram_handle(token,index): # return a new string
     return listToString(wildCard)
 
 
-# In[205]:
+# In[33]:
 
 
 def listToString(strList):
-    return "( "+" AND ".join(strList)+" )"
+    return "( "+" OR ".join(strList)+" )"
 
 
-# In[238]:
+# In[34]:
 
 
 def buildSecIndex(bg,index, isEnd):
@@ -130,14 +131,11 @@ def buildSecIndex(bg,index, isEnd):
     return secPosting
 
 
-# In[239]:
+# In[64]:
 
 
 def demo_processWithIndex(query, selectedCollection,index):
-#     if os.path.exists(iic.indexPath):
-#         with open(iic.indexPath, 'r') as file:
-#             f = json.load(file)
-            
+          
             termsPostings = []
             #resultList = []
             totalPostings = []
@@ -147,11 +145,11 @@ def demo_processWithIndex(query, selectedCollection,index):
                 pre = query.split(" ")
                 for t in pre:
                     if '*' in t:
-                        newStr = wildCard_bigram_handle(t,index)
+                        newStr = wildCard_bigram_handle(t,completeTerms)
                         query = query.replace(t,newStr)
             print(query)
             postfixList = queryToPostfix(query)
-            
+
             # I would rather manipulate on list of postings rathe then on words
             for token in postfixList:
                 if token == "OR" or token == "AND" or token == "AND_NOT":
@@ -169,8 +167,8 @@ def demo_processWithIndex(query, selectedCollection,index):
             print("Printing tootalpostings")
             print(totalPostings)
             for token in totalPostings:
-                print(termsPostings)
-                if token[0] == "OR" or token[0] == "AND" or token[0] == "AND_NOT":
+                #print(termsPostings)
+                if token and (token[0] == "OR" or token[0] == "AND" or token[0] == "AND_NOT"):
                     p1 = termsPostings.pop()
                     p2 = termsPostings.pop()
                     termsPostings.append(findPostings(token[0],p1,p2))
@@ -179,7 +177,7 @@ def demo_processWithIndex(query, selectedCollection,index):
             return termsPostings[0]
 
 
-# In[114]:
+# In[19]:
 
 
 def getCompleteTerms():
@@ -191,14 +189,14 @@ def getCompleteTerms():
     return temp
 
 
-# In[247]:
+# In[13]:
 
 
 #"( *er OR ink )"
-demo_processWithIndex("printer AND ( laser OR ink )",[],index)
+demo_processWithIndex("*er",[],index)
 
 
-# In[246]:
+# In[12]:
 
 
 index = {'zeroknowledg':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
