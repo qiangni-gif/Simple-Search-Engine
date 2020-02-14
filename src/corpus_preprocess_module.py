@@ -37,7 +37,7 @@ def preProcess(dataPath):
 
     docId = 1
     for html in os.listdir(dataPath):
-        ## temp, only process one file now
+        ## all french in desc hve been removed 
 
         with open(os.path.join(dataPath,html)) as f:
             print(os.path.join(dataPath,html))
@@ -49,30 +49,26 @@ def preProcess(dataPath):
                 for courseblock in mainDiv.find_all('div', attrs={'class':'courseblock'}):
                     container = dict()
                     container['docId'] = docId
-                        #print(docId)
+
                     docId = docId+1
                     title = courseblock.find('p',attrs={'class':'courseblocktitle noindent'}).string.rsplit('(',1)[0]
                     desc = courseblock.find('p',attrs={'class':'courseblockdesc noindent'})
                     if not desc is None:
                         for a in desc.findAll('a'):
                             a.replaceWithChildren()
-                                #for some reasons desc.string sometimes returns NONE even though there indeed texts
+                    #for some reasons desc.string sometimes returns NONE even though there indeed texts
                         container['desc'] = desc.text.strip()
                         
                     else:
                         container['desc'] = 'Nothing to see here'
                     if '/' not in title:
                         container['title'] = title
-                    else:
+                        #in case there is french in title
+                    else: 
                         string = title.rsplit('/',1)
                         temp = string[0].split(' ')
                         container['title'] = temp[0]+' '+temp[1]+string[1]
-                        #print(container['title'])
-                    # usually a '/' means there are en and fr
-#                     if detect(container['title']) == 'en' and detect(container['desc'].split('/',1)[1]) == 'en':
-#                             data.append(container)
-#                     if detect(container['title']) == 'en':
-#                         print(container['title'])
+                        
                     data.append(container)
                 
     return data
