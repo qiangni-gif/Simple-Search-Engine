@@ -7,7 +7,7 @@ import weight_calculation_module as wc
 #https://stackoverflow.com/questions/26924812/python-sort-list-of-json-by-value
 
 weightedindexPath = '../output/weightedindex.json'
-countMax = 30
+countMax = 20
 
 def gettf_idf():
     wc.getweightedindex()
@@ -38,9 +38,8 @@ def comput_score(query):
         for q,w in wquery.items():
             for i,t in windex.items():
                 for x in t:
-                    if q == i and c <= countMax:
+                    if q == i:
                         c = c + 1
-                        #print(x)
                         if x[0] not in score:
                             score[x[0]] = x[1]*w
                         else:
@@ -48,6 +47,7 @@ def comput_score(query):
         #sort the list by score
         if score != {}:
             rank = sorted(score.items(), key=lambda item:item[1], reverse=True)
+            rank = rank[:countMax]
             score = {}
             c = 0
         else:
