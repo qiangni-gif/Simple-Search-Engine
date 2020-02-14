@@ -193,7 +193,7 @@ def getCompleteTerms():
 
 
 #"( *er OR ink )"
-demo_processWithIndex("*er",[],index)
+#demo_processWithIndex("*er",[],index)
 
 
 # In[12]:
