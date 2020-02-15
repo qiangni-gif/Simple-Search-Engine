@@ -399,8 +399,10 @@ def get_correction(correction):
         print ('Accepted')
         if sc_msg.tableWidget2.rowCount() == 0:
             print("M table is empty")
+            word = [correction[0],None]
         elif not sc_msg.tableWidget2.selectionModel().selectedRows():
             print("M not selected")
+            word = [correction[0],None]
         else:
             word = [correction[0],sc_msg.tableWidget2.item(sc_msg.tableWidget2.currentRow(),0).text()]
     else:
