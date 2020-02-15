@@ -14,7 +14,8 @@ sub_consonant_consonant = 1
 sub_vowel_consonant = 1
 
 indexPath = '../output/index.json'
-maxNum = 6
+termsPath = '../output/terms.json'
+maxNum = 10
 
 def weightedEditDistance(source, target): 
 
@@ -49,24 +50,52 @@ def weightedEditDistance(source, target):
                                             matrix[i-1][j-1] + sub_consonant_consonant if source[i-1] != target[j-1] else matrix[i-1][j-1] + 0)
                 else:
                     return False
-
     return matrix[len(source)][len(target)]
+
+# def getCorrection(terms):
+#     correction = {}
+#     f = json.load(open(indexPath, 'r'))
+#     for q in terms:
+#         list = {}
+#         for i in f:
+#             distance = weightedEditDistance(q,i)
+#             if distance < len(q) and distance != False:
+#                 list[i] = distance
+#         list = sorted(list.items(), key=lambda item:item[1], reverse=False)
+#         correction[q] = list
+#         for a,b in correction.items():
+#             if len(correction[a]) >= maxNum:
+#                 correction[a] = b[:maxNum]
+#     return correction
 
 def getCorrection(terms):
     correction = {}
-    f = json.load(open(indexPath, 'r'))
+    f = getterms()
     for q in terms:
-        list = {}
+        lis = {}
         for i in f:
-            distance = weightedEditDistance(q,i)
+            distance = weightedEditDistance(q,i)#match query with term
             if distance < len(q) and distance != False:
-                list[i] = distance
-        list = sorted(list.items(), key=lambda item:item[1], reverse=False)
-        correction[q] = list
+                lis[i] = distance
+        lis = sorted(lis.items(), key=lambda item:item[1], reverse=False)
+        correction[q] = lis
         for a,b in correction.items():
             if len(correction[a]) >= maxNum:
                 correction[a] = b[:maxNum]
     return correction
+
+def getterms():
+    f = json.load(open(termsPath, 'r'))
+    lis = []
+    for i in f["terms"]:
+        for l in i:
+            if l not in lis:
+                lis.append(l)
+                #print(l)
+    return lis
+
+
+
 
 
 def check(terms):
@@ -77,10 +106,12 @@ def check(terms):
             l.append(q)
     return l
 
-# print(getCorrection(["operot"]))
+#print(getCorrection(["operoting"]))
 # print(getCorrection(["lienar"]))
 # print(check(['text']))
 # print("operot lienar")
 
 # print(weightedEditDistance('neihgbor','neighbour'))
 # print(weightedEditDistance('levenshtein','levels'))
+#print(weightedEditDistance('operot','operat'))
+#print(weightedEditDistance('operoting','operating'))
