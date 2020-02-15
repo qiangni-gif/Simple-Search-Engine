@@ -17,7 +17,7 @@ def extractQueryTerms(query):
     w = {}
     query = wc.iic.db.nltk.word_tokenize(query)
     query = wc.iic.db.stopWordRemoval(query)
-    query = wc.iic.db.wordStemming(query)
+    # query = wc.iic.db.wordStemming(query)
     query = wc.iic.db.normalization(query)
     return query
 
