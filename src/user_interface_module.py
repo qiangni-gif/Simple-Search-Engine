@@ -265,6 +265,7 @@ class Ui_mainWindow(object):
                 self.tableWidget.setRowCount(0)
                 self.tableWidget.setColumnCount(4)
                 self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
+                terms = db.wordStemming(terms)# word stemming after spelling correction
                 result = vr.comput_score(terms)
                 if result != None:
                     for i in result:
