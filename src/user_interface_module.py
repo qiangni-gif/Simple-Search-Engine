@@ -347,7 +347,7 @@ class MyMessageBox(QtWidgets.QMessageBox):
         self.setSizeGripEnabled (True)
         self.setWindowTitle('Spelling Correction')
         self.setText("Please select one of the word below to replace "+lis[0]+
-                     "Or press cancel to remove"+lis[0]+"from search query")
+                     " Or press cancel to remove "+lis[0]+" from search query")
         
         self.addButton (
             QtWidgets.QPushButton('Accept'), 
