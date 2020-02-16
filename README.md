@@ -6,4 +6,5 @@
 ```pip install pyqt5``` ui use pyqt5\
 ```pip install numpy``` edit distance calculation use numpy
 ## Run the file user_interface_module.py to start search engine
-## files under output folder are important
+## Files under output folder are important
+```All the sources that we found have been added into corresponding modules as comments```
