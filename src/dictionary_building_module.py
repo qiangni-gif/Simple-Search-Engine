@@ -9,11 +9,9 @@ import nltk
 import json
 import importlib
 import string
-from langdetect import detect,DetectorFactory
 from collections import Counter
-import re
 importlib.reload(cp)
-nltk.download('punkt')
+#nltk.download('punkt')
 #nltk.download('wordnet')
 nltk.download('stopwords')
 
@@ -104,16 +102,16 @@ def tokenize(data):
 # In[87]:
 
 
-def removeFrenchWords(desc):
-    newTokens = []
-    newDesc = ""
-   # desctemp = re.sub('[/]', '', desc)
-    #desctemp = desc.replace('/','')
-    #print(desctemp)
-    for d in filter(None, desctemp.split('.')):
-        if detect(d) == 'en':
-            newDesc = newDesc+""+d
-    return newDesc
+# def removeFrenchWords(desc):
+#     newTokens = []
+#     newDesc = ""
+#    # desctemp = re.sub('[/]', '', desc)
+#     #desctemp = desc.replace('/','')
+#     #print(desctemp)
+#     for d in filter(None, desctemp.split('.')):
+#         if detect(d) == 'en':
+#             newDesc = newDesc+""+d
+#     return newDesc
 
 
 # In[88]:

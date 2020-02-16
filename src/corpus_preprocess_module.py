@@ -9,7 +9,7 @@ import os
 import json
 #conda install -c conda-forge langdetect
 # with anaconda 3 envir
-from langdetect import detect
+#from langdetect import detect
 
 
 # In[41]:
