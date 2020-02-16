@@ -4,6 +4,6 @@
 ```pip install beautifulsoup4``` for Windows\
 ```pip install importlib``` some modules use importlib.repload(module)\
 ```pip install pyqt5``` ui use pyqt5\
-```pip install numpy``` 
-## Run the files user_interface_module.py start search engine
+```pip install numpy``` edit distance calculation use numpy
+## Run the file user_interface_module.py to start search engine
 ## files under output folder are important
