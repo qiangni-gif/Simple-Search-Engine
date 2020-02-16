@@ -102,16 +102,16 @@ def tokenize(data):
 # In[87]:
 
 
-def removeFrenchWords(desc):
-    newTokens = []
-    newDesc = ""
-   # desctemp = re.sub('[/]', '', desc)
-    #desctemp = desc.replace('/','')
-    #print(desctemp)
-    for d in filter(None, desctemp.split('.')):
-        if detect(d) == 'en':
-            newDesc = newDesc+""+d
-    return newDesc
+# def removeFrenchWords(desc):
+#     newTokens = []
+#     newDesc = ""
+#    # desctemp = re.sub('[/]', '', desc)
+#     #desctemp = desc.replace('/','')
+#     #print(desctemp)
+#     for d in filter(None, desctemp.split('.')):
+#         if detect(d) == 'en':
+#             newDesc = newDesc+""+d
+#     return newDesc
 
 
 # In[88]:
