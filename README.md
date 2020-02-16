@@ -6,4 +6,4 @@
 ```pip install pyqt5``` ui use pyqt5\
 ```pip install numpy``` 
 ## Run the files user_interface_module.py start search engine
-## OTHER MODULE, FOR EXMAPLE THE ONE FOR UI 
+## files under output folder are important
