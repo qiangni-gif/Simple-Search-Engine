@@ -424,7 +424,7 @@ def rebuild():
     reBuildFlag = False
     print("done....")
 
-## setting of the stopword removal, stemming, normalization is no by defult
+## setting of the stopword removal, stemming, normalization is on by defult
 def main():
     #setup corpus, index, terms, and weighted index when open up search engine
     #print("corpus preprocessing....")
