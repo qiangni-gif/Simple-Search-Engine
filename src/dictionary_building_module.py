@@ -24,7 +24,7 @@ stopWordFlag = True
 wordStemmingFlag = True
 normalizationFlag = True
 ps = nltk.stem.PorterStemmer()
-DetectorFactory.seed = 0
+#DetectorFactory.seed = 0
 #https://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string
 #https://stackoverflow.com/questions/1254370/reimport-a-module-in-python-while-interactive
 #https://pythonprogramming.net/stemming-nltk-tutorial/
