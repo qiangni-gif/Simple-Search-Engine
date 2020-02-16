@@ -9,11 +9,9 @@ import nltk
 import json
 import importlib
 import string
-from langdetect import detect,DetectorFactory
 from collections import Counter
-import re
 importlib.reload(cp)
-nltk.download('punkt')
+#nltk.download('punkt')
 #nltk.download('wordnet')
 nltk.download('stopwords')
 
