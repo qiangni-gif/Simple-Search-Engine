@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[122]:
+# In[130]:
 
 
 from bs4 import BeautifulSoup as bs
@@ -9,7 +9,7 @@ import os
 import json
 
 
-# In[123]:
+# In[131]:
 
 
 rssPath = '../reutersRss/reuters21578'
@@ -18,7 +18,7 @@ dataStorage = '../output/reuterStorage.json'
 #https://stackoverflow.com/questions/15863751/extracting-body-tags-from-smg-file-beautiful-soup-and-python
 
 
-# In[128]:
+# In[138]:
 
 
 def preProcess(dataPath):
@@ -42,9 +42,9 @@ def preProcess(dataPath):
                         container['title'] = 'NO_TITLE'
                     topic = s.find('topics')
                     if not topic is None and topic.text:
-                        container['topic'] = topic.text
+                        container['topic'] = [t.text for t in topic.find_all('d')]
                     else:
-                         container['topic'] = 'NO_TOPIC'
+                         container['topic'] = ['NO_TOPIC']
                     body = s.find('body')
                     if not body is None and body.text:
                         # there is " x " quotation in the body. May need to think about it
@@ -56,17 +56,11 @@ def preProcess(dataPath):
     return corpus
 
 
-# In[129]:
+# In[139]:
 
 
 def getCorpus():
     data = preProcess(rssPath)
     with open(dataStorage,'w') as f:
         json.dump(data, f, sort_keys=True, indent=4,ensure_ascii=False)
-
-
-# In[ ]:
-
-
-
 
