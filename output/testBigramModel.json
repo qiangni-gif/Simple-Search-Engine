@@ -1,0 +1,2945 @@
+{
+    "'ll": {
+        "reducing": 0.5
+    },
+    "'m": {
+        "quite": 1.0
+    },
+    "'s": {
+        "Dow": 0.16666666666666666,
+        "United": 0.25,
+        "heavy": 1.0,
+        "largest": 0.5,
+        "major": 0.25,
+        "ratio": 1.0,
+        "removal": 0.25,
+        "shareholders": 1.0,
+        "stock": 0.06666666666666667
+    },
+    "'well": {
+        "'s": 0.07692307692307693
+    },
+    "0.5": {
+        "pct": 0.058823529411764705
+    },
+    "0.6": {
+        "0.7": 1.0
+    },
+    "0.7": {
+        "pct": 0.058823529411764705
+    },
+    "0.8": {
+        "1.2": 1.0
+    },
+    "1,200": {
+        "1985": 1.0
+    },
+    "1,700": {
+        "cases": 1.0
+    },
+    "1-3/8": {
+        "lower": 0.25
+    },
+    "1.125": {
+        "pct": 0.058823529411764705
+    },
+    "1.2": {
+        "pct": 0.058823529411764705
+    },
+    "10-year": {
+        "rescheduling": 1.0
+    },
+    "100": {
+        "pct": 0.058823529411764705
+    },
+    "100-26/32": {
+        "101-3/32": 1.0
+    },
+    "100-4/32": {
+        "today": 0.16666666666666666
+    },
+    "101-3/32": {
+        "created": 1.0
+    },
+    "102": {
+        "June": 0.2
+    },
+    "12": {
+        "years": 0.1111111111111111
+    },
+    "125": {
+        "mln": 0.125
+    },
+    "15": {
+        "pct": 0.058823529411764705
+    },
+    "160,253": {
+        "emplyees": 1.0
+    },
+    "167.25": {
+        "dlrs": 0.07692307692307693
+    },
+    "18.50": {
+        "dlrs": 0.07692307692307693
+    },
+    "181": {
+        "miln": 1.0
+    },
+    "19-3/8": {
+        "second": 0.5
+    },
+    "19-year-old": {
+        "man": 1.0
+    },
+    "190": {
+        "dlrs": 0.07692307692307693
+    },
+    "1928": {
+        "Replacing": 0.5
+    },
+    "1982": {
+        "women": 0.5
+    },
+    "1985": {
+        "Reuter": 0.09090909090909091
+    },
+    "1986": {
+        "52.2": 0.5
+    },
+    "1987-89": {
+        "accord": 1.0
+    },
+    "2,100": {
+        "dlrs": 0.07692307692307693
+    },
+    "2-1/8": {
+        "Ronald": 1.0
+    },
+    "2.5": {
+        "1.125": 1.0
+    },
+    "2.85": {
+        "pct": 0.11764705882352941
+    },
+    "20": {
+        "54": 1.0
+    },
+    "200,000": {
+        "U.S.": 0.06666666666666667
+    },
+    "220": {
+        "dlr": 0.2
+    },
+    "225": {
+        "mln": 0.125
+    },
+    "235": {
+        "dlr": 0.2
+    },
+    "25": {
+        "pct": 0.058823529411764705
+    },
+    "287": {
+        "mln": 0.125
+    },
+    "3-1/2": {
+        "month": 0.5
+    },
+    "3.5": {
+        "billion": 0.5
+    },
+    "300": {
+        "million": 1.0,
+        "mln": 0.125
+    },
+    "33": {
+        "pct": 0.058823529411764705
+    },
+    "371": {
+        "mln": 0.125
+    },
+    "4.20": {
+        "pct": 0.058823529411764705
+    },
+    "4.36": {
+        "pct": 0.058823529411764705
+    },
+    "4.49": {
+        "pct": 0.058823529411764705
+    },
+    "40": {
+        "percent": 1.0
+    },
+    "42": {
+        "pct": 0.058823529411764705
+    },
+    "5": {
+        "billion": 0.5
+    },
+    "5,000": {
+        "dlrs": 0.07692307692307693
+    },
+    "50": {
+        "pct": 0.058823529411764705
+    },
+    "52.2": {
+        "mln": 0.125
+    },
+    "54": {
+        "years": 0.1111111111111111
+    },
+    "75": {
+        "mln": 0.125
+    },
+    "85": {
+        "pct": 0.058823529411764705
+    },
+    "99-6/32": {
+        "find": 1.0
+    },
+    "AIDS": {
+        "vaccinating": 1.0,
+        "vaccine": 0.4,
+        "virus": 0.6666666666666666
+    },
+    "Africa": {
+        "'s": 0.07692307692307693,
+        "end": 1.0,
+        "focusing": 1.0,
+        "today": 0.16666666666666666
+    },
+    "African": {
+        "access": 1.0,
+        "country": 0.5,
+        "nations": 0.6666666666666666
+    },
+    "Also": {
+        "included": 1.0,
+        "key": 0.5,
+        "taken": 0.3333333333333333
+    },
+    "Although": {
+        "market": 0.08333333333333333
+    },
+    "American": {
+        "officials": 0.3333333333333333
+    },
+    "Among": {
+        "priorities": 1.0
+    },
+    "Army": {
+        "Institute": 1.0,
+        "doctors": 1.0
+    },
+    "Atlanta": {
+        "said": 0.020833333333333332
+    },
+    "Baker": {
+        "Democratic": 1.0,
+        "several": 1.0,
+        "trade": 0.5
+    },
+    "Baldrige": {
+        "Among": 1.0
+    },
+    "Bank": {
+        "coordination": 1.0
+    },
+    "Barney": {
+        "Harris": 1.0
+    },
+    "Benson": {
+        "charged": 1.0,
+        "former": 1.0,
+        "pleaded": 1.0
+    },
+    "Bentsen": {
+        "Texas": 0.3333333333333333
+    },
+    "Boeing": {
+        "Co": 0.25
+    },
+    "Brian": {
+        "Mulroney": 1.0,
+        "Singer": 0.3333333333333333
+    },
+    "Brothers": {
+        "Inc": 0.2
+    },
+    "Bush": {
+        "Secretary": 0.25
+    },
+    "COr": {
+        "said": 0.020833333333333332
+    },
+    "Canada": {
+        "establish": 0.5,
+        "keep": 1.0,
+        "seeking": 1.0
+    },
+    "Canadian": {
+        "Foreign": 1.0,
+        "officials": 0.6666666666666666
+    },
+    "Carolina": {
+        "Inc": 0.2
+    },
+    "Carroll": {
+        "McEntee": 1.0
+    },
+    "Centers": {
+        "Disease": 1.0
+    },
+    "Cherney": {
+        "said": 0.020833333333333332
+    },
+    "Christopher": {
+        "Dodd": 1.0
+    },
+    "Clark": {
+        "today": 0.16666666666666666,
+        "winding": 1.0
+    },
+    "Co": {
+        "Boeing": 0.5,
+        "effective": 0.3333333333333333
+    },
+    "Coca-Cola": {
+        "Co": 0.25
+    },
+    "Cochran": {
+        "Murray": 0.5
+    },
+    "Commenting": {
+        "first": 0.25
+    },
+    "Commerce": {
+        "Secretary": 0.25
+    },
+    "Connecticut": {
+        "Lloyd": 1.0
+    },
+    "Control": {
+        "Atlanta": 1.0
+    },
+    "Craig": {
+        "Sloane": 0.3333333333333333
+    },
+    "Dean": {
+        "Witter": 1.0
+    },
+    "Debt": {
+        "payments": 0.3333333333333333
+    },
+    "Democratic": {
+        "Sens": 1.0
+    },
+    "Disease": {
+        "Control": 1.0
+    },
+    "Doctors": {
+        "Centers": 1.0
+    },
+    "Dodd": {
+        "Connecticut": 1.0
+    },
+    "Dow": {
+        "Jones": 0.5,
+        "stock": 0.06666666666666667
+    },
+    "Dr.": {
+        "Howard": 1.0,
+        "Robert": 1.0
+    },
+    "Empire": {
+        "Carolina": 1.0,
+        "Reuter": 0.09090909090909091
+    },
+    "England": {
+        "Journal": 0.5
+    },
+    "Everyone": {
+        "expecting": 1.0
+    },
+    "Exchange": {
+        "Wall": 0.5
+    },
+    "February": {
+        "U.S.": 0.06666666666666667
+    },
+    "Fed": {
+        "funds": 0.2
+    },
+    "Ford": {
+        "Motor": 1.0
+    },
+    "Foreign": {
+        "Secretary": 0.25
+    },
+    "Friday": {
+        "June": 0.2,
+        "expected": 0.2,
+        "show": 0.5
+    },
+    "Fund/World": {
+        "Bank": 1.0
+    },
+    "Futures": {
+        "analyst": 0.3333333333333333
+    },
+    "Gallatin": {
+        "managing": 1.0,
+        "noted": 1.0,
+        "said": 0.020833333333333332
+    },
+    "George": {
+        "Bush": 1.0,
+        "Mitchell": 0.5,
+        "Shultz": 1.0
+    },
+    "Gibbs": {
+        "said": 0.041666666666666664
+    },
+    "Hanover": {
+        "Futures": 0.5
+    },
+    "Harris": {
+        "Upham": 1.0
+    },
+    "House": {
+        "statement": 0.5,
+        "task": 0.3333333333333333
+    },
+    "Howard": {
+        "Ory": 1.0
+    },
+    "However": {
+        "sufficient": 1.0
+    },
+    "Ilmar": {
+        "Martens": 0.25
+    },
+    "Inc": {
+        "Coca-Cola": 0.5,
+        "marketed": 1.0,
+        "sole": 1.0,
+        "toy": 1.0
+    },
+    "Inco": {
+        "'s": 0.07692307692307693,
+        "Ltd": 0.25,
+        "Owens-Illinois": 0.5,
+        "closed": 0.25,
+        "dropped": 0.5,
+        "may": 0.25,
+        "non-Communist": 0.5,
+        "stock": 0.06666666666666667,
+        "struggled": 0.5
+    },
+    "Industrial": {
+        "production": 0.3333333333333333
+    },
+    "Institute": {
+        "Research": 1.0
+    },
+    "Instruments": {
+        "Inc": 0.2,
+        "common": 0.5
+    },
+    "International": {
+        "Monetary": 1.0
+    },
+    "Investors": {
+        "maintain": 1.0
+    },
+    "James": {
+        "Baker": 0.3333333333333333
+    },
+    "Jim": {
+        "Rozich": 0.3333333333333333
+    },
+    "Joe": {
+        "Clark": 0.5
+    },
+    "Jones": {
+        "industrial": 0.3333333333333333,
+        "industrials": 0.5
+    },
+    "Journal": {
+        "Medicine": 1.0,
+        "selects": 0.5
+    },
+    "June": {
+        "bond": 0.3333333333333333,
+        "bonds": 0.5,
+        "contract": 0.6666666666666666
+    },
+    "Karen": {
+        "Gibbs": 0.5
+    },
+    "Ken": {
+        "Cherney": 0.5
+    },
+    "Last": {
+        "week": 0.3333333333333333
+    },
+    "Lehman": {
+        "Brothers": 1.0
+    },
+    "Like": {
+        "non-convertible": 1.0
+    },
+    "Lloyd": {
+        "Bentsen": 1.0
+    },
+    "Ltd": {
+        "said": 0.041666666666666664
+    },
+    "Maine": {
+        "Yesterday": 1.0
+    },
+    "Malcolm": {
+        "Baldrige": 1.0
+    },
+    "Manhattan": {
+        "federal": 0.3333333333333333
+    },
+    "Manufacturers": {
+        "Hanover": 1.0
+    },
+    "Martens": {
+        "Walwyn": 0.5,
+        "although": 0.5
+    },
+    "Mason": {
+        "Benson": 0.3333333333333333
+    },
+    "McEntee": {
+        "McGinley": 1.0
+    },
+    "McGinley": {
+        "Futures": 0.5
+    },
+    "Medicine": {
+        "also": 0.16666666666666666,
+        "significant": 1.0
+    },
+    "Minister": {
+        "Brian": 0.5
+    },
+    "Mitchell": {
+        "Maine": 1.0,
+        "urged": 1.0
+    },
+    "Monetary": {
+        "Fund/World": 1.0
+    },
+    "Moreover": {
+        "protection": 0.5
+    },
+    "Motor": {
+        "COr": 1.0
+    },
+    "Moynihan": {
+        "New": 0.3333333333333333
+    },
+    "Mulroney": {
+        "Clark": 0.5
+    },
+    "Murray": {
+        "Ltd": 0.25
+    },
+    "Nations": {
+        "special": 1.0
+    },
+    "New": {
+        "England": 1.0,
+        "York": 1.0
+    },
+    "Nickel": {
+        "analyst": 0.16666666666666666
+    },
+    "Ory": {
+        "found": 0.5
+    },
+    "Ottawa": {
+        "next": 0.3333333333333333
+    },
+    "Owens-Illinois": {
+        "Inc": 0.2
+    },
+    "Patrick": {
+        "Moynihan": 1.0
+    },
+    "Physicians": {
+        "Walter": 1.0
+    },
+    "President": {
+        "George": 0.3333333333333333,
+        "Reagan": 0.2
+    },
+    "Prime": {
+        "Minister": 1.0
+    },
+    "Reagan": {
+        "Prime": 1.0,
+        "administration": 0.75,
+        "prepared": 1.0
+    },
+    "Redfield": {
+        "report": 0.5
+    },
+    "Reed": {
+        "Army": 0.5
+    },
+    "Replacing": {
+        "Inco": 0.05555555555555555
+    },
+    "Research": {
+        "said": 0.020833333333333332
+    },
+    "Retail": {
+        "sales": 0.16666666666666666
+    },
+    "Robert": {
+        "Redfield": 1.0
+    },
+    "Ronald": {
+        "Gallatin": 0.3333333333333333
+    },
+    "Rozich": {
+        "rally": 0.5,
+        "said": 0.041666666666666664
+    },
+    "Secretary": {
+        "James": 1.0,
+        "Joe": 1.0,
+        "Malcolm": 1.0,
+        "State": 1.0
+    },
+    "Sens": {
+        "Patrick": 1.0
+    },
+    "September": {
+        "series": 1.0
+    },
+    "Shearson": {
+        "Lehman": 1.0,
+        "official": 1.0,
+        "originated": 1.0,
+        "said": 0.020833333333333332
+    },
+    "Shultz": {
+        "Commerce": 1.0
+    },
+    "Singer": {
+        "higher": 1.0,
+        "said": 0.041666666666666664
+    },
+    "Sloane": {
+        "Treasury": 0.5,
+        "said": 0.041666666666666664
+    },
+    "Smith": {
+        "Barney": 1.0
+    },
+    "Speaking": {
+        "news": 1.0
+    },
+    "Specifically": {
+        "team": 0.5
+    },
+    "State": {
+        "George": 0.3333333333333333
+    },
+    "States": {
+        "Canada": 0.3333333333333333,
+        "administration": 0.25,
+        "five-year": 1.0
+    },
+    "Stock": {
+        "Exchange": 0.5
+    },
+    "Stodgell": {
+        "Cochran": 0.5
+    },
+    "Street": {
+        "Journal": 0.25
+    },
+    "Texas": {
+        "George": 0.3333333333333333,
+        "Instruments": 1.0
+    },
+    "Thursday": {
+        "industrial": 0.3333333333333333
+    },
+    "Toronto": {
+        "Stock": 0.5
+    },
+    "Treasury": {
+        "Secretary": 0.25,
+        "bond": 0.3333333333333333
+    },
+    "U.S.": {
+        "Army": 0.5,
+        "action": 0.25,
+        "assistance": 1.0,
+        "bilateral": 1.0,
+        "dlr": 0.2,
+        "dlrs": 0.07692307692307693,
+        "economic": 0.2222222222222222,
+        "facilities": 1.0,
+        "food": 1.0,
+        "goal": 1.0,
+        "interest": 0.25,
+        "private": 0.25,
+        "retail": 0.25
+    },
+    "U.S.-Canada": {
+        "consultation": 1.0
+    },
+    "United": {
+        "Nations": 1.0,
+        "States": 1.0
+    },
+    "Upham": {
+        "analyst": 0.16666666666666666
+    },
+    "Vice": {
+        "President": 0.5
+    },
+    "Wall": {
+        "Street": 0.5
+    },
+    "Walter": {
+        "Reed": 1.0
+    },
+    "Walwyn": {
+        "Stodgell": 0.5
+    },
+    "Washington": {
+        "said": 0.020833333333333332
+    },
+    "White": {
+        "House": 1.0
+    },
+    "Witter": {
+        "analyst": 0.16666666666666666
+    },
+    "Yesterday": {
+        "held": 0.3333333333333333
+    },
+    "York": {
+        "Christopher": 1.0
+    },
+    "able": {
+        "fill": 1.0
+    },
+    "access": {
+        "world": 0.3333333333333333
+    },
+    "accord": {
+        "includes": 1.0
+    },
+    "account": {
+        "U.S.": 0.06666666666666667
+    },
+    "acid": {
+        "rain": 1.0
+    },
+    "action": {
+        "Canadian": 0.3333333333333333,
+        "program": 0.3333333333333333,
+        "recommended": 1.0,
+        "reducing": 0.5
+    },
+    "active": {
+        "trading": 0.2
+    },
+    "added": {
+        "Retail": 1.0,
+        "move": 0.3333333333333333
+    },
+    "addition": {
+        "federal": 0.3333333333333333
+    },
+    "address": {
+        "Africa": 0.25
+    },
+    "adjustment": {
+        "reform": 0.25
+    },
+    "administration": {
+        "acid": 0.5,
+        "force": 0.25,
+        "responding": 1.0,
+        "take": 1.0
+    },
+    "advance": {
+        "Gallatin": 0.3333333333333333
+    },
+    "age": {
+        "effect": 1.0,
+        "groups": 1.0
+    },
+    "ago": {
+        "conversion": 1.0
+    },
+    "agreed": {
+        "creditor": 1.0
+    },
+    "agreements": {
+        "sub-Saharan": 0.3333333333333333
+    },
+    "aid": {
+        "order": 0.5,
+        "stress": 1.0
+    },
+    "aims": {
+        "reduce": 0.5
+    },
+    "allows": {
+        "investors": 0.25
+    },
+    "already": {
+        "easing": 1.0
+    },
+    "also": {
+        "concern": 1.0,
+        "expected": 0.2,
+        "fined": 1.0,
+        "found": 0.5,
+        "said": 0.020833333333333332,
+        "throws": 1.0
+    },
+    "although": {
+        "added": 0.3333333333333333
+    },
+    "analyst": {
+        "Brian": 0.5,
+        "Craig": 1.0,
+        "Ilmar": 0.5,
+        "Jim": 1.0,
+        "Karen": 1.0
+    },
+    "analysts": {
+        "said": 0.041666666666666664
+    },
+    "announced": {
+        "establishment": 1.0
+    },
+    "apparent": {
+        "persists": 1.0
+    },
+    "apparently": {
+        "exposed": 1.0
+    },
+    "approached": {
+        "top": 0.3333333333333333
+    },
+    "area": {
+        "gradually": 1.0
+    },
+    "around": {
+        "18.50": 1.0
+    },
+    "asked": {
+        "turn": 1.0
+    },
+    "assistance": {
+        "programs": 0.3333333333333333
+    },
+    "auction": {
+        "dividend": 0.2,
+        "money": 0.2
+    },
+    "average": {
+        "payment": 1.0
+    },
+    "back": {
+        "little": 1.0,
+        "toward": 0.5
+    },
+    "bad": {
+        "market": 0.08333333333333333
+    },
+    "bandwagon": {
+        "yet": 1.0
+    },
+    "banks": {
+        "money": 0.2,
+        "reschedule": 1.0
+    },
+    "barrel": {
+        "said": 0.020833333333333332
+    },
+    "become": {
+        "apparent": 1.0
+    },
+    "begun": {
+        "working": 1.0
+    },
+    "belief": {
+        "held": 0.3333333333333333
+    },
+    "better": {
+        "African": 0.25,
+        "mechanism": 1.0,
+        "rewarding": 1.0
+    },
+    "bilateral": {
+        "aid": 0.5
+    },
+    "billion": {
+        "U.S.": 0.06666666666666667,
+        "dlr": 0.2
+    },
+    "birth": {
+        "control": 1.0
+    },
+    "bit": {
+        "Singer": 0.3333333333333333
+    },
+    "bond": {
+        "contract": 0.3333333333333333,
+        "futures": 0.4
+    },
+    "bonds": {
+        "100-26/32": 1.0,
+        "break": 0.3333333333333333,
+        "closed": 0.25,
+        "right": 1.0
+    },
+    "boost": {
+        "debt": 0.1111111111111111
+    },
+    "borrowing": {
+        "justified": 1.0
+    },
+    "break": {
+        "3-1/2": 1.0,
+        "chart": 0.5,
+        "top": 0.3333333333333333
+    },
+    "breaking": {
+        "trading": 0.2
+    },
+    "broad": {
+        "range": 0.16666666666666666
+    },
+    "budget": {
+        "account": 1.0
+    },
+    "bullish": {
+        "bandwagon": 1.0
+    },
+    "burden": {
+        "said": 0.020833333333333332
+    },
+    "burning": {
+        "coal": 1.0
+    },
+    "business": {
+        "Empire": 0.5
+    },
+    "buy": {
+        "shares": 0.5
+    },
+    "buyers": {
+        "first": 0.25
+    },
+    "ca": {
+        "n't": 0.25
+    },
+    "called": {
+        "dividend": 0.2,
+        "new": 0.2,
+        "separate": 1.0
+    },
+    "came": {
+        "pressure": 0.3333333333333333
+    },
+    "cancer": {
+        "1982": 1.0,
+        "40": 1.0,
+        "may": 0.25,
+        "ovary": 1.0,
+        "researchers": 1.0
+    },
+    "cap": {
+        "3.5": 1.0
+    },
+    "case": {
+        "report": 0.5
+    },
+    "cases": {
+        "ovarian": 0.25
+    },
+    "charged": {
+        "demanding": 1.0
+    },
+    "charges": {
+        "conspiracy": 1.0
+    },
+    "chart": {
+        "gap": 0.5,
+        "support": 0.5
+    },
+    "checks": {
+        "distributed": 0.5
+    },
+    "chief": {
+        "operating": 1.0
+    },
+    "cleaner": {
+        "ways": 1.0
+    },
+    "closed": {
+        "1-3/8": 0.5,
+        "100-4/32": 1.0,
+        "167.25": 1.0
+    },
+    "club": {
+        "nations": 0.3333333333333333
+    },
+    "coal": {
+        "issue": 0.3333333333333333
+    },
+    "come": {
+        "expected": 0.2
+    },
+    "commisisons": {
+        "condition": 1.0
+    },
+    "commitment": {
+        "made": 1.0
+    },
+    "common": {
+        "closed": 0.25,
+        "stock": 0.06666666666666667
+    },
+    "companies": {
+        "banks": 0.5
+    },
+    "company": {
+        "'s": 0.15384615384615385
+    },
+    "compared": {
+        "1,200": 1.0
+    },
+    "complicate": {
+        "search": 1.0
+    },
+    "concept": {
+        "auction": 0.5,
+        "said": 0.020833333333333332
+    },
+    "concern": {
+        "Manufacturers": 1.0
+    },
+    "concerning": {
+        "ultimate": 1.0
+    },
+    "condition": {
+        "business": 1.0
+    },
+    "conference": {
+        "seaga": 0.3333333333333333
+    },
+    "consensus": {
+        "estimate": 1.0
+    },
+    "conspiracy": {
+        "tax": 0.5
+    },
+    "consultation": {
+        "also": 0.16666666666666666
+    },
+    "contraceptive": {
+        "use": 0.3333333333333333,
+        "used": 0.5
+    },
+    "contraceptives": {
+        "ends": 1.0,
+        "market": 0.08333333333333333,
+        "move": 0.3333333333333333
+    },
+    "contract": {
+        "crude": 0.5,
+        "ease": 1.0,
+        "failed": 1.0
+    },
+    "control": {
+        "pills": 0.6666666666666666
+    },
+    "conversion": {
+        "feature": 1.0
+    },
+    "convertible": {
+        "concept": 0.5,
+        "money": 0.2
+    },
+    "coordination": {
+        "process": 1.0
+    },
+    "corporate": {
+        "involvement": 0.5,
+        "tax": 0.5
+    },
+    "costs": {
+        "Shearson": 0.2
+    },
+    "could": {
+        "complicate": 1.0,
+        "key": 0.5,
+        "modified": 1.0
+    },
+    "countries": {
+        "'s": 0.07692307692307693,
+        "negotiate": 1.0
+    },
+    "country": {
+        "establish": 0.5,
+        "probably": 0.5
+    },
+    "course": {
+        "pull": 1.0
+    },
+    "court": {
+        "year": 0.125
+    },
+    "covered": {
+        "short": 1.0
+    },
+    "cowpox": {
+        "could": 0.3333333333333333
+    },
+    "created": {
+        "Friday": 0.3333333333333333
+    },
+    "creditor": {
+        "banks": 0.5
+    },
+    "crude": {
+        "oil": 0.4
+    },
+    "current": {
+        "50": 1.0
+    },
+    "cut": {
+        "2.85": 0.5
+    },
+    "data": {
+        "week": 0.3333333333333333
+    },
+    "day": {
+        "jail": 1.0
+    },
+    "debt": {
+        "300": 0.5,
+        "burden": 1.0,
+        "futures": 0.4,
+        "paris": 1.0,
+        "payments": 0.3333333333333333,
+        "reduce": 0.5,
+        "undertake": 1.0,
+        "would": 0.2
+    },
+    "declining": {
+        "incidence": 1.0
+    },
+    "defrauding": {
+        "company": 0.3333333333333333
+    },
+    "demand": {
+        "offering": 1.0,
+        "saving": 1.0
+    },
+    "demanding": {
+        "kickbacks": 1.0
+    },
+    "determining": {
+        "whether": 0.5
+    },
+    "developed": {
+        "pox-like": 1.0
+    },
+    "development": {
+        "Reuter": 0.09090909090909091,
+        "statement": 0.5
+    },
+    "died": {
+        "receiving": 1.0
+    },
+    "direction": {
+        "addition": 1.0,
+        "crude": 0.5
+    },
+    "director": {
+        "Shearson": 0.2
+    },
+    "discovery": {
+        "could": 0.3333333333333333
+    },
+    "discussed": {
+        "length": 1.0
+    },
+    "discussions": {
+        "Treasury": 0.5
+    },
+    "disease": {
+        "died": 1.0,
+        "known": 1.0,
+        "said": 0.020833333333333332
+    },
+    "diseases": {
+        "Reuter": 0.09090909090909091
+    },
+    "disputes": {
+        "two": 0.3333333333333333
+    },
+    "distributed": {
+        "160,253": 1.0,
+        "employees": 1.0
+    },
+    "dividend": {
+        "four": 1.0,
+        "least": 1.0,
+        "preferred": 0.4,
+        "set": 0.3333333333333333
+    },
+    "dlr": {
+        "foreign": 0.5,
+        "issue": 0.3333333333333333,
+        "program": 0.3333333333333333,
+        "strike": 0.6666666666666666
+    },
+    "dlrs": {
+        "1986": 0.5,
+        "2-1/8": 1.0,
+        "Benson": 0.3333333333333333,
+        "compared": 1.0,
+        "distributed": 0.5,
+        "due": 0.5,
+        "first": 0.25,
+        "per": 0.5,
+        "previous": 0.5,
+        "represented": 1.0,
+        "year": 0.125
+    },
+    "doctors": {
+        "said": 0.020833333333333332
+    },
+    "dollars": {
+        "debt": 0.1111111111111111,
+        "said": 0.020833333333333332,
+        "seaga": 0.3333333333333333
+    },
+    "donor": {
+        "countries": 0.5
+    },
+    "dropped": {
+        "make": 0.25
+    },
+    "due": {
+        "1987-89": 1.0,
+        "next": 0.3333333333333333
+    },
+    "earlier": {
+        "reported": 0.25
+    },
+    "early": {
+        "quickly": 1.0
+    },
+    "earn": {
+        "way": 1.0
+    },
+    "earnings": {
+        "current": 1.0,
+        "fell": 0.5
+    },
+    "ease": {
+        "99-6/32": 1.0
+    },
+    "easing": {
+        "back": 0.5
+    },
+    "economic": {
+        "data": 1.0,
+        "growth": 1.0,
+        "performance": 0.5,
+        "programs": 0.3333333333333333,
+        "reform": 0.5,
+        "reforms": 1.0
+    },
+    "edward": {
+        "seaga": 0.3333333333333333
+    },
+    "effect": {
+        "probably": 0.5
+    },
+    "effective": {
+        "lowering": 1.0,
+        "tomorrow": 0.5
+    },
+    "efforts": {
+        "address": 1.0
+    },
+    "eight": {
+        "half": 1.0
+    },
+    "eliminate": {
+        "investment": 0.5
+    },
+    "employee": {
+        "2,100": 1.0
+    },
+    "employees": {
+        "U.S.": 0.06666666666666667
+    },
+    "emplyees": {
+        "average": 1.0
+    },
+    "enable": {
+        "African": 0.25
+    },
+    "end": {
+        "hunger": 1.0
+    },
+    "ends": {
+        "Moreover": 1.0
+    },
+    "epithelial": {
+        "ovarian": 0.5
+    },
+    "equally": {
+        "effective": 0.3333333333333333
+    },
+    "especially": {
+        "first": 0.25
+    },
+    "establish": {
+        "better": 0.3333333333333333,
+        "long-term": 0.2
+    },
+    "establishment": {
+        "long-term": 0.2
+    },
+    "estimate": {
+        "non-auto": 0.5
+    },
+    "estimated": {
+        "use": 0.3333333333333333
+    },
+    "evasion": {
+        "filing": 1.0
+    },
+    "even": {
+        "months": 0.5,
+        "pills": 0.3333333333333333
+    },
+    "every": {
+        "seven": 1.0
+    },
+    "evidence": {
+        "Reagan": 0.2,
+        "birth": 0.5
+    },
+    "exchange": {
+        "earnings": 0.3333333333333333
+    },
+    "existing": {
+        "International": 1.0
+    },
+    "exists": {
+        "regardless": 1.0
+    },
+    "expect": {
+        "earlier": 0.5
+    },
+    "expectations": {
+        "February": 1.0,
+        "would": 0.2
+    },
+    "expected": {
+        "Reagan": 0.2,
+        "lay": 1.0,
+        "show": 0.5,
+        "total": 1.0,
+        "wo": 1.0
+    },
+    "expecting": {
+        "strong": 1.0
+    },
+    "exposed": {
+        "AIDS": 0.2
+    },
+    "exposes": {
+        "people": 0.5
+    },
+    "facilities": {
+        "371": 1.0
+    },
+    "failed": {
+        "materialize": 1.0
+    },
+    "fallen": {
+        "due": 0.5
+    },
+    "false": {
+        "corporate": 0.5
+    },
+    "feature": {
+        "issue": 0.3333333333333333
+    },
+    "fed": {
+        "funds": 0.2
+    },
+    "federal": {
+        "court": 1.0,
+        "funds": 0.4
+    },
+    "fell": {
+        "200,000": 0.5
+    },
+    "figure": {
+        "market": 0.08333333333333333
+    },
+    "figures": {
+        "within": 0.5
+    },
+    "filing": {
+        "false": 1.0
+    },
+    "fill": {
+        "gap": 0.5
+    },
+    "financial": {
+        "analysts": 0.5
+    },
+    "financing": {
+        "Texas": 0.3333333333333333,
+        "costs": 1.0
+    },
+    "find": {
+        "support": 0.5
+    },
+    "findings": {
+        "reported": 0.25
+    },
+    "fined": {
+        "5,000": 1.0
+    },
+    "firm": {
+        "federal": 0.3333333333333333,
+        "oil": 0.2
+    },
+    "first": {
+        "2.85": 0.5,
+        "tranche": 1.0
+    },
+    "five": {
+        "ten": 1.0
+    },
+    "five-year": {
+        "5": 1.0
+    },
+    "flexibility": {
+        "U.S.": 0.06666666666666667
+    },
+    "focus": {
+        "better": 0.3333333333333333
+    },
+    "focusing": {
+        "heavily": 1.0
+    },
+    "food": {
+        "aid": 0.5
+    },
+    "force": {
+        "action": 0.25,
+        "called": 0.6666666666666666,
+        "set": 0.3333333333333333
+    },
+    "forecasts": {
+        "would": 0.2
+    },
+    "foreign": {
+        "debt": 0.1111111111111111,
+        "exchange": 1.0
+    },
+    "form": {
+        "disease": 0.3333333333333333
+    },
+    "former": {
+        "president": 1.0
+    },
+    "formulation": {
+        "oral": 0.2
+    },
+    "found": {
+        "oral": 0.2,
+        "various": 1.0
+    },
+    "four": {
+        "4.20": 1.0
+    },
+    "framework": {
+        "agreements": 1.0
+    },
+    "funds": {
+        "Reuter": 0.09090909090909091,
+        "already": 1.0,
+        "rate": 0.6
+    },
+    "futures": {
+        "break": 0.3333333333333333,
+        "came": 1.0,
+        "direction": 0.5,
+        "early": 1.0,
+        "put": 0.5
+    },
+    "gains": {
+        "figures": 1.0
+    },
+    "gap": {
+        "Gibbs": 0.5,
+        "June": 0.2
+    },
+    "give": {
+        "boost": 1.0
+    },
+    "goal": {
+        "U.S.": 0.06666666666666667
+    },
+    "good": {
+        "performance": 0.5
+    },
+    "government": {
+        "aims": 1.0
+    },
+    "grace": {
+        "period": 1.0
+    },
+    "gradually": {
+        "cut": 1.0
+    },
+    "groundwork": {
+        "summit": 1.0
+    },
+    "group": {
+        "led": 0.5
+    },
+    "groups": {
+        "highest": 1.0
+    },
+    "growth": {
+        "U.S.": 0.06666666666666667,
+        "policy": 1.0,
+        "year": 0.125
+    },
+    "guilty": {
+        "charges": 1.0
+    },
+    "half": {
+        "years": 0.1111111111111111
+    },
+    "healthy": {
+        "gains": 1.0
+    },
+    "heat": {
+        "Reagan": 0.2
+    },
+    "heavily": {
+        "economic": 0.1111111111111111
+    },
+    "heavy": {
+        "debt": 0.1111111111111111
+    },
+    "held": {
+        "discussions": 1.0,
+        "scientists": 0.5,
+        "talks": 1.0
+    },
+    "help": {
+        "provide": 0.5
+    },
+    "higher": {
+        "fed": 1.0
+    },
+    "highest": {
+        "risk": 0.5
+    },
+    "hold": {
+        "securities": 0.5
+    },
+    "holdings": {
+        "every": 1.0,
+        "sell": 1.0
+    },
+    "host": {
+        "diseases": 1.0
+    },
+    "humanitarian": {
+        "said": 0.020833333333333332
+    },
+    "hunger": {
+        "region": 1.0
+    },
+    "impact": {
+        "Inco": 0.05555555555555555,
+        "company": 0.3333333333333333
+    },
+    "implement": {
+        "United": 0.25
+    },
+    "impressed": {
+        "resiliency": 1.0
+    },
+    "impression": {
+        "movement": 0.5
+    },
+    "incentive": {
+        "economic": 0.1111111111111111
+    },
+    "incentives": {
+        "reinforce": 1.0
+    },
+    "incidence": {
+        "serious": 0.3333333333333333
+    },
+    "included": {
+        "4.36": 1.0
+    },
+    "includes": {
+        "grace": 1.0
+    },
+    "including": {
+        "Mitchell": 0.5,
+        "major": 0.25,
+        "need": 1.0
+    },
+    "increases": {
+        "0.5": 1.0
+    },
+    "increasing": {
+        "flexibility": 1.0
+    },
+    "index": {
+        "Friday": 0.3333333333333333,
+        "make": 0.25,
+        "representative": 0.5,
+        "said": 0.020833333333333332,
+        "since": 0.5,
+        "would": 0.2
+    },
+    "individuals": {
+        "institutions": 0.5
+    },
+    "industrial": {
+        "index": 0.09090909090909091,
+        "production": 0.3333333333333333
+    },
+    "industrials": {
+        "spokesman": 0.5
+    },
+    "institutions": {
+        "buy": 0.5
+    },
+    "insurance": {
+        "companies": 1.0
+    },
+    "intense": {
+        "demand": 0.5
+    },
+    "interaction": {
+        "AIDS": 0.2
+    },
+    "interest": {
+        "125": 1.0,
+        "break": 0.3333333333333333,
+        "rate": 0.2,
+        "rates": 1.0
+    },
+    "investment": {
+        "said": 0.020833333333333332
+    },
+    "investors": {
+        "Inco": 0.05555555555555555,
+        "including": 0.3333333333333333,
+        "redeem": 1.0
+    },
+    "involvement": {
+        "humanitarian": 1.0,
+        "kickback": 1.0
+    },
+    "issue": {
+        "convertible": 0.5,
+        "discussed": 1.0,
+        "new": 0.2
+    },
+    "issuer": {
+        "money": 0.2
+    },
+    "issues": {
+        "including": 0.3333333333333333
+    },
+    "jail": {
+        "involvement": 0.5
+    },
+    "jamaica": {
+        "'s": 0.07692307692307693,
+        "agreed": 1.0,
+        "obtained": 1.0,
+        "put": 0.5,
+        "reached": 1.0
+    },
+    "judge": {
+        "predict": 1.0
+    },
+    "jump": {
+        "bullish": 1.0
+    },
+    "jury": {
+        "still": 1.0
+    },
+    "justified": {
+        "economic": 0.1111111111111111
+    },
+    "keep": {
+        "heat": 1.0
+    },
+    "key": {
+        "debt": 0.1111111111111111,
+        "determining": 1.0
+    },
+    "kickback": {
+        "scheme": 1.0
+    },
+    "kickbacks": {
+        "sales": 0.16666666666666666
+    },
+    "known": {
+        "cowpox": 1.0
+    },
+    "largest": {
+        "nickel": 0.25
+    },
+    "last": {
+        "September": 1.0,
+        "time": 1.0,
+        "year": 0.25
+    },
+    "latter": {
+        "two": 0.3333333333333333
+    },
+    "lay": {
+        "groundwork": 1.0
+    },
+    "least": {
+        "level": 0.5
+    },
+    "led": {
+        "Dr.": 1.0
+    },
+    "length": {
+        "Baker": 0.3333333333333333
+    },
+    "less": {
+        "strongly": 1.0,
+        "wanted": 1.0
+    },
+    "level": {
+        "recent": 0.3333333333333333,
+        "specify": 1.0
+    },
+    "libor": {
+        "Last": 1.0
+    },
+    "likely": {
+        "spark": 0.5
+    },
+    "linked": {
+        "persistently": 1.0
+    },
+    "little": {
+        "bit": 1.0
+    },
+    "live": {
+        "commitment": 1.0
+    },
+    "long": {
+        "use": 0.3333333333333333
+    },
+    "long-term": {
+        "U.S.": 0.06666666666666667,
+        "impact": 0.25,
+        "protection": 0.5,
+        "structural": 1.0
+    },
+    "looking": {
+        "June": 0.2
+    },
+    "lower": {
+        "19-3/8": 0.5,
+        "nickel": 0.25
+    },
+    "lowering": {
+        "rate": 0.2
+    },
+    "made": {
+        "last": 0.25
+    },
+    "maintain": {
+        "holdings": 0.5
+    },
+    "major": {
+        "impact": 0.25,
+        "insurance": 1.0,
+        "trading": 0.2
+    },
+    "make": {
+        "index": 0.09090909090909091,
+        "major": 0.25
+    },
+    "maker": {
+        "today": 0.16666666666666666
+    },
+    "man": {
+        "apparently": 1.0
+    },
+    "manager": {
+        "Shearson": 0.2
+    },
+    "managers": {
+        "pension": 1.0
+    },
+    "managing": {
+        "director": 1.0
+    },
+    "market": {
+        "Inco": 0.05555555555555555,
+        "Sloane": 0.3333333333333333,
+        "analysts": 0.5,
+        "approached": 1.0,
+        "breaking": 1.0,
+        "equally": 1.0,
+        "expectations": 0.5,
+        "forecasts": 1.0,
+        "preferred": 0.6
+    },
+    "marketed": {
+        "three-part": 1.0
+    },
+    "markets": {
+        "promoted": 1.0
+    },
+    "materialize": {
+        "participants": 1.0
+    },
+    "maximum": {
+        "stock": 0.06666666666666667
+    },
+    "may": {
+        "nearing": 1.0,
+        "suddenly": 0.5,
+        "witness": 1.0
+    },
+    "mechanism": {
+        "settling": 1.0
+    },
+    "meetings": {
+        "American": 1.0
+    },
+    "member": {
+        "index": 0.09090909090909091
+    },
+    "milder": {
+        "protective": 1.0
+    },
+    "military": {
+        "tests": 1.0
+    },
+    "million": {
+        "dollars": 0.3333333333333333
+    },
+    "miln": {
+        "dlrs": 0.07692307692307693
+    },
+    "minister": {
+        "edward": 1.0
+    },
+    "mln": {
+        "dlr": 0.2,
+        "dlrs": 0.3076923076923077,
+        "dollars": 0.6666666666666666
+    },
+    "mobilized": {
+        "provide": 0.5
+    },
+    "modified": {
+        "protect": 0.5
+    },
+    "money": {
+        "financing": 0.5,
+        "managers": 1.0,
+        "market": 0.25
+    },
+    "month": {
+        "President": 0.5,
+        "trading": 0.2
+    },
+    "months": {
+        "reduces": 1.0,
+        "study": 1.0
+    },
+    "move": {
+        "age": 0.5,
+        "unlikely": 0.5
+    },
+    "movement": {
+        "United": 0.25,
+        "ca": 1.0
+    },
+    "much": {
+        "movement": 0.5
+    },
+    "n't": {
+        "bad": 1.0,
+        "judge": 1.0,
+        "think": 0.5
+    },
+    "nations": {
+        "debt": 0.1111111111111111,
+        "earn": 1.0,
+        "economic": 0.1111111111111111
+    },
+    "nearing": {
+        "top": 0.3333333333333333
+    },
+    "need": {
+        "United": 0.25
+    },
+    "needs": {
+        "run": 1.0
+    },
+    "negotiate": {
+        "existing": 1.0
+    },
+    "net": {
+        "earnings": 0.3333333333333333
+    },
+    "new": {
+        "convertible": 0.5,
+        "efforts": 1.0,
+        "evidence": 0.5,
+        "version": 1.0,
+        "wrinkle": 1.0
+    },
+    "news": {
+        "conference": 1.0
+    },
+    "next": {
+        "12": 1.0,
+        "month": 0.5,
+        "two": 0.3333333333333333
+    },
+    "nickel": {
+        "prices": 0.16666666666666666,
+        "producer": 0.3333333333333333
+    },
+    "non-Communist": {
+        "world": 0.3333333333333333
+    },
+    "non-auto": {
+        "sector": 0.4
+    },
+    "non-convertible": {
+        "money": 0.2
+    },
+    "noted": {
+        "original": 1.0
+    },
+    "novel": {
+        "type": 1.0
+    },
+    "numbers": {
+        "come": 1.0
+    },
+    "obligations": {
+        "300": 0.5
+    },
+    "obtained": {
+        "10-year": 1.0
+    },
+    "offer": {
+        "hold": 1.0
+    },
+    "offering": {
+        "unbelievable": 1.0
+    },
+    "officer": {
+        "Empire": 0.5
+    },
+    "official": {
+        "said": 0.020833333333333332
+    },
+    "officials": {
+        "part": 1.0,
+        "said": 0.041666666666666664
+    },
+    "oil": {
+        "prices": 0.6666666666666666,
+        "rally": 0.5
+    },
+    "one": {
+        "Dow": 0.16666666666666666,
+        "day": 1.0
+    },
+    "operating": {
+        "officer": 1.0
+    },
+    "oral": {
+        "contraceptive": 1.0,
+        "contraceptives": 1.0
+    },
+    "order": {
+        "bonds": 0.25,
+        "focus": 1.0
+    },
+    "original": {
+        "pricing": 1.0
+    },
+    "originated": {
+        "concept": 0.5,
+        "new": 0.2
+    },
+    "outlined": {
+        "U.S.": 0.06666666666666667
+    },
+    "ovarian": {
+        "cancer": 0.8
+    },
+    "ovary": {
+        "even": 0.5
+    },
+    "oversubscribed": {
+        "Like": 1.0
+    },
+    "paris": {
+        "club": 1.0
+    },
+    "part": {
+        "routine": 1.0
+    },
+    "participants": {
+        "sold": 0.5
+    },
+    "partner": {
+        "Canadian": 0.3333333333333333
+    },
+    "payment": {
+        "per": 0.5
+    },
+    "payments": {
+        "eight": 1.0,
+        "foreign": 0.5,
+        "year": 0.125
+    },
+    "pct": {
+        "25": 1.0,
+        "Dean": 1.0,
+        "Industrial": 1.0,
+        "added": 0.3333333333333333,
+        "area": 1.0,
+        "dividend": 0.6,
+        "intense": 1.0,
+        "interest": 0.25,
+        "level": 0.5,
+        "libor": 1.0,
+        "premium": 1.0,
+        "principal": 0.5,
+        "within": 0.5
+    },
+    "pension": {
+        "funds": 0.2
+    },
+    "people": {
+        "host": 1.0,
+        "milder": 1.0
+    },
+    "per": {
+        "barrel": 1.0,
+        "employee": 1.0
+    },
+    "percent": {
+        "women": 0.5
+    },
+    "performance": {
+        "enable": 1.0,
+        "increasing": 1.0
+    },
+    "period": {
+        "principal": 0.5
+    },
+    "persistently": {
+        "firm": 0.5
+    },
+    "persists": {
+        "long": 1.0
+    },
+    "pills": {
+        "country": 0.5,
+        "help": 1.0,
+        "taken": 0.3333333333333333
+    },
+    "pleaded": {
+        "guilty": 1.0
+    },
+    "policies": {
+        "sub-Saharan": 0.3333333333333333
+    },
+    "policy": {
+        "reform": 0.25
+    },
+    "portion": {
+        "commisisons": 1.0
+    },
+    "positions": {
+        "said": 0.020833333333333332
+    },
+    "positive": {
+        "market": 0.08333333333333333
+    },
+    "potentially-fatal": {
+        "interaction": 1.0
+    },
+    "pox-like": {
+        "disease": 0.3333333333333333
+    },
+    "precluded": {
+        "market": 0.08333333333333333
+    },
+    "predict": {
+        "told": 0.5
+    },
+    "preferred": {
+        "220": 1.0,
+        "235": 1.0,
+        "stock": 0.2
+    },
+    "premium": {
+        "4.49": 1.0,
+        "Texas": 0.3333333333333333,
+        "common": 0.5
+    },
+    "prepared": {
+        "live": 1.0
+    },
+    "president": {
+        "chief": 1.0
+    },
+    "pressure": {
+        "stock": 0.06666666666666667,
+        "today": 0.16666666666666666
+    },
+    "prevented": {
+        "1,700": 1.0
+    },
+    "previous": {
+        "year": 0.125
+    },
+    "price": {
+        "190": 1.0,
+        "33": 1.0,
+        "42": 1.0,
+        "index": 0.09090909090909091,
+        "terms": 1.0
+    },
+    "prices": {
+        "However": 1.0,
+        "also": 0.16666666666666666,
+        "net": 0.5,
+        "precluded": 1.0,
+        "said": 0.020833333333333332
+    },
+    "pricing": {
+        "talk": 1.0
+    },
+    "prime": {
+        "minister": 1.0
+    },
+    "principal": {
+        "85": 1.0,
+        "payments": 0.3333333333333333
+    },
+    "priorities": {
+        "Canada": 0.3333333333333333
+    },
+    "private": {
+        "sector": 0.6,
+        "voluntary": 1.0
+    },
+    "probably": {
+        "prevented": 1.0,
+        "takes": 1.0
+    },
+    "process": {
+        "framework": 1.0
+    },
+    "producer": {
+        "member": 0.5,
+        "price": 0.2
+    },
+    "production": {
+        "Friday": 0.3333333333333333,
+        "incentives": 1.0,
+        "producer": 0.3333333333333333
+    },
+    "productivity": {
+        "also": 0.16666666666666666
+    },
+    "profit-sharing": {
+        "checks": 1.0
+    },
+    "program": {
+        "action": 0.25,
+        "sub-Saharan": 0.3333333333333333,
+        "test": 1.0
+    },
+    "programs": {
+        "incentive": 1.0,
+        "policies": 1.0,
+        "task": 0.3333333333333333
+    },
+    "promoted": {
+        "reward": 1.0
+    },
+    "protect": {
+        "people": 0.5,
+        "smallpox": 0.25
+    },
+    "protection": {
+        "cancer": 0.2,
+        "exists": 1.0
+    },
+    "protective": {
+        "form": 1.0
+    },
+    "provide": {
+        "long-term": 0.2,
+        "private": 0.25
+    },
+    "provocative": {
+        "questions": 1.0
+    },
+    "pull": {
+        "back": 0.5
+    },
+    "put": {
+        "cap": 1.0,
+        "range": 0.16666666666666666
+    },
+    "query": {
+        "Inco": 0.05555555555555555
+    },
+    "question": {
+        "belief": 1.0
+    },
+    "questions": {
+        "concerning": 1.0
+    },
+    "quickly": {
+        "covered": 1.0
+    },
+    "quite": {
+        "ready": 1.0
+    },
+    "rain": {
+        "impression": 1.0,
+        "much": 1.0
+    },
+    "raises": {
+        "provocative": 1.0
+    },
+    "rally": {
+        "may": 0.25,
+        "needs": 1.0
+    },
+    "range": {
+        "102": 1.0,
+        "Singer": 0.3333333333333333,
+        "financial": 1.0,
+        "investors": 0.25,
+        "last": 0.25,
+        "non-auto": 0.5
+    },
+    "rate": {
+        "direction": 0.5,
+        "firm": 0.5,
+        "futures": 0.2,
+        "ovarian": 0.25,
+        "rise": 0.5
+    },
+    "rates": {
+        "2.5": 1.0
+    },
+    "ratio": {
+        "debt": 0.1111111111111111
+    },
+    "reached": {
+        "maximum": 1.0
+    },
+    "ready": {
+        "jump": 1.0
+    },
+    "received": {
+        "less": 0.5
+    },
+    "receiving": {
+        "smallpox": 0.25
+    },
+    "recent": {
+        "surge": 1.0,
+        "years": 0.1111111111111111
+    },
+    "recommendations": {
+        "task": 0.3333333333333333
+    },
+    "recommended": {
+        "White": 0.5
+    },
+    "recruits": {
+        "AIDS": 0.2
+    },
+    "redeem": {
+        "holdings": 0.5
+    },
+    "reduce": {
+        "jamaica": 0.2,
+        "obligations": 1.0
+    },
+    "reduces": {
+        "risk": 0.5
+    },
+    "reducing": {
+        "acid": 0.5,
+        "stock": 0.06666666666666667
+    },
+    "reduction": {
+        "interest": 0.25
+    },
+    "referring": {
+        "chart": 0.5
+    },
+    "reform": {
+        "private": 0.25,
+        "productivity": 1.0,
+        "programs": 0.3333333333333333,
+        "self-help": 1.0
+    },
+    "reforms": {
+        "private": 0.25
+    },
+    "regardless": {
+        "formulation": 1.0
+    },
+    "region": {
+        "economic": 0.1111111111111111
+    },
+    "reinforce": {
+        "African": 0.25
+    },
+    "relies": {
+        "smallpox": 0.25
+    },
+    "removal": {
+        "Dow": 0.16666666666666666,
+        "index": 0.09090909090909091
+    },
+    "reply": {
+        "query": 0.5
+    },
+    "report": {
+        "also": 0.16666666666666666,
+        "raises": 1.0
+    },
+    "reported": {
+        "New": 0.6666666666666666,
+        "removal": 0.25
+    },
+    "reporters": {
+        "government": 1.0,
+        "meetings": 1.0
+    },
+    "representative": {
+        "market": 0.08333333333333333
+    },
+    "representatives": {
+        "asked": 1.0
+    },
+    "represented": {
+        "15": 1.0
+    },
+    "reschedule": {
+        "next": 0.3333333333333333
+    },
+    "rescheduling": {
+        "100": 1.0
+    },
+    "researchers": {
+        "estimated": 1.0
+    },
+    "resiliency": {
+        "bonds": 0.25
+    },
+    "responding": {
+        "last": 0.25
+    },
+    "retail": {
+        "sales": 0.6666666666666666
+    },
+    "returns": {
+        "defrauding": 1.0
+    },
+    "reward": {
+        "good": 1.0
+    },
+    "rewarding": {
+        "economic": 0.1111111111111111
+    },
+    "right": {
+        "said": 0.020833333333333332
+    },
+    "rise": {
+        "0.6": 1.0,
+        "oil": 0.2
+    },
+    "risk": {
+        "epithelial": 1.0
+    },
+    "routine": {
+        "U.S.-Canada": 1.0
+    },
+    "run": {
+        "course": 1.0
+    },
+    "safety": {
+        "vaccines": 1.0
+    },
+    "said": {
+        "19-year-old": 1.0,
+        "Also": 0.3333333333333333,
+        "Although": 1.0,
+        "Carroll": 1.0,
+        "Everyone": 1.0,
+        "Fed": 1.0,
+        "Inco": 0.1111111111111111,
+        "Martens": 0.25,
+        "Reuter": 0.2727272727272727,
+        "Rozich": 0.3333333333333333,
+        "Shearson": 0.2,
+        "Sloane": 0.3333333333333333,
+        "Smith": 1.0,
+        "Specifically": 1.0,
+        "U.S.": 0.06666666666666667,
+        "better": 0.3333333333333333,
+        "consensus": 1.0,
+        "demand": 0.5,
+        "donor": 1.0,
+        "expect": 0.5,
+        "expected": 0.2,
+        "group": 1.0,
+        "impressed": 1.0,
+        "jamaica": 0.2,
+        "latter": 1.0,
+        "looking": 1.0,
+        "new": 0.2,
+        "order": 0.5,
+        "profit-sharing": 1.0,
+        "program": 0.3333333333333333,
+        "referring": 1.0,
+        "reply": 0.5,
+        "retail": 0.25,
+        "securities": 0.5,
+        "three": 0.3333333333333333,
+        "today": 0.16666666666666666,
+        "told": 0.5,
+        "uncovered": 1.0,
+        "virtually": 1.0,
+        "yesterday": 1.0
+    },
+    "sales": {
+        "0.8": 1.0,
+        "Thursday": 1.0,
+        "figure": 1.0,
+        "representatives": 1.0,
+        "rise": 0.5,
+        "tell": 1.0
+    },
+    "saving": {
+        "issuer": 1.0
+    },
+    "say": {
+        "'well": 0.5
+    },
+    "scheme": {
+        "Benson": 0.3333333333333333
+    },
+    "scientists": {
+        "begun": 1.0,
+        "smallpox": 0.25
+    },
+    "seaga": {
+        "said": 0.0625
+    },
+    "search": {
+        "AIDS": 0.2
+    },
+    "second": {
+        "active": 0.5
+    },
+    "sector": {
+        "development": 1.0,
+        "mobilized": 1.0,
+        "retail": 0.5
+    },
+    "securities": {
+        "auction": 0.5,
+        "sold": 0.5
+    },
+    "seeking": {
+        "evidence": 0.5
+    },
+    "selects": {
+        "index": 0.09090909090909091
+    },
+    "self-help": {
+        "White": 0.5
+    },
+    "sell": {
+        "offer": 1.0
+    },
+    "selling": {
+        "interest": 0.25,
+        "pressure": 0.3333333333333333
+    },
+    "senators": {
+        "Baker": 0.3333333333333333,
+        "including": 0.3333333333333333
+    },
+    "sentenced": {
+        "Manhattan": 1.0
+    },
+    "separate": {
+        "budget": 1.0
+    },
+    "series": {
+        "recommendations": 1.0
+    },
+    "serious": {
+        "disease": 0.3333333333333333,
+        "long-term": 0.2
+    },
+    "session": {
+        "Africa": 0.25
+    },
+    "set": {
+        "Also": 0.3333333333333333,
+        "last": 0.25,
+        "stock": 0.06666666666666667
+    },
+    "settling": {
+        "trade": 0.5
+    },
+    "seven": {
+        "weeks": 1.0
+    },
+    "several": {
+        "senators": 0.5
+    },
+    "shareholders": {
+        "also": 0.16666666666666666
+    },
+    "shares": {
+        "one": 0.3333333333333333
+    },
+    "sharply": {
+        "lower": 0.25
+    },
+    "short": {
+        "positions": 1.0
+    },
+    "short-term": {
+        "selling": 0.3333333333333333
+    },
+    "show": {
+        "healthy": 1.0,
+        "increases": 1.0
+    },
+    "significant": {
+        "scientists": 0.5
+    },
+    "since": {
+        "1928": 0.5
+    },
+    "six": {
+        "pct": 0.058823529411764705
+    },
+    "slightly": {
+        "expectations": 0.5
+    },
+    "smallpox": {
+        "Physicians": 1.0,
+        "vaccine": 0.6
+    },
+    "sold": {
+        "bond": 0.3333333333333333,
+        "broad": 1.0
+    },
+    "sole": {
+        "manager": 1.0
+    },
+    "spark": {
+        "short-term": 0.5
+    },
+    "special": {
+        "session": 1.0
+    },
+    "specify": {
+        "advance": 1.0
+    },
+    "spokesman": {
+        "Ken": 0.5
+    },
+    "statement": {
+        "announced": 1.0,
+        "said": 0.020833333333333332
+    },
+    "still": {
+        "week": 0.3333333333333333
+    },
+    "stock": {
+        "Inco": 0.05555555555555555,
+        "Shearson": 0.2,
+        "debt": 0.2222222222222222,
+        "eliminate": 0.5,
+        "investors": 0.25,
+        "n't": 0.25,
+        "new": 0.2,
+        "price": 0.2,
+        "strike": 0.3333333333333333,
+        "three": 0.3333333333333333
+    },
+    "stress": {
+        "production": 0.3333333333333333
+    },
+    "strike": {
+        "price": 0.6
+    },
+    "strong": {
+        "numbers": 1.0
+    },
+    "strongly": {
+        "oversubscribed": 1.0
+    },
+    "structural": {
+        "adjustment": 1.0
+    },
+    "struggled": {
+        "recent": 0.3333333333333333
+    },
+    "study": {
+        "reported": 0.25
+    },
+    "sub-Saharan": {
+        "Africa": 0.5,
+        "African": 0.25
+    },
+    "suddenly": {
+        "say": 0.5
+    },
+    "sufficient": {
+        "selling": 0.3333333333333333
+    },
+    "summit": {
+        "Ottawa": 1.0
+    },
+    "support": {
+        "'m": 1.0,
+        "June": 0.2
+    },
+    "surge": {
+        "oil": 0.2
+    },
+    "take": {
+        "action": 0.25
+    },
+    "taken": {
+        "months": 0.5,
+        "oral": 0.2,
+        "senators": 0.5
+    },
+    "takes": {
+        "five": 1.0
+    },
+    "talk": {
+        "called": 0.3333333333333333
+    },
+    "talks": {
+        "Vice": 1.0
+    },
+    "task": {
+        "force": 0.75
+    },
+    "tax": {
+        "evasion": 1.0,
+        "returns": 1.0
+    },
+    "team": {
+        "U.S.": 0.06666666666666667,
+        "led": 0.5
+    },
+    "tell": {
+        "us": 1.0
+    },
+    "ten": {
+        "years": 0.1111111111111111
+    },
+    "terms": {
+        "set": 0.3333333333333333
+    },
+    "test": {
+        "cleaner": 1.0
+    },
+    "tests": {
+        "recruits": 1.0
+    },
+    "think": {
+        "individuals": 0.5
+    },
+    "three": {
+        "tranches": 0.5,
+        "years": 0.2222222222222222
+    },
+    "three-part": {
+        "225": 1.0
+    },
+    "throws": {
+        "question": 1.0
+    },
+    "time": {
+        "market": 0.08333333333333333
+    },
+    "today": {
+        "Also": 0.3333333333333333,
+        "Speaking": 1.0,
+        "held": 0.3333333333333333,
+        "outlined": 1.0,
+        "sentenced": 1.0,
+        "traders": 1.0
+    },
+    "told": {
+        "reporters": 1.0
+    },
+    "tomorrow": {
+        "Nickel": 0.5
+    },
+    "top": {
+        "around": 1.0,
+        "range": 0.3333333333333333
+    },
+    "total": {
+        "287": 1.0
+    },
+    "totaled": {
+        "75": 1.0
+    },
+    "toward": {
+        "economic": 0.1111111111111111,
+        "six": 1.0
+    },
+    "toy": {
+        "maker": 1.0
+    },
+    "trade": {
+        "disputes": 1.0,
+        "issues": 1.0
+    },
+    "traders": {
+        "linked": 1.0
+    },
+    "trading": {
+        "Toronto": 0.5,
+        "partner": 1.0,
+        "range": 0.3333333333333333
+    },
+    "tranche": {
+        "Gallatin": 0.3333333333333333,
+        "received": 1.0,
+        "said": 0.020833333333333332
+    },
+    "tranches": {
+        "less": 0.5,
+        "totaled": 1.0
+    },
+    "turn": {
+        "portion": 1.0
+    },
+    "two": {
+        "countries": 0.5,
+        "tranches": 0.5,
+        "years": 0.1111111111111111
+    },
+    "two-day": {
+        "visit": 1.0
+    },
+    "type": {
+        "financing": 0.5
+    },
+    "types": {
+        "oral": 0.2
+    },
+    "ultimate": {
+        "safety": 1.0
+    },
+    "unbelievable": {
+        "especially": 1.0
+    },
+    "uncovered": {
+        "potentially-fatal": 1.0
+    },
+    "undertake": {
+        "borrowing": 1.0
+    },
+    "unlikely": {
+        "serious": 0.3333333333333333
+    },
+    "urged": {
+        "Canada": 0.3333333333333333
+    },
+    "us": {
+        "whether": 0.5
+    },
+    "use": {
+        "birth": 0.5,
+        "even": 0.5,
+        "oral": 0.2
+    },
+    "used": {
+        "protect": 0.5,
+        "said": 0.020833333333333332
+    },
+    "vaccinating": {
+        "findings": 1.0
+    },
+    "vaccine": {
+        "case": 1.0,
+        "exposes": 1.0,
+        "military": 1.0,
+        "relies": 1.0,
+        "team": 0.5
+    },
+    "vaccines": {
+        "said": 0.020833333333333332
+    },
+    "various": {
+        "types": 1.0
+    },
+    "version": {
+        "allows": 1.0
+    },
+    "virtually": {
+        "buyers": 1.0
+    },
+    "virus": {
+        "developed": 1.0,
+        "used": 0.5,
+        "virus": 0.3333333333333333
+    },
+    "visit": {
+        "Washington": 1.0
+    },
+    "voluntary": {
+        "corporate": 0.5
+    },
+    "wanted": {
+        "said": 0.020833333333333332
+    },
+    "way": {
+        "toward": 0.5
+    },
+    "ways": {
+        "burning": 1.0
+    },
+    "week": {
+        "Rozich": 0.3333333333333333,
+        "could": 0.3333333333333333,
+        "jamaica": 0.2
+    },
+    "weeks": {
+        "Investors": 1.0
+    },
+    "whether": {
+        "U.S.": 0.06666666666666667,
+        "able": 1.0
+    },
+    "winding": {
+        "two-day": 1.0
+    },
+    "within": {
+        "slightly": 1.0,
+        "three": 0.3333333333333333
+    },
+    "witness": {
+        "declining": 1.0
+    },
+    "wo": {
+        "n't": 0.25
+    },
+    "women": {
+        "20": 1.0,
+        "taken": 0.3333333333333333
+    },
+    "working": {
+        "AIDS": 0.2
+    },
+    "world": {
+        "'s": 0.07692307692307693,
+        "markets": 1.0
+    },
+    "would": {
+        "fallen": 1.0,
+        "give": 1.0,
+        "likely": 0.5,
+        "positive": 1.0
+    },
+    "wrinkle": {
+        "Commenting": 1.0
+    },
+    "year": {
+        "'ll": 1.0,
+        "'s": 0.07692307692307693,
+        "Reuter": 0.09090909090909091,
+        "expected": 0.2,
+        "implement": 1.0,
+        "one": 0.3333333333333333,
+        "prime": 1.0
+    },
+    "years": {
+        "181": 1.0,
+        "Debt": 1.0,
+        "Reuter": 0.09090909090909091,
+        "age": 0.5,
+        "ago": 1.0,
+        "become": 1.0,
+        "reduction": 1.0,
+        "sharply": 0.5
+    },
+    "yesterday": {
+        "jamaica": 0.2
+    },
+    "yet": {
+        "jury": 1.0
+    }
+}
