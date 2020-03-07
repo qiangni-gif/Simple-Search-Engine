@@ -1,5 +1,5 @@
 # Simple-Search-Engine
-## The input query for boolean model should always have spaces to separate any term/boolean operator
+## The input query for boolean model should always have spaces to separate any term/boolean/brackets operator
 ```pip install nltk``` within the ``dictionary_building_module`` we use nltk.download('stopwords') to get all stop words\
 ```pip install beautifulsoup4``` for Windows\
 ```pip install importlib``` some modules use importlib.repload(module)\
