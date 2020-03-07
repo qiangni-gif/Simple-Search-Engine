@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[89]:
+# In[20]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[90]:
+# In[21]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,20 +21,21 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[91]:
+# In[22]:
 
 
-indexPath = '../output/index.json'
+#indexPath = '../output/index.json'
+indexPath = '../output/reuterIndex.json'
 
 
-# In[92]:
+# In[23]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[93]:
+# In[24]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
@@ -51,7 +52,7 @@ def buildIndex():
         
 
 
-# In[94]:
+# In[25]:
 
 
 # not sure if we need this func
@@ -67,7 +68,7 @@ def buildIndex():
 #     return counter
 
 
-# In[95]:
+# In[26]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -86,7 +87,7 @@ def buildPostings(pairContainer,frequency,totalPostings):
     return postings
 
 
-# In[96]:
+# In[27]:
 
 
 # terms => terms[docId] = list(terms)
@@ -104,7 +105,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[97]:
+# In[28]:
 
 
 #get call if the file doesn;t exist (I think..)
@@ -112,4 +113,10 @@ def getIndex():
     index = buildIndex()
     with open(indexPath,'w') as f:
         json.dump(index, f, sort_keys=True, indent=4,ensure_ascii=False)
+
+
+# In[29]:
+
+
+getIndex()
 

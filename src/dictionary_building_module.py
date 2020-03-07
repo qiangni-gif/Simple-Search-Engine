@@ -1,25 +1,30 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[79]:
+# In[4]:
 
 
 import corpus_preprocess_module as cp
+import reuters_Preprocessing_module as rp
 import nltk
 import json
 import importlib
 import string
+#from langdetect import detect,DetectorFactory
 from collections import Counter
+import re
 importlib.reload(cp)
-#nltk.download('punkt')
+importlib.reload(rp)
+nltk.download('punkt')
 #nltk.download('wordnet')
 nltk.download('stopwords')
 
 
-# In[80]:
+# In[6]:
 
 
 storagePath = cp.dataStorage
+reuterStoragePath = rp.dataStorage
 stopWordFlag = True
 wordStemmingFlag = True
 normalizationFlag = True
@@ -33,37 +38,35 @@ ps = nltk.stem.PorterStemmer()
 #https://stackoverflow.com/questions/21696649/filtering-out-strings-that-only-contains-digits-and-or-punctuation-python
 
 
-# In[81]:
+# In[7]:
 
 
-def toggleStopWordFlag(boolean):
-    global stopWordFlag
-    stopWordFlag = boolean
+def toggleStopWordFlag():
+    return not stopWordFlag
 
 
-# In[82]:
+# In[8]:
 
 
-def toggleWordStemmingFlag(boolean):
-    global wordStemmingFlag
-    wordStemmingFlag = boolean
+def toggleWordStemmingFlag():
+    return not wordStemmingFlag
 
 
-# In[83]:
+# In[9]:
 
 
-def toggleNormalizationFlag(boolean):
-    global normalizationFlag
-    normalizationFlag = boolean
+def toggleNormalizationFlag():
+    return not normalizationFlag
 
-# In[84]:
+
+# In[10]:
 
 
 def getTermsForBoolean():
     return termsForBoolean
 
 
-# In[85]:
+# In[11]:
 
 
 def extractTerms():
@@ -71,7 +74,7 @@ def extractTerms():
     data = dict()
     container = dict()
     termsForBoolean = []
-    with open(storagePath, 'r') as file:
+    with open(reuterStoragePath, 'r') as file:
         f = json.load(file)
         for d in f:
             terms = tokenize(d['desc'])
@@ -87,7 +90,7 @@ def extractTerms():
     return data,container,termsForBoolean
 
 
-# In[86]:
+# In[12]:
 
 
 def tokenize(data):
@@ -99,22 +102,22 @@ def tokenize(data):
     
 
 
-# In[87]:
+# In[13]:
 
 
-# def removeFrenchWords(desc):
-#     newTokens = []
-#     newDesc = ""
-#    # desctemp = re.sub('[/]', '', desc)
-#     #desctemp = desc.replace('/','')
-#     #print(desctemp)
-#     for d in filter(None, desctemp.split('.')):
-#         if detect(d) == 'en':
-#             newDesc = newDesc+""+d
-#     return newDesc
+def removeFrenchWords(desc):
+    newTokens = []
+    newDesc = ""
+   # desctemp = re.sub('[/]', '', desc)
+    #desctemp = desc.replace('/','')
+    #print(desctemp)
+    for d in filter(None, desctemp.split('.')):
+        if detect(d) == 'en':
+            newDesc = newDesc+""+d
+    return newDesc
 
 
-# In[88]:
+# In[14]:
 
 
 def stopWordRemoval(data):
@@ -129,7 +132,7 @@ def stopWordRemoval(data):
     return newData
 
 
-# In[89]:
+# In[15]:
 
 
 def wordStemming(data):
@@ -143,7 +146,7 @@ def wordStemming(data):
     return newData
 
 
-# In[90]:
+# In[16]:
 
 
 def normalization(data):
@@ -156,14 +159,14 @@ def normalization(data):
     return newData
 
 
-# In[91]:
+# In[17]:
 
 
 def pre_dictionary_building():
     cp.getCorpus()
 
 
-# In[92]:
+# In[18]:
 
 
 #dict('docId') -> dict{'word':frequency}

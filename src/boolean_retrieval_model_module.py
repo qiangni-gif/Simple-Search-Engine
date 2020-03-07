@@ -63,8 +63,10 @@ def findPostings(logicalOp, p1, p2):
         return list(set(p1) & set(p2))
     elif logicalOp == 'AND_NOT': # is it the correct way?
         if p1:# p1 is not empty
-            return [x for x in p1 if x not in p2]
-        return [x for x in p2 if x not in p1]
+#             return [x for x in p1 if x not in p2]
+            return list(set(p1)-set(p2))
+#         return [x for x in p2 if x not in p1]
+        return list(set(p2)-set(p1))
 
 
 # In[32]:
@@ -193,7 +195,7 @@ def getCompleteTerms():
 
 
 #"( *er OR ink )"
-#demo_processWithIndex("*er",[],index)
+demo_processWithIndex("*er",[],index)
 
 
 # In[12]:
