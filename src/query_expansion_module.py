@@ -11,8 +11,9 @@ def expansion(query, model, collection):
     else:
         tPath = termPath
     terms = json.load(open(tPath,'r'))
+    tokenList = query.split()
     if model == "Vector Space Model":
-        for q in query:
+        for q in tokenList:
             synonyms = []
             for syn in wordnet.synsets(q):
                 for l in syn.lemmas():
@@ -28,7 +29,6 @@ def expansion(query, model, collection):
         return lis#return list of synonyms with its similarity score
 
     elif model == "Boolean Retrieval Model":
-        tokenList = query.split()
         op = ['(',')','OR','AND','AND_NOT']
         for token in tokenList:
             synonyms = []
@@ -36,12 +36,21 @@ def expansion(query, model, collection):
                 for syn in wordnet.synsets(token):
                     for l in syn.lemmas():
                         if any(l.name() in t for t in terms["terms"]):
-                            print(l.name())
+                            #print(l.name())
                             synonyms.append(l.name())#get synonyms
                 synonyms = list(filter(lambda a:a != token, synonyms))
                 if synonyms != []:
                     lis[token] = synonyms
         return lis#return list of synonyms
+# q = "think"
+# p = "think quick"
+# print(q.split())
+# print(p.split())
+# v = expansion("think","Vector Space Model","")
+# b = expansion("think AND individuals","Boolean Retrieval Model","")
+# print(v)
+# print(b)
 
-print(expansion(["think"],"Vector Space Model",""))
-print(expansion("think AND individuals","Boolean Retrieval Model",""))
+# for i in expansion("think AND individuals","Boolean Retrieval Model",""):
+#     print(i)
+#     print(b[i])
