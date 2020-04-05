@@ -9,3 +9,4 @@
 ## Run the file user_interface_module.py to start search engine
 ## Files under output folder are important
 ```All the sources that we found have been added into corresponding modules as comments```
+## And we donot expect any special char in the query (/ , . - = etc.) ##
