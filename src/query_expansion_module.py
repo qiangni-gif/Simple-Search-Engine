@@ -15,24 +15,25 @@ def expansion(query, model, collection):
     if model == "Vector Space Model":
         for q in tokenList:
             synonyms = []
-            for syn in wordnet.synsets(q):
-                for l in syn.lemmas():
-                    if any(l.name() in t for t in terms["terms"]):
-                        synonyms.append(l.name())#get synonyms
-                        # synonyms.append([l.name(),q.wup_similarity(l)])#get synonyms with its similarity score
+            if q not in lis:
+                for syn in wordnet.synsets(q):
+                    for l in syn.lemmas():
+                        if any(l.name() in t for t in terms["terms"]):
+                            synonyms.append(l.name())#get synonyms
+                            # synonyms.append([l.name(),q.wup_similarity(l)])#get synonyms with its similarity score
             synonyms = list(filter(lambda a:a != q, synonyms))
             if synonyms != []:
                 lis[q] = synonyms
         # if lis != {}:
         #     lis = sorted(lis.items(), key=lambda item:item[1], reverse=True)
         
-        return lis#return list of synonyms with its similarity score
+        return lis#return list of synonyms
 
     elif model == "Boolean Retrieval Model":
         op = ['(',')','OR','AND','AND_NOT']
         for token in tokenList:
             synonyms = []
-            if token not in op:
+            if token not in op and token not in lis:
                 for syn in wordnet.synsets(token):
                     for l in syn.lemmas():
                         if any(l.name() in t for t in terms["terms"]):
