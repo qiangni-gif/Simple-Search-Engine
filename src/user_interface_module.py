@@ -20,6 +20,7 @@ import VSM_retrieval_module as vr
 import corpus_access_module as ca
 import spelling_correction_module as sc
 import boolean_retrieval_model_module as br
+import query_expansion_module as qe
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 
@@ -84,7 +85,7 @@ class Ui_mainWindow(object):
         self.lineEdit = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
         self.lineEdit.setLocale(QtCore.QLocale(QtCore.QLocale.Armenian, QtCore.QLocale.Armenia))
         self.lineEdit.setObjectName("lineEdit")
-        self.gridLayout.addWidget(self.lineEdit, 0, 2, 1, 3)
+        self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 3)
 
         self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
@@ -171,7 +172,19 @@ class Ui_mainWindow(object):
         self.pushButton.setObjectName("pushButton")
         self.pushButton.clicked.connect(self.onSearch_clicked)
 
-        self.gridLayout.addWidget(self.pushButton, 0, 0, 1, 2)
+        self.pushButton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setLocale(QtCore.QLocale(QtCore.QLocale.Armenian, QtCore.QLocale.Armenia))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_3.clicked.connect(self.onExpansion_clicked)
+        self.gridLayout.addWidget(self.pushButton_3, 0, 4, 1, 1)
+
+        self.gridLayout.addWidget(self.pushButton, 0, 0, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout_2.addWidget(self.scrollArea, 1, 0, 1, 1)
         mainWindow.setCentralWidget(self.centralwidget)
@@ -192,9 +205,11 @@ class Ui_mainWindow(object):
         self.comboBox.setItemText(0, _translate("mainWindow", "Boolean Retrieval Model"))
         self.comboBox.setItemText(1, _translate("mainWindow", "Vector Space Model"))
         self.comboBox_2.setItemText(0, _translate("mainWindow", "UofO catalog"))
+        self.comboBox_2.setItemText(1, _translate("mainWindow", "Reuters21578"))
         self.checkBox_2.setText(_translate("mainWindow", "Stemming"))
         self.checkBox.setText(_translate("mainWindow", "Stopword "))
         self.pushButton.setText(_translate("mainWindow", "Search"))
+        self.pushButton_3.setText(_translate("mainWindow", "Query Expansion"))
         
     #change the rebuild flag when setting is toggled
     def onCheckBox_Toggled(self):
@@ -246,11 +261,11 @@ class Ui_mainWindow(object):
                 print("Vector Space Model")
                 terms = vr.extractQueryTerms(query)
                 #check weather the imput query is in the index.
-                w = sc.check(terms)
+                w = sc.check(terms,collection)
                 
                 if w != []:
                     #ask user to pick a different query 
-                    correction = sc.getCorrection(w)
+                    correction = sc.getCorrection(w,collection)
                     for i in correction.items():
                         c = get_correction(i)
                         if c != None:
@@ -266,7 +281,7 @@ class Ui_mainWindow(object):
                 self.tableWidget.setColumnCount(4)
                 self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
                 terms = db.wordStemming(terms)# word stemming after spelling correction
-                result = vr.comput_score(terms)
+                result = vr.comput_score(terms,collection)
                 if result != None:
                     for i in result:
                         currentRowCount = self.tableWidget.rowCount()
@@ -338,6 +353,124 @@ class Ui_mainWindow(object):
             
                         y = info.exec_()
 
+
+    def onExpansion_clicked(self):
+        query = self.lineEdit.text()
+        model = self.comboBox.currentText()
+        collection = self.comboBox_2.currentText()
+        if query == "":
+            msg = QMessageBox()
+            msg.setWindowTitle("warning!")
+            msg.setText("Please fill out the search field!")
+            font = QtGui.QFont()
+            font.setFamily("Times New Roman")
+            font.setPointSize(10)
+            msg.setFont(font)
+            
+            x = msg.exec_()
+        else:
+            exp = qe.expansion(query, model, collection)
+            print(exp)
+            if exp != {}:
+                explist = []
+                for i in exp:
+                    q = exp[i]
+                    qe_msg = expMessageBox([i,q])
+                    currentClick = qe_msg.exec_()
+                    word = None
+                    if currentClick == 0 :
+                        print ('Accepted')
+                        if qe_msg.tableWidget3.rowCount() == 0:
+                            print("Expansion table is empty")
+                            word = [i,None]
+                        elif not qe_msg.tableWidget3.selectionModel().selectedRows():
+                            print("Expansion not selected")
+                            word = [i,None]
+                        else:
+                            templist = []
+                            rows=[idx.row() for idx in qe_msg.tableWidget3.selectionModel().selectedRows()]
+                            for r in rows:
+                                templist.append(qe_msg.tableWidget3.item(r,0).text())
+                            word = [i,templist]
+                    else:
+                        word = [i,None]
+                    explist.append(word)
+                print(explist)
+                newquery = ''
+                if model == "Vector Space Model":
+                    tempquery = query.split()
+                    for e in explist:
+                        if e[1] != None:
+                            s= ' '.join(str(s) for s in e[1])+" "+str(e[0])
+                            tempquery[:] = [s if x==e[0] else x for x in tempquery]
+                        else:
+                            print("no expansion for "+e[0])
+                    newquery = ' '.join(str(s) for s in tempquery)
+                else:
+                    tempquery = query.split()
+                    for e in explist:
+                        if e[1] != None:
+                            s = '( '+' OR '.join(str(s) for s in e[1])+" OR "+str(e[0])+' )'
+                            tempquery[:] = [s if x==e[0] else x for x in tempquery]
+                            print(s)
+                            print(tempquery)
+                        else:
+                            print("no expansion for "+e[0])
+                    newquery = ' '.join(str(s) for s in tempquery)
+                self.lineEdit.setText(newquery)
+
+            else:
+                print("can not find expansion")
+
+class expMessageBox(QtWidgets.QMessageBox):
+    def __init__(self,lis):
+        QtWidgets.QMessageBox.__init__(self)
+        self.setSizeGripEnabled (True)
+        self.setWindowTitle('Query Expansion')
+        self.setText("Please select words below to expansion: "+lis[0]+
+                     "\n Or press cancel. holding ctrl to select multiple items")
+        self.addButton (
+            QtWidgets.QPushButton('Accept'), 
+            QtWidgets.QMessageBox.YesRole
+        )
+        self.addButton(
+            QtWidgets.QPushButton('Cancel'), 
+            QtWidgets.QMessageBox.RejectRole
+        )
+        self.addTableWidget (self,lis)
+    def addTableWidget (self, parentItem,lis) :
+        self.l =  QtWidgets.QVBoxLayout()
+        self.tableWidget3 = QtWidgets.QTableWidget(parentItem)
+        self.tableWidget3.setObjectName ('expansion_tableWidget')
+
+        self.tableWidget3.move(100,130)
+        self.tableWidget3.resize(200, 200)
+        self.l.addWidget(self.tableWidget3)
+        self.setLayout(self.l)
+        self.tableWidget3.setColumnCount(1)
+        self.tableWidget3.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget3.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
+        for c in lis[1]:
+            RowCount = self.tableWidget3.rowCount()
+            self.tableWidget3.insertRow(RowCount)
+            self.tableWidget3.setItem(RowCount,0,QTableWidgetItem(c))
+
+        
+    def event(self, e):
+        result = QtWidgets.QMessageBox.event(self, e)
+        self.setMinimumWidth(0)
+        self.setMaximumWidth(16777215)
+        self.setMinimumHeight(0)
+        self.setMaximumHeight(16777215)
+        self.setSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, 
+            QtWidgets.QSizePolicy.Expanding
+        )
+        self.resize(400, 400)
+
+        return result
+
+
 #message popup box with spelling correction table
 class MyMessageBox(QtWidgets.QMessageBox):
     #get_word = QtCore.pyqtSignal(dict)
@@ -346,7 +479,7 @@ class MyMessageBox(QtWidgets.QMessageBox):
         
         self.setSizeGripEnabled (True)
         self.setWindowTitle('Spelling Correction')
-        self.setText("Please select one of the word below to replace "+lis[0]+
+        self.setText("Please select one of the word below to replace: "+lis[0]+
                      " Or press cancel to remove "+lis[0]+" from search query")
         
         self.addButton (
@@ -433,12 +566,12 @@ def main():
     #vr.wc.getinvertedindex()
     #print("creating weighted index....")
     #vr.gettf_idf()
-    if not os.path.exists(corpusPath):
-        db.pre_dictionary_building()
-    if not os.path.exists(indexPath):
-        iic.getinvertedindex()
-    if not os.path.exists(weightedIndexPath):
-        vr.gettf_idf()
+    # if not os.path.exists(corpusPath):
+    #     db.pre_dictionary_building()
+    # if not os.path.exists(indexPath):
+    #     iic.getinvertedindex()
+    # if not os.path.exists(weightedIndexPath):
+    #     vr.gettf_idf()
         
     app = QtWidgets.QApplication(sys.argv)
     w = QtWidgets.QMainWindow()
