@@ -398,12 +398,13 @@ class Ui_mainWindow(object):
                 print(explist)
                 newquery = ''
                 if model == "Vector Space Model":
-                    tempquery = []
+                    tempquery = query.split()
                     for e in explist:
                         if e[1] != None:
-                            tempquery.append(' '.join(str(s) for s in e[1])+" "+str(e[0]))
+                            s= ' '.join(str(s) for s in e[1])+" "+str(e[0])
+                            tempquery[:] = [s if x==e[0] else x for x in tempquery]
                         else:
-                            tempquery.append(str(e[0]))
+                            print("no expansion for "+e[0])
                     newquery = ' '.join(str(s) for s in tempquery)
                 else:
                     tempquery = query.split()
