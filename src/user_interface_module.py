@@ -409,7 +409,7 @@ class Ui_mainWindow(object):
                     tempquery = query.split()
                     for e in explist:
                         if e[1] != None:
-                            s = '( '+' AND '.join(str(s) for s in e[1])+" AND "+str(e[0])+' )'
+                            s = '( '+' OR '.join(str(s) for s in e[1])+" OR "+str(e[0])+' )'
                             tempquery[:] = [s if x==e[0] else x for x in tempquery]
                             print(s)
                             print(tempquery)
