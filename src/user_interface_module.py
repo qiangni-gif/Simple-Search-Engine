@@ -21,6 +21,7 @@ import corpus_access_module as ca
 import spelling_correction_module as sc
 import boolean_retrieval_model_module as br
 import query_expansion_module as qe
+import relevance_feedback_model as rfb
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 
@@ -30,6 +31,7 @@ wordStemmingFlag = True
 normalizationFlag = True
 
 corpusPath = '../output/storage.json'
+reutercorpusPath = '../output/reuterStorage.json'
 indexPath = '../output/index.json'
 weightedIndexPath = '../output/weightedindex.json'
 
@@ -262,7 +264,7 @@ class Ui_mainWindow(object):
                 terms = vr.extractQueryTerms(query)
                 #check weather the imput query is in the index.
                 w = sc.check(terms,collection)
-                
+                print(w)
                 if w != []:
                     #ask user to pick a different query 
                     correction = sc.getCorrection(w,collection)
@@ -280,12 +282,14 @@ class Ui_mainWindow(object):
                 self.tableWidget.setRowCount(0)
                 self.tableWidget.setColumnCount(4)
                 self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
-                terms = db.wordStemming(terms)# word stemming after spelling correction
+                # terms = db.wordStemming(terms)# word stemming after spelling correction
+                self.lineEdit.setText(' '.join(str(s) for s in terms))
+
                 result = vr.comput_score(terms,collection)
                 if result != None:
                     for i in result:
                         currentRowCount = self.tableWidget.rowCount()
-                        doc = ca.getDocs([i[0]])
+                        doc = ca.getDocs([i[0]],model)
                         #print(doc)
                         if 'link' in doc[0] and 'title' in doc[0] and 'desc' in doc[0]:
                             self.tableWidget.insertRow(currentRowCount)
@@ -307,7 +311,7 @@ class Ui_mainWindow(object):
                     self.tableWidget.setRowCount(0)
                     self.tableWidget.setColumnCount(3)
                     self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc'])
-                    doc = ca.getDocs(result)
+                    doc = ca.getDocs(result,model)
                     for i in doc:
                         currentRowCount = self.tableWidget.rowCount()
                         #print(doc)
@@ -324,13 +328,18 @@ class Ui_mainWindow(object):
 
     
     def onViewDetail_clicked(self):
-        
+        model = self.comboBox.currentText()
         if self.tableWidget.rowCount() == 0:
             print("table is empty")
         elif not self.tableWidget.selectionModel().selectedRows():
             print("not selected")
         else:
-            with open(corpusPath, 'r') as file:
+            collection = self.comboBox_2.currentText()
+            if collection == 'UofO catalog':
+                cPath = corpusPath
+            else: 
+                cPath = reutercorpusPath
+            with open(cPath, 'r') as file:
                 f = json.load(file)
                 print("onViewDetail_clicked")
                 
@@ -350,9 +359,33 @@ class Ui_mainWindow(object):
                         font.setFamily("Times New Roman")
                         font.setPointSize(10)
                         info.setFont(font)
-            
-                        y = info.exec_()
+                        if model == "Vector Space Model":
+                            yes = info.addButton (
+                                    'relevant', 
+                                    QtWidgets.QMessageBox.YesRole
+                                    )
+                            no = info.addButton(
+                                    'not relevant', 
+                                    QtWidgets.QMessageBox.NoRole
+                                    )
+                            cancel = info.addButton(
+                                    'cancel', 
+                                    QtWidgets.QMessageBox.RejectRole
+                                    ) 
+                            info.exec_()
+                            query = self.lineEdit.text()
+                            if info.clickedButton() == yes:
+                                print("relvent selected")
+                                rfb.setfd([query,i["docId"]], collection, True)# save feedback 
+                            elif info.clickedButton() == no:
+                                print("not relvent selected")
+                                rfb.setfd([query,i["docId"]], collection, False)# save feedback
+                            else:
+                                print("cancel")
+                        else:
+                            y=info.exec_()
 
+                       
 
     def onExpansion_clicked(self):
         query = self.lineEdit.text()
@@ -427,7 +460,7 @@ class expMessageBox(QtWidgets.QMessageBox):
         QtWidgets.QMessageBox.__init__(self)
         self.setSizeGripEnabled (True)
         self.setWindowTitle('Query Expansion')
-        self.setText("Please select words below to expansion: "+lis[0]+
+        self.setText("Please select words below to expand: "+lis[0]+
                      "\n Or press cancel. holding ctrl to select multiple items")
         self.addButton (
             QtWidgets.QPushButton('Accept'), 
