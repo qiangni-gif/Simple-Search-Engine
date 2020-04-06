@@ -7,6 +7,7 @@ import weight_calculation_module as wc
 #https://stackoverflow.com/questions/26924812/python-sort-list-of-json-by-value
 
 weightedindexPath = '../output/weightedindex.json'
+reuterWindexPath = '../output/reuter_weightedindex.json'
 countMax = 20
 
 def gettf_idf():
@@ -17,7 +18,7 @@ def extractQueryTerms(query):
     w = {}
     query = wc.iic.db.nltk.word_tokenize(query)
     query = wc.iic.db.stopWordRemoval(query)
-    # query = wc.iic.db.wordStemming(query)
+    query = wc.iic.db.wordStemming(query)
     query = wc.iic.db.normalization(query)
     return query
 
@@ -29,11 +30,17 @@ def count(query):
             w[x] = y
     return w
 #search query -> list of ranked docId with score
-def comput_score(query):
+def comput_score(query,collection):
     c = 0
     wquery = count(query)
     score = {}
-    with open(weightedindexPath,'r') as f:
+
+    if collection == "UofO catalog":
+        windexPath = weightedindexPath
+    elif collection == "Reuters21578":
+        windexPath = reuterWindexPath
+
+    with open(windexPath,'r') as f:
         windex = json.load(f)
         for q,w in wquery.items():
             for i,t in windex.items():
@@ -54,8 +61,8 @@ def comput_score(query):
             rank = None
             score = {}
             c = 0
-        #print(rank)
+        print(rank)
     return rank
 
-#print(comput_score(extractQueryTerms("text")))
-#print(count(extractQueryTerms("text")))
+# print(comput_score(extractQueryTerms("text"),"Reuters21578"))
+# print(count(extractQueryTerms("text")))
