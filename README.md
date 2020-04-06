@@ -8,5 +8,5 @@
 ## setting of the stopword removal, stemming, normalization is on by defult
 ## Run the file user_interface_module.py to start search engine
 ## Files under output folder are important
-```All the sources that we found have been added into corresponding modules as comments```
+```All the sources that we found have been added into corresponding modules as comments```\
 ```Assumption for knn part: ignore documents that have neither content nor topics```
