@@ -46,4 +46,4 @@ def setfd(feedback,collection,bool):
 
     savefb(fb,collection)
 
-reset()
+#reset()
