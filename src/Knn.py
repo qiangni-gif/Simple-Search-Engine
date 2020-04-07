@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[152]:
+# In[14]:
 
 
 import json
@@ -13,14 +13,14 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score,hamming_loss
+from sklearn.metrics import accuracy_score,hamming_loss,f1_score
 
 from sklearn.preprocessing import MultiLabelBinarizer
 
 import dictionary_building_module as db
 
 
-# In[153]:
+# In[2]:
 
 
 #dataPath = '../output/test.json'
@@ -40,7 +40,7 @@ all_topics = set()
 #https://stackoverflow.com/questions/48467669/tfidf-transformer-sklearn-results-in-no-supported-conversion-for-types-dt
 
 
-# In[154]:
+# In[4]:
 
 
 with open(dataPath, 'r') as f:
@@ -59,7 +59,7 @@ with open(dataPath, 'r') as f:
         #ignore file with not desc/no topics
 
 
-# In[125]:
+# In[3]:
 
 
 def stringProcess(desc):
@@ -69,19 +69,19 @@ def stringProcess(desc):
                             db.tokenize(desc))))) # strings preprocess
 
 
-# In[126]:
+# In[7]:
 
 
 len(X_unknown)
 
 
-# In[137]:
+# In[8]:
 
 
 df.head()
 
 
-# In[159]:
+# In[9]:
 
 
 multilabel_binarizer = MultiLabelBinarizer()
@@ -94,21 +94,22 @@ X_train = vectorizer.fit_transform(X_train)
 X_test = vectorizer.transform(X_test)
 
 
-# In[160]:
+# In[10]:
 
 
-classifier = KNeighborsClassifier(n_neighbors = 20,metric = 'minkowski', p=2)
+classifier = KNeighborsClassifier(n_neighbors = 5,metric = 'minkowski', p=2)
 classifier.fit(X_train,y_train)
 
 
-# In[161]:
+# In[15]:
 
 
 predicts = classifier.predict(X_test)
 print("Hamming loss =",hamming_loss(y_test,predicts))
+print("F1 score =",f1_score(y_test,predicts,average='micro'))
 
 
-# In[228]:
+# In[12]:
 
 
 for docId,des in X_unknown:
@@ -121,7 +122,7 @@ for docId,des in X_unknown:
             d.update(temp)
 
 
-# In[229]:
+# In[13]:
 
 
 with open("../output/new.json", "w") as jsonFile: # to replace original corpus
