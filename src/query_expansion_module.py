@@ -3,6 +3,9 @@ import json
 from nltk.corpus import wordnet
 nltk.download('wordnet')
 
+# https://stackoverflow.com/questions/13226629/wordnet-query-expansion-step-by-step
+# https://pythonprogramming.net/wordnet-nltk-tutorial/
+
 termPath = '../output/terms.json'
 def expansion(query, model, collection):
     lis = {}
