@@ -38,6 +38,8 @@ def getDocs(docIds,collection):
             d['link'] = course['docId']
             d['title'] = course['title']
             d['desc'] = s
+            if collection == "Reuters21578":
+                d['topic'] = course['topic']
             output.append(d)
     return output
 
@@ -52,4 +54,5 @@ def getDocs(docIds,collection):
 
 
 #getDocs(docIds)
+
 
