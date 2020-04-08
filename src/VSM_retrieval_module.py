@@ -10,6 +10,7 @@ Beta = 0.3
 Lambda = 0.1
 
 #https://stackoverflow.com/questions/26924812/python-sort-list-of-json-by-value
+#https://www.youtube.com/watch?v=yPd3vHCG7N4
 
 weightedindexPath = '../output/weightedindex.json'
 reuterWindexPath = '../output/reuter_weightedindex.json'
@@ -65,7 +66,7 @@ def comput_score(query,collection):
         else:
             rank = None
             score = {}
-        print(rank)
+        # print(rank)
     return rank
 
 
@@ -98,8 +99,6 @@ def Rocchio(query,windex,collection):
     else:
         print("no feedback")
 
-    print(count_relevant)
-    print(count_irrelevant)
     for term in query:
         value = Alpha*query[term]
         query[term] = value
@@ -113,18 +112,17 @@ def Rocchio(query,windex,collection):
 
     for term in irrelevant:
         value = -Lambda*(irrelevant[term] / count_irrelevant)
-        print(term)
         if term in query:
             query[term] += value
         else:
             query[term] = value
-    print(query)
+    # print(query)
     return query
 
-t = count(extractQueryTerms("text text book"))
-tindex = json.load(open(weightedindexPath,'r'))
-print(t)
-print(Rocchio(t,tindex,"UofO catalog"))
-print(Rocchio(t,tindex,"Reuters21578"))
+# t = count(extractQueryTerms("text text book"))
+# tindex = json.load(open(weightedindexPath,'r'))
+# print(t)
+# print(Rocchio(t,tindex,"UofO catalog"))
+# print(Rocchio(t,tindex,"Reuters21578"))
 # print(comput_score(extractQueryTerms("text"),"Reuters21578"))
 # print(count(extractQueryTerms("text")))
