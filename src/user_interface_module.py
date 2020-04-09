@@ -12,12 +12,12 @@
 #https://stackoverflow.com/questions/34374660/how-can-i-get-the-selected-rows-value-of-a-qtablewidget-in-pyqt
 # https://stackoverflow.com/questions/25101171/what-do-the-different-qmessagebox-roles-mean
 # https://stackoverflow.com/questions/32885472/getting-selected-index-number-of-column-times-of-a-qtableview
+# https://stackoverflow.com/questions/2655354/how-to-allow-resizing-of-qmessagebox-in-pyqt4
 
 import sys
 import json
 import os
 import dictionary_building_module as db
-import inverted_index_construction_module as iic
 import VSM_retrieval_module as vr
 import corpus_access_module as ca
 import spelling_correction_module as sc
@@ -35,6 +35,9 @@ normalizationFlag = True
 
 corpusPath = db.storagePath
 reutercorpusPath = db.reuterStoragePath
+indexPath = '../output/reuterIndex.json'
+UOindexPath = '../output/index.json'
+
 
 
 class Ui_mainWindow(object):
@@ -266,10 +269,11 @@ class Ui_mainWindow(object):
                     self.comboBox_3.addItems(completelist)
                 except:
                     print("can not find query completion for: "+ lastword)
+                    self.comboBox_3.addItem("no query completion")
                 
     def query_completion_box(self):
         index = self.comboBox_3.currentIndex()
-        if index != -1:
+        if index != -1 and self.comboBox_3.currentText() != "no query completion":
             text = self.lineEdit.text()
             texts = text.split()
             complete = self.comboBox_3.currentText()
@@ -280,7 +284,7 @@ class Ui_mainWindow(object):
 
     def topicFilter(self):
         index = self.comboBox_4.currentIndex()
-        if index != -1:
+        if index != -1 and self.comboBox_4.currentText() != "remove filter":
             topic = self.comboBox_4.currentText()
             print("Select topic: " + topic)
             for i in range(self.tableWidget.columnCount()):
@@ -293,6 +297,13 @@ class Ui_mainWindow(object):
                             self.tableWidget.setRowHidden(l,True)
                         else:
                             self.tableWidget.setRowHidden(l,False)
+        elif self.comboBox_4.currentText() == "remove filter":
+            for i in range(self.tableWidget.columnCount()):
+                headeritem = self.tableWidget.horizontalHeaderItem(i)
+                if headeritem.text() == 'topic':
+                    for l in range(self.tableWidget.rowCount()):
+                        self.tableWidget.setRowHidden(l,False)
+
 
     def rrplace(self, st, old, new, occurence):
         lis = st.rsplit(old, occurence)
@@ -402,18 +413,25 @@ class Ui_mainWindow(object):
                                 for item in doc[0]['topic']:
                                     if item not in topicList:
                                         topicList.append(item)
+                                        
                             else:
                                 print(doc[0])
 
                         else:
                             print(doc[0])
+                    topicList.append("remove filter")
                     self.comboBox_4.addItems(topicList)
                 else:
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
             elif model == "Boolean Retrieval Model":
                 print("Boolean Retrieval Model")
-                result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
+                iPath = None
+                if collection == "UofO catalog":
+                    iPath = UOindexPath
+                else:
+                    iPath = indexPath
+                result = br.demo_processWithIndex(query, [], json.load(open(iPath, 'r')))
                 if result != []:
                     #set up table
                     topicList = []
@@ -453,6 +471,7 @@ class Ui_mainWindow(object):
                                 print(i)
                         else:
                             print(i)
+                    topicList.append("remove filter")
                     self.comboBox_4.addItems(topicList)
                 else:
                     self.tableWidget.setRowCount(0)
@@ -484,7 +503,7 @@ class Ui_mainWindow(object):
                     if i["docId"] == int(id):
                         title = i["title"]
                         desc = i["desc"]
-                        info = QMessageBox()
+                        info = infoMessageBox()
                         info.setWindowTitle(title)
                         info.setText(desc)
                         font = QtGui.QFont()
@@ -586,6 +605,31 @@ class Ui_mainWindow(object):
 
             else:
                 print("can not find expansion")
+
+class infoMessageBox(QtWidgets.QMessageBox):
+    def __init__(self):
+        QtWidgets.QMessageBox.__init__(self)
+        self.setSizeGripEnabled(True)
+
+    def event(self, e):
+        result = QtWidgets.QMessageBox.event(self, e)
+
+        self.setMinimumHeight(0)
+        self.setMaximumHeight(800)
+        self.setMinimumWidth(0)
+        self.setMaximumWidth(16777215)
+        self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        self.setFixedWidth(1500)
+
+        textEdit = self.findChild(QtWidgets.QTextEdit)
+        if textEdit != None :
+            textEdit.setMinimumHeight(0)
+            textEdit.setMaximumHeight(750)
+            textEdit.setMinimumWidth(0)
+            textEdit.setMaximumWidth(16777215)
+            textEdit.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+
+        return result
 
 class expMessageBox(QtWidgets.QMessageBox):
     def __init__(self,lis):
