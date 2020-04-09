@@ -183,7 +183,7 @@ def demo_processWithIndex(query, selectedCollection,index):
 
 
 def getCompleteTerms(collection):
-    path = '../output/terms.json'
+    path = '../output/reuterTerms.json'
     if collection == "UofO catalog":
         path = '../output/UOterms.json'
         
