@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
+# In[1]:
 
 
 import dictionary_building_module as db
@@ -12,7 +12,7 @@ import operator
 importlib.reload(db)
 
 
-# In[21]:
+# In[2]:
 
 
 #https://stackoverflow.com/questions/4233476/sort-a-list-by-multiple-attributes
@@ -21,29 +21,29 @@ importlib.reload(db)
 #https://docs.python.org/3.3/howto/sorting.html
 
 
-# In[22]:
+# In[3]:
 
 
 #indexPath = '../output/index.json'
 indexPath = '../output/reuterIndex.json'
 
 
-# In[23]:
+# In[4]:
 
 
 def getTermsAndFrequency():
     return db.extractTerms()
 
 
-# In[24]:
+# In[5]:
 
 
 # word -> [[list of docIds],[list of frequencies(map to docId)]]
 def buildIndex():
     terms,frequency,t = getTermsAndFrequency()
     # create all terms to be used in wildcard
-    with open('../output/terms.json','w') as f:
-        json.dump({"terms":t}, f, sort_keys=True, indent=4,ensure_ascii=False)
+#     with open('../output/terms.json','w') as f:
+#         json.dump({"terms":t}, f, sort_keys=True, indent=4,ensure_ascii=False)
      #return a posting list dict (with weight in it)
     l,p = buildTermIdPairAndTotalPostings(terms)
     # sort list based on term
@@ -52,7 +52,7 @@ def buildIndex():
         
 
 
-# In[25]:
+# In[6]:
 
 
 # not sure if we need this func
@@ -68,7 +68,7 @@ def buildIndex():
 #     return counter
 
 
-# In[26]:
+# In[7]:
 
 
 def buildPostings(pairContainer,frequency,totalPostings):
@@ -87,7 +87,7 @@ def buildPostings(pairContainer,frequency,totalPostings):
     return postings
 
 
-# In[27]:
+# In[8]:
 
 
 # terms => terms[docId] = list(terms)
@@ -105,7 +105,7 @@ def buildTermIdPairAndTotalPostings(terms):
     return listContainer, sorted(list(set(postings)))
 
 
-# In[28]:
+# In[9]:
 
 
 #get call if the file doesn;t exist (I think..)
@@ -113,10 +113,4 @@ def getIndex():
     index = buildIndex()
     with open(indexPath,'w') as f:
         json.dump(index, f, sort_keys=True, indent=4,ensure_ascii=False)
-
-
-# In[29]:
-
-
-getIndex()
 
