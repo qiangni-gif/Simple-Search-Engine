@@ -12,6 +12,7 @@ import json
 
 # modelPath = '../output/testBigramModel.json'
 modelPath = '../output/bigramModel.json'
+UomodelPath = '../output/UObigramModel.json'
 limit = 6
 #https://stackoverflow.com/questions/35624064/sorting-dictionary-descending-in-python
 
@@ -19,9 +20,12 @@ limit = 6
 # In[35]:
 
 
-def findNext(query):
+def findNext(query,collection):
     # Let's assume the query is of form "abc cde "
-    with open(modelPath,'r') as f:
+    mPath = modelPath
+    if collection == "UofO catalog":
+        mPath = UomodelPath
+    with open(mPath,'r') as f:
         file = json.load(f)
         previousWord = query.split()[-1]
         d = file[previousWord]
