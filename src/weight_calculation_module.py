@@ -6,18 +6,22 @@ import inverted_index_construction_module as iic
 
 indexPath = '../output/index.json'
 storagePath = '../output/storage.json'
+reuterIndexPath = '../output/reuterIndex.json'
+reuterStorage = '../output/reuterStorage.json'
 termPath = '../output/terms.json'
+UOtermPath = '../output/UOterms.json'
 weightedindexPath = '../output/weightedindex.json'
+reuterWindexPath = '../output/reuter_weightedindex.json'
 
 def getinvertedindex():
     return iic.getIndex()
 
 #set up list of terms with corresponding docId and tf_idf
-def tf_idf():
+def tf_idf(iPath,tPath,sPath):
     tfidf = {}
     docId = 0
     tfreq = 0
-    with open(indexPath, 'r') as inde, open(termPath, 'r') as ter , open(storagePath, 'r') as storag:
+    with open(iPath, 'r') as inde, open(tPath, 'r') as ter , open(sPath, 'r') as storag:
         indexf = json.load(inde)
         termf = json.load(ter)
         storagef = json.load(storag)
@@ -30,9 +34,10 @@ def tf_idf():
                 num = findNumOfterms(docId,termf)
                 #comput term frequency
                 #tfreq = t[1]/findMaxfrequency(f,docId)
-                tfreq = t[1]/num
+                #tfreq = t[1]/num
+                tfreq = t[1]
                 #tfreq = 1 + math.log10(t[1])
-                lis.append([docId,tfreq*idf,num])
+                lis.append([docId,idf,tfreq,num])
             tfidf[q] = lis
         return tfidf
 
@@ -54,8 +59,12 @@ def findNumOfterms(docId,termf):
     return maxNum
 
 def getweightedindex():
-    weightedindex = tf_idf()
+    weightedindex = tf_idf(indexPath,UOtermPath,storagePath)
     with open(weightedindexPath,'w') as f:
         json.dump(weightedindex, f, sort_keys=True, indent=4,ensure_ascii=False)
+
+    reuterWindex = tf_idf(reuterIndexPath,termPath,reuterStorage)
+    with open(reuterWindexPath,'w') as f:
+        json.dump(reuterWindex, f, sort_keys=True, indent=4,ensure_ascii=False)
 
 #getweightedindex()

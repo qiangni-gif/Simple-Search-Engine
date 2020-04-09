@@ -14,6 +14,7 @@ sub_consonant_consonant = 1
 sub_vowel_consonant = 1
 
 indexPath = '../output/index.json'
+reuterIndexPath = '../output/reuterIndex.json'
 termsPath = '../output/terms.json'
 maxNum = 10
 
@@ -68,9 +69,9 @@ def weightedEditDistance(source, target):
 #                 correction[a] = b[:maxNum]
 #     return correction
 
-def getCorrection(terms):
+def getCorrection(terms,collection):
     correction = {}
-    f = getterms()
+    f = getterms(collection)
     for q in terms:
         lis = {}
         for i in f:
@@ -84,23 +85,36 @@ def getCorrection(terms):
                 correction[a] = b[:maxNum]
     return correction
 
-def getterms():
-    f = json.load(open(termsPath, 'r'))
+def getterms(collection):
+    if collection == "UofO catalog":
+        tPath = indexPath
+    elif collection == "Reuters21578":
+        tPath = reuterIndexPath
+
+    f = json.load(open(tPath, 'r'))
     lis = []
-    for i in f["terms"]:
-        for l in i:
-            if l not in lis:
-                lis.append(l)
-                #print(l)
+    for i in f:
+        if i not in lis:
+            lis.append(i)
+    # for i in f["terms"]:
+    #     for l in i:
+    #         if l not in lis:
+    #             lis.append(l)
+    #             #print(l)
     return lis
 
 
 
 
 
-def check(terms):
+def check(terms,collection):
+    if collection == "UofO catalog":
+        iPath = indexPath
+    elif collection == "Reuters21578":
+        iPath = reuterIndexPath
+
     l = []
-    f = json.load(open(indexPath, 'r'))
+    f = json.load(open(iPath, 'r'))
     for q in terms:
         if q not in f:
             l.append(q)

@@ -11,15 +11,20 @@ import json
 # In[52]:
 
 
-corpus = '../output/storage.json'
+UOcorpus = '../output/storage.json'
+reutercorpus = '../output/reuterStorage.json'
 excerptLength = 50
 
 
 # In[56]:
 
 
-def getDocs(docIds):
+def getDocs(docIds,collection):
     docIds.sort()
+    if collection == 'UofO catalog':
+        corpus = UOcorpus
+    else:
+        corpus = reutercorpus
     if os.path.exists(corpus):
         output = []
         with open(corpus, 'r') as file:
@@ -33,6 +38,8 @@ def getDocs(docIds):
             d['link'] = course['docId']
             d['title'] = course['title']
             d['desc'] = s
+            if collection == "Reuters21578":
+                d['topic'] = course['topic']
             output.append(d)
     return output
 
@@ -47,4 +54,5 @@ def getDocs(docIds):
 
 
 #getDocs(docIds)
+
 

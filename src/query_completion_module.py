@@ -32,11 +32,11 @@ def findNext(query):
 # In[19]:
 
 
-list(newf)[0:3]
+#list(newf)[0:3]
 
 
 # In[37]:
 
 
-findNext("U.S. would ")
-
+# print(findNext("U.S. would ")
+# print(findNext("boo ")

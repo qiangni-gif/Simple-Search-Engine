@@ -10,6 +10,8 @@
 #https://stackoverflow.com/questions/37222081/pyqt-qtableview-set-horizontal-vertical-header-labels
 #https://stackoverflow.com/questions/40995778/resize-column-width-to-fit-into-the-qtablewidget-pyqt
 #https://stackoverflow.com/questions/34374660/how-can-i-get-the-selected-rows-value-of-a-qtablewidget-in-pyqt
+# https://stackoverflow.com/questions/25101171/what-do-the-different-qmessagebox-roles-mean
+# https://stackoverflow.com/questions/32885472/getting-selected-index-number-of-column-times-of-a-qtableview
 
 import sys
 import json
@@ -21,6 +23,8 @@ import corpus_access_module as ca
 import spelling_correction_module as sc
 import boolean_retrieval_model_module as br
 import query_expansion_module as qe
+import relevance_feedback_model as rfb
+import query_completion_module as qc
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QTableWidgetItem
 
@@ -29,15 +33,14 @@ stopWordFlag = True
 wordStemmingFlag = True
 normalizationFlag = True
 
-corpusPath = '../output/storage.json'
-indexPath = '../output/index.json'
-weightedIndexPath = '../output/weightedindex.json'
+corpusPath = db.storagePath
+reutercorpusPath = db.reuterStoragePath
 
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
         mainWindow.setObjectName("mainWindow")
-        mainWindow.resize(836, 651)
+        mainWindow.resize(1200, 800)
         self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
@@ -85,7 +88,11 @@ class Ui_mainWindow(object):
         self.lineEdit = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
         self.lineEdit.setLocale(QtCore.QLocale(QtCore.QLocale.Armenian, QtCore.QLocale.Armenia))
         self.lineEdit.setObjectName("lineEdit")
-        self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 3)
+        self.gridLayout.addWidget(self.lineEdit, 0, 1, 1, 2)
+        self.typing_timer = QtCore.QTimer()
+        self.typing_timer.setSingleShot(True)
+        self.typing_timer.timeout.connect(self.make_change)
+        self.lineEdit.textChanged.connect(self.start_typing_timer)
 
         self.label = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         font = QtGui.QFont()
@@ -133,6 +140,22 @@ class Ui_mainWindow(object):
         self.comboBox_2.addItem("")
         self.comboBox_2.addItem("")
         self.gridLayout.addWidget(self.comboBox_2, 2, 2, 1, 1)
+
+        self.comboBox_3 = QtWidgets.QComboBox(self.scrollAreaWidgetContents)
+        self.comboBox_3.setLocale(QtCore.QLocale(QtCore.QLocale.Armenian, QtCore.QLocale.Armenia))
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.gridLayout.addWidget(self.comboBox_3, 0, 3, 1, 1)
+        self.comboBox_3.activated.connect(self.query_completion_box)
+
+        self.comboBox_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents)
+        self.comboBox_4.setLocale(QtCore.QLocale(QtCore.QLocale.Armenian, QtCore.QLocale.Armenia))
+        self.comboBox_4.setObjectName("comboBox_4")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.gridLayout.addWidget(self.comboBox_4, 4, 1, 1, 1)
+        self.comboBox_4.activated.connect(self.topicFilter)
 
         self.checkBox_2 = QtWidgets.QCheckBox(self.scrollAreaWidgetContents)
         self.checkBox_2.setEnabled(True)
@@ -212,6 +235,69 @@ class Ui_mainWindow(object):
         self.pushButton_3.setText(_translate("mainWindow", "Query Expansion"))
         
     #change the rebuild flag when setting is toggled
+    def start_typing_timer(self):
+        self.typing_timer.start(500)
+
+    def make_change(self):
+        text = self.lineEdit.text()
+        op = ['(',')','OR','AND','AND_NOT']
+        if text.endswith(" ") and text != " ":
+            self.comboBox_3.clear()
+            texts = text.split()
+            lastword = texts[-1]
+            if self.comboBox.currentText() == "Boolean Retrieval Model":
+                print("Boolean Retrieval Model")
+                if lastword not in op:
+                    complete = []
+                    try:
+                        completelist = qc.findNext(lastword+" ")
+                        print("query completion: ")
+                        print(completelist)
+                        for item in completelist:
+                            complete.append('( '+ item.split()[0] + ' OR ' + item.split()[1] +' )')
+                        self.comboBox_3.addItems(complete)
+                    except:
+                        print("can not find query completion for: "+ lastword)
+            else:
+                try:
+                    completelist = qc.findNext(lastword+" ")
+                    print("query completion: ")
+                    print(completelist)
+                    self.comboBox_3.addItems(completelist)
+                except:
+                    print("can not find query completion for: "+ lastword)
+                
+    def query_completion_box(self):
+        index = self.comboBox_3.currentIndex()
+        if index != -1:
+            text = self.lineEdit.text()
+            texts = text.split()
+            complete = self.comboBox_3.currentText()
+            print("select: ")
+            print(complete)
+            self.lineEdit.setText(self.rrplace( text, texts[-1], complete, 1).rstrip())
+            self.comboBox_3.clear()
+
+    def topicFilter(self):
+        index = self.comboBox_4.currentIndex()
+        if index != -1:
+            topic = self.comboBox_4.currentText()
+            print("Select topic: " + topic)
+            for i in range(self.tableWidget.columnCount()):
+                headeritem = self.tableWidget.horizontalHeaderItem(i)
+                if headeritem.text() == 'topic':
+                    for l in range(self.tableWidget.rowCount()):
+                        box = self.tableWidget.cellWidget(l,i)
+                        Alltopic = [box.itemText(t) for t in range(box.count())]
+                        if topic not in Alltopic:
+                            self.tableWidget.setRowHidden(l,True)
+                        else:
+                            self.tableWidget.setRowHidden(l,False)
+
+    def rrplace(self, st, old, new, occurence):
+        lis = st.rsplit(old, occurence)
+        return new.join(lis)
+
     def onCheckBox_Toggled(self):
         global reBuildFlag
         global stopWordFlag
@@ -241,7 +327,7 @@ class Ui_mainWindow(object):
         query = self.lineEdit.text()
         print("onSearch_clicked, module: "+ model +" collection: "+ collection)
         self.tableWidget.setRowCount(0)
-
+        self.comboBox_4.clear()
         #reBuild index if the setting is changed
         if reBuildFlag == True:
             rebuild()
@@ -262,7 +348,6 @@ class Ui_mainWindow(object):
                 terms = vr.extractQueryTerms(query)
                 #check weather the imput query is in the index.
                 w = sc.check(terms,collection)
-                
                 if w != []:
                     #ask user to pick a different query 
                     correction = sc.getCorrection(w,collection)
@@ -278,23 +363,51 @@ class Ui_mainWindow(object):
                         #print(terms)
                 #set up table
                 self.tableWidget.setRowCount(0)
-                self.tableWidget.setColumnCount(4)
-                self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc', 'score'])
-                terms = db.wordStemming(terms)# word stemming after spelling correction
+                if collection == "UofO catalog":
+                    header = ['docId', 'title', 'desc', 'score']
+                    self.tableWidget.setColumnCount(4)
+                    for i in range(4):
+                        headerText = QtWidgets.QTableWidgetItem(header[i])
+                        self.tableWidget.setHorizontalHeaderItem(i,headerText)
+                else:
+                    header = ['docId', 'title', 'desc','topic','score']
+                    self.tableWidget.setColumnCount(5)
+                    for i in range(5):
+                        headerText = QtWidgets.QTableWidgetItem(header[i])
+                        self.tableWidget.setHorizontalHeaderItem(i,headerText)
+                # terms = db.wordStemming(terms)# word stemming after spelling correction
+                self.lineEdit.setText(' '.join(str(s) for s in terms))
+                
                 result = vr.comput_score(terms,collection)
                 if result != None:
+                    topicList = []
+                    self.comboBox_4.clear()
                     for i in result:
                         currentRowCount = self.tableWidget.rowCount()
-                        doc = ca.getDocs([i[0]])
+                        doc = ca.getDocs([i[0]],collection)
                         #print(doc)
                         if 'link' in doc[0] and 'title' in doc[0] and 'desc' in doc[0]:
                             self.tableWidget.insertRow(currentRowCount)
                             self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(doc[0]['link'])))
                             self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(doc[0]['title']))
                             self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(doc[0]['desc']))
-                            self.tableWidget.setItem(currentRowCount,3,QTableWidgetItem(str(i[1])))
+                            
+                            if collection == "UofO catalog":
+                                self.tableWidget.setItem(currentRowCount,3,QTableWidgetItem(str(i[1])))
+                            elif collection == "Reuters21578" and 'topic' in doc[0]:
+                                topicBox = QtWidgets.QComboBox()
+                                topicBox.addItems(doc[0]['topic'])
+                                self.tableWidget.setCellWidget(currentRowCount,3,topicBox)
+                                self.tableWidget.setItem(currentRowCount,4,QTableWidgetItem(str(i[1])))
+                                for item in doc[0]['topic']:
+                                    if item not in topicList:
+                                        topicList.append(item)
+                            else:
+                                print(doc[0])
+
                         else:
                             print(doc[0])
+                    self.comboBox_4.addItems(topicList)
                 else:
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
@@ -303,34 +416,62 @@ class Ui_mainWindow(object):
                 result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
                 if result != []:
                     #set up table
+                    topicList = []
+                    self.comboBox_4.clear()
                     print(result)
                     self.tableWidget.setRowCount(0)
-                    self.tableWidget.setColumnCount(3)
-                    self.tableWidget.setHorizontalHeaderLabels(['docId', 'title', 'desc'])
-                    doc = ca.getDocs(result)
+                    if collection == "UofO catalog":
+                        header = ['docId', 'title', 'desc']
+                        self.tableWidget.setColumnCount(3)
+                        for i in range(3):
+                            headerText = QtWidgets.QTableWidgetItem(header[i])
+                            self.tableWidget.setHorizontalHeaderItem(i,headerText)
+
+                    else:
+                        header = ['docId', 'title', 'desc','topic']
+                        self.tableWidget.setColumnCount(4)
+                        for i in range(4):
+                            headerText = QtWidgets.QTableWidgetItem(header[i])
+                            self.tableWidget.setHorizontalHeaderItem(i,headerText)
+                    doc = ca.getDocs(result,collection)
+                    print(doc)
                     for i in doc:
                         currentRowCount = self.tableWidget.rowCount()
-                        #print(doc)
                         if 'link' in i and 'title' in i and 'desc' in i:
                             self.tableWidget.insertRow(currentRowCount)
                             self.tableWidget.setItem(currentRowCount,0,QTableWidgetItem(str(i['link'])))
                             self.tableWidget.setItem(currentRowCount,1,QTableWidgetItem(i['title']))
                             self.tableWidget.setItem(currentRowCount,2,QTableWidgetItem(i['desc']))
+                            if collection == "Reuters21578" and 'topic' in i:
+                                topicBox = QtWidgets.QComboBox()
+                                topicBox.addItems(i['topic'])
+                                self.tableWidget.setCellWidget(currentRowCount,3,topicBox)
+                                for item in i['topic']:
+                                    if item not in topicList:
+                                        topicList.append(item)
+                            else:
+                                print(i)
                         else:
                             print(i)
+                    self.comboBox_4.addItems(topicList)
                 else:
                     self.tableWidget.setRowCount(0)
                     print("can not find the term " +query+" from the collection")
 
     
     def onViewDetail_clicked(self):
-        
+        model = self.comboBox.currentText()
         if self.tableWidget.rowCount() == 0:
             print("table is empty")
         elif not self.tableWidget.selectionModel().selectedRows():
             print("not selected")
         else:
-            with open(corpusPath, 'r') as file:
+            collection = self.comboBox_2.currentText()
+            if collection == 'UofO catalog':
+                cPath = corpusPath
+            else: 
+                cPath = reutercorpusPath
+            with open(cPath, 'r') as file:
                 f = json.load(file)
                 print("onViewDetail_clicked")
                 
@@ -350,9 +491,33 @@ class Ui_mainWindow(object):
                         font.setFamily("Times New Roman")
                         font.setPointSize(10)
                         info.setFont(font)
-            
-                        y = info.exec_()
+                        if model == "Vector Space Model":
+                            yes = info.addButton (
+                                    'relevant', 
+                                    QtWidgets.QMessageBox.YesRole
+                                    )
+                            no = info.addButton(
+                                    'not relevant', 
+                                    QtWidgets.QMessageBox.NoRole
+                                    )
+                            cancel = info.addButton(
+                                    'cancel', 
+                                    QtWidgets.QMessageBox.RejectRole
+                                    ) 
+                            info.exec_()
+                            query = self.lineEdit.text()
+                            if info.clickedButton() == yes:
+                                print("relvent selected")
+                                rfb.setfd([query,i["docId"]], collection, True)# save feedback 
+                            elif info.clickedButton() == no:
+                                print("not relvent selected")
+                                rfb.setfd([query,i["docId"]], collection, False)# save feedback
+                            else:
+                                print("cancel")
+                        else:
+                            y=info.exec_()
 
+                       
 
     def onExpansion_clicked(self):
         query = self.lineEdit.text()
@@ -427,7 +592,7 @@ class expMessageBox(QtWidgets.QMessageBox):
         QtWidgets.QMessageBox.__init__(self)
         self.setSizeGripEnabled (True)
         self.setWindowTitle('Query Expansion')
-        self.setText("Please select words below to expansion: "+lis[0]+
+        self.setText("Please select words below to expand: "+lis[0]+
                      "\n Or press cancel. holding ctrl to select multiple items")
         self.addButton (
             QtWidgets.QPushButton('Accept'), 
