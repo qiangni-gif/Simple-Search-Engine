@@ -253,7 +253,7 @@ class Ui_mainWindow(object):
                 if lastword not in op:
                     complete = []
                     try:
-                        completelist = qc.findNext(lastword+" ")
+                        completelist = qc.findNext(lastword+" ", self.comboBox_2.currentText())
                         print("query completion: ")
                         print(completelist)
                         for item in completelist:
@@ -264,7 +264,7 @@ class Ui_mainWindow(object):
                         self.comboBox_3.addItem("no query completion")
             else:
                 try:
-                    completelist = qc.findNext(lastword+" ")
+                    completelist = qc.findNext(lastword+" ", self.comboBox_2.currentText())
                     print("query completion: ")
                     print(completelist)
                     self.comboBox_3.addItems(completelist)
@@ -427,14 +427,12 @@ class Ui_mainWindow(object):
                     print("can not find the term " +query+" from the collection")
             elif model == "Boolean Retrieval Model":
                 print("Boolean Retrieval Model")
-
                 iPath = None
                 if collection == "UofO catalog":
                     iPath = UOindexPath
                 else:
                     iPath = indexPath
                 result = br.demo_processWithIndex(query, collection, json.load(open(iPath, 'r')))
-
                 if result != []:
                     #set up table
                     topicList = []
