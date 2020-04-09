@@ -7,10 +7,11 @@ nltk.download('wordnet')
 # https://pythonprogramming.net/wordnet-nltk-tutorial/
 
 termPath = '../output/terms.json'
+UotermPath = '../output/UOterms.json'
 def expansion(query, model, collection):
     lis = {}
     if collection == "UofO catalog":
-        tPath = termPath
+        tPath = UotermPath
     else:
         tPath = termPath
     terms = json.load(open(tPath,'r'))
