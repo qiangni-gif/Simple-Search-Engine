@@ -413,7 +413,8 @@ class Ui_mainWindow(object):
                     print("can not find the term " +query+" from the collection")
             elif model == "Boolean Retrieval Model":
                 print("Boolean Retrieval Model")
-                result = br.demo_processWithIndex(query, [], json.load(open(br.iic.indexPath, 'r')))
+                idx = json.load(open("../output/index.json", 'r'))
+                result = br.demo_processWithIndex(query, [], idx)
                 if result != []:
                     #set up table
                     topicList = []

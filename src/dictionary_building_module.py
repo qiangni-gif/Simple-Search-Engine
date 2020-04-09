@@ -74,7 +74,7 @@ def extractTerms():
     data = dict()
     container = dict()
     termsForBoolean = []
-    with open(reuterStoragePath, 'r') as file:
+    with open(storagePath, 'r') as file:
         f = json.load(file)
         for d in f:
             terms = tokenize(d['desc'])

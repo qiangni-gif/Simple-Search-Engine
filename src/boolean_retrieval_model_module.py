@@ -143,7 +143,7 @@ def demo_processWithIndex(query, selectedCollection,index):
             totalPostings = []
             # need to apply stemming etc on query
             if '*' in query:
-                completeTerms = getCompleteTerms()
+                completeTerms = getCompleteTerms(selectedCollection)
                 pre = query.split(" ")
                 for t in pre:
                     if '*' in t:
@@ -182,8 +182,12 @@ def demo_processWithIndex(query, selectedCollection,index):
 # In[19]:
 
 
-def getCompleteTerms():
-    with open('../output/terms.json', 'r') as file:
+def getCompleteTerms(collection):
+    path = '../output/terms.json'
+    if collection == "UofO catalog":
+        path = '../output/UOterms.json'
+        
+    with open(path, 'r') as file:
         f = json.load(file)
         temp = []
         for l in f["terms"]:
@@ -195,7 +199,7 @@ def getCompleteTerms():
 
 
 #"( *er OR ink )"
-demo_processWithIndex("*er",[],index)
+# demo_processWithIndex("*er",[],index)
 
 
 # In[12]:
