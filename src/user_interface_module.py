@@ -261,6 +261,7 @@ class Ui_mainWindow(object):
                         self.comboBox_3.addItems(complete)
                     except:
                         print("can not find query completion for: "+ lastword)
+                        self.comboBox_3.addItem("no query completion")
             else:
                 try:
                     completelist = qc.findNext(lastword+" ")
@@ -431,7 +432,7 @@ class Ui_mainWindow(object):
                     iPath = UOindexPath
                 else:
                     iPath = indexPath
-                result = br.demo_processWithIndex(query, [], json.load(open(iPath, 'r')))
+                result = br.demo_processWithIndex(query, collection, json.load(open(iPath, 'r')))
                 if result != []:
                     #set up table
                     topicList = []
