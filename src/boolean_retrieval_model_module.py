@@ -62,9 +62,9 @@ def findPostings(logicalOp, p1, p2):
     elif logicalOp == 'AND':
         return list(set(p1) & set(p2))
     elif logicalOp == 'AND_NOT': # is it the correct way?
-        if p1:# p1 is not empty
+        if not p2:# p2 is empty
 #             return [x for x in p1 if x not in p2]
-            return list(set(p1)-set(p2))
+            return []
 #         return [x for x in p2 if x not in p1]
         return list(set(p2)-set(p1))
 
@@ -217,4 +217,5 @@ index = {'zeroknowledg':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[2
          'asdasetc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
          'zasdvctc':[[1,0],[3,0],[6,0],[11,0],[13,0],[16,0],[18,0],[19,0],[20,0]],
         }
+#print(demo_processWithIndex("( game AND_NOT math )","UofO catalog",json.load(open('../output/index.json', 'r'))))
 

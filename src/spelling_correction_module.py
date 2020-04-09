@@ -16,7 +16,7 @@ sub_vowel_consonant = 1
 indexPath = '../output/index.json'
 reuterIndexPath = '../output/reuterIndex.json'
 termsPath = '../output/terms.json'
-maxNum = 10
+maxNum = 100
 
 def weightedEditDistance(source, target): 
 
@@ -30,13 +30,13 @@ def weightedEditDistance(source, target):
                 matrix[i][j] = 0
             #if source is shorter than target string so adding del_cost
             elif i == 0:  
-                matrix[i][j] = matrix[i][j-1] + del_cost
+                matrix[i][j] = matrix[i][j-1] + del_cost + 0.5
             #if source is lenger than target string so adding ins_cost
             elif j == 0: 
-                matrix[i][j] = matrix[i-1][j] + ins_cost
+                matrix[i][j] = matrix[i-1][j] + ins_cost + 0.5
             else:
                 if source[0] == target[0]: # assume that the first letter are always correct
-            ## Adjusted the cost accordinly, insertion = 1 deletion=1 vowel-vowel substitution = 0.5 vowel-consonant substitution = 2 consonant-consonant substitution = 1
+            ## Adjusted the cost accordinly, insertion = 1 deletion=1 vowel-vowel substitution = 0.5 vowel-consonant substitution = 1.5 consonant-consonant substitution = 1
                     if source[i-1] in vowel and target[j-1] not in vowel:
                         matrix[i][j] = min( matrix[i][j-1] + del_cost,  
                                             matrix[i-1][j] + ins_cost,
@@ -75,9 +75,11 @@ def getCorrection(terms,collection):
     for q in terms:
         lis = {}
         for i in f:
-            distance = weightedEditDistance(q,i)#match query with term
-            if distance < len(q) and distance != False:
-                lis[i] = distance
+            if i.isalpha() and len(q) >= len(i):
+                distance = weightedEditDistance(q,i)#match query with term
+                if distance < len(q) and distance != False:
+                    lis[i] = distance
+        print(lis)
         lis = sorted(lis.items(), key=lambda item:item[1], reverse=False)
         correction[q] = lis
         for a,b in correction.items():
