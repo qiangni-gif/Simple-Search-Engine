@@ -244,7 +244,7 @@ class Ui_mainWindow(object):
     def make_change(self):
         text = self.lineEdit.text()
         op = ['(',')','OR','AND','AND_NOT']
-        if text.endswith(" ") and text != " ":
+        if text.endswith(" ") and not text.isspace():
             self.comboBox_3.clear()
             texts = text.split()
             lastword = texts[-1]
