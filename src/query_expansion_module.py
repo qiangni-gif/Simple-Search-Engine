@@ -6,7 +6,7 @@ nltk.download('wordnet')
 # https://stackoverflow.com/questions/13226629/wordnet-query-expansion-step-by-step
 # https://pythonprogramming.net/wordnet-nltk-tutorial/
 
-termPath = '../output/terms.json'
+termPath = '../output/reuterTerms.json'
 UotermPath = '../output/UOterms.json'
 def expansion(query, model, collection):
     lis = {}
@@ -38,6 +38,7 @@ def expansion(query, model, collection):
         for token in tokenList:
             synonyms = []
             if token not in op and token not in lis:
+                # print(token)
                 for syn in wordnet.synsets(token):
                     for l in syn.lemmas():
                         if any(l.name() in t for t in terms["terms"]):
