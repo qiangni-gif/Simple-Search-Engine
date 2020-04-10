@@ -373,7 +373,6 @@ class Ui_mainWindow(object):
                                     if i == c[0]:
                                         terms.remove(i)
                         #print(terms)
-                print("set up table")
                 self.tableWidget.setRowCount(0)
                 if collection == "UofO catalog":
                     header = ['docId', 'title', 'desc', 'score']
@@ -391,6 +390,7 @@ class Ui_mainWindow(object):
                 self.lineEdit.setText(' '.join(str(s) for s in terms))
                 
                 result = vr.comput_score(terms,collection)
+                print("set up table")
                 if result != None:
                     topicList = []
                     self.comboBox_4.clear()
