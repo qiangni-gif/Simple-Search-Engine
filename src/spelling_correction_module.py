@@ -15,7 +15,7 @@ sub_vowel_consonant = 1
 
 indexPath = '../output/index.json'
 reuterIndexPath = '../output/reuterIndex.json'
-termsPath = '../output/terms.json'
+termsPath = '../output/reuterTerms.json'
 maxNum = 100
 
 def weightedEditDistance(source, target): 
