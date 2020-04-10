@@ -373,7 +373,7 @@ class Ui_mainWindow(object):
                                     if i == c[0]:
                                         terms.remove(i)
                         #print(terms)
-                #set up table
+                print("set up table")
                 self.tableWidget.setRowCount(0)
                 if collection == "UofO catalog":
                     header = ['docId', 'title', 'desc', 'score']
@@ -434,7 +434,7 @@ class Ui_mainWindow(object):
                     iPath = indexPath
                 result = br.demo_processWithIndex(query, collection, json.load(open(iPath, 'r')))
                 if result != []:
-                    #set up table
+                    print("set up table")
                     topicList = []
                     self.comboBox_4.clear()
                     print(result)
