@@ -1,6 +1,7 @@
 import importlib
 import os
 import json
+import math
 import operator
 import weight_calculation_module as wc
 import nltk
@@ -87,15 +88,15 @@ def Rocchio(query,windex,collection):
                     if docID in fb[q]['relevant']:
                         count_relevant += 1
                         if term in relevant:
-                            relevant[term] += tfreq
+                            relevant[term] += 1 + math.log10(tfreq)
                         else:
-                            relevant[term] = tfreq
+                            relevant[term] = 1 + math.log10(tfreq)
                     elif docID in fb[q]['not relevant']:
                         count_irrelevant += 1
                         if term in irrelevant:
-                            irrelevant[term] += tfreq
+                            irrelevant[term] += 1 + math.log10(tfreq)
                         else:
-                            irrelevant[term] = tfreq
+                            irrelevant[term] = 1 + math.log10(tfreq)
     else:
         print("no feedback")
 
